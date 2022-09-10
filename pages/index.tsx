@@ -13,13 +13,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section
-          id="intro"
-          className="min-h-screen w-full flex flex-col justify-center items-center"
-        >
-          <h1 className="text-8xl mb-2">Hendra Sadewa</h1>
-          <FadeWords words={occupations} className="text-4xl" />
-        </section>
+        <div className="hero min-h-screen bg-base-200">
+          <div className="hero-content text-center">
+            <div className="max-w-screen-lg">
+              <h1 className="sm:text-2xl md:text-4xl lg:text-8xl mb-2">
+                Hendra Sadewa
+              </h1>
+              <FadeWords
+                words={occupations}
+                className="sm:text-xl md:text-2xl lg:text-4xl"
+              />
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );
