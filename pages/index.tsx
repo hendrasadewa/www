@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <section className="hero min-h-screen" id="hero">
           <div className="hero-content text-center">
             <div className="max-w-screen-lg">
-              <h1 className="flex cursor-pointer sm:text-2xl md:text-4xl lg:text-8xl mb-2">
+              <h1 className="flex justify-center cursor-pointer text-4xl md:text-4xl md:mb-2 lg:text-8xl ">
                 {'Hendra Sadewa'.split('').map((letter, index) => (
                   <AudioControl
                     key={`letter-${index}`}
@@ -28,10 +28,10 @@ const Home: NextPage = () => {
                   </AudioControl>
                 ))}
               </h1>
-              <div className="divider" />
+              <div className="divider my-0 md:my-2" />
               <FadeWords
                 words={occupations}
-                className="sm:text-xl md:text-2xl lg:text-4xl mb-8"
+                className="text-xl md:text-2xl lg:text-4xl mb-8"
               />
               <div className="flex gap-2 items-center justify-center">
                 {socials.map(({ name, url }, index) => (
