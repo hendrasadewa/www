@@ -2,7 +2,9 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import FadeWords from '../components/Fadewords';
-import { occupations } from '../constants/siteInfo';
+import { occupations, socials } from '../constants/siteInfo';
+import BounceLetter from '../components/BounceLetter';
+import AudioControl from '../components/AudioControl';
 
 const Home: NextPage = () => {
   return (
@@ -13,19 +15,34 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="hero min-h-screen bg-base-200">
+        <section className="hero min-h-screen" id="hero">
           <div className="hero-content text-center">
             <div className="max-w-screen-lg">
-              <h1 className="sm:text-2xl md:text-4xl lg:text-8xl mb-2">
-                Hendra Sadewa
+              <h1 className="flex cursor-pointer sm:text-2xl md:text-4xl lg:text-8xl mb-2">
+                {'Hendra Sadewa'.split('').map((letter, index) => (
+                  <AudioControl
+                    key={`letter-${index}`}
+                    audioSrc="/metalic-snare.ogg"
+                  >
+                    <BounceLetter letter={letter} />
+                  </AudioControl>
+                ))}
               </h1>
+              <div className="divider" />
               <FadeWords
                 words={occupations}
-                className="sm:text-xl md:text-2xl lg:text-4xl"
+                className="sm:text-xl md:text-2xl lg:text-4xl mb-8"
               />
+              <div className="flex gap-2 items-center justify-center">
+                {socials.map(({ name, url }, index) => (
+                  <a key={`social-${index}`} href={url}>
+                    {name}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );

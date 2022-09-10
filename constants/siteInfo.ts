@@ -13,7 +13,7 @@ export const socials = [
   {
     name: 'Twitter',
     url: 'https://twitter.com/@sadevva_',
-    username: '@sadevva_'
+    username: '@sadevva_',
   },
   {
     name: 'LinkedIn',
@@ -29,5 +29,5 @@ export const socials = [
     name: 'Medium',
     url: 'https://hendrasadewa.medium.com',
     username: 'hendrasadewa',
-  }
-]
+  },
+];
