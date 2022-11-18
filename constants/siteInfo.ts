@@ -1,3 +1,9 @@
+export const basicInfo = {
+  author: 'Hendra Sadewa',
+  descriptions: "Hendra Sadewa's Personal Website",
+  keywords: 'Web, web developers, web engineers, ui engineer, software developer, react, react developer'
+}
+
 export const occupations = [
   'A passionate web engineer 👨🏻‍💻',
   'A seasoned writer 📇',

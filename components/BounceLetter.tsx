@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from 'framer-motion';
 
 interface Props {
@@ -6,12 +8,12 @@ interface Props {
 
 function BounceLetter({ letter }: Props) {
   return (
-    <motion.div
+    <motion.span
       whileHover={{ y: -4 }}
       whileTap={{ scale: 0.8 }}
     >
       {letter === ' ' ? <div>&nbsp;</div> : letter}
-    </motion.div>
+    </motion.span>
   );
 }
 

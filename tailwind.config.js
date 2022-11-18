@@ -1,15 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
-  theme: {
-    fontFamily: {
-      mono: "'IBM Plex Mono', monospace",
-    },
-    extend: {
-      backgroundImage: {
-        'graph-paper': "url('/graph-paper.svg')",
-      },
-    },
-  },
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {},
   plugins: [require('daisyui')],
 };
