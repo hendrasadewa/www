@@ -1,10 +1,8 @@
-import type { NextPage } from 'next';
-
 import FadeWords from '../components/Fadewords';
 import BounceLetter from '../components/BounceLetter';
 import { basicInfo, occupations, socials } from '../constants/siteInfo';
 
-const Home: NextPage = () => {
+function Home() {
   return (
     <div>
       <main>
@@ -34,6 +32,6 @@ const Home: NextPage = () => {
       </main>
     </div>
   );
-};
+}
 
 export default Home;
