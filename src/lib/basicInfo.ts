@@ -4,9 +4,10 @@ export const basicInfo = {
 	twitter: '@sadevva_',
 	icon: '/icon.svg',
 	logo: '/logo.svg',
-	descriptions: ['Website personal dari Hendra Sadewa', 'seorang web developer asal Bekasi'].join(
-		' '
-	),
+	descriptions: [
+		'Website personal dari Hendra Sadewa',
+		'seorang web developer asal Bekasi'
+	].join(' '),
 	keywords: [
 		// Web developer indonesia, developer indonesia, web development, web design, application development, digital marketing, web business consultant
 		'Web',
@@ -48,24 +49,18 @@ export const socials = [
 		name: 'Twitter',
 		url: 'https://twitter.com/@sadevva_',
 		username: '@sadevva_',
-		icon: '/icon_twitter.svg'
+		icon: '/icons/twitter.svg'
 	},
 	{
 		name: 'LinkedIn',
 		url: 'https://linkedin.com/in/hendra-sadewa/',
 		username: 'hendra-sadewa',
-		icon: '/icon_linkedin.png'
+		icon: '/icons/linkedin.svg'
 	},
 	{
 		name: 'GitHub',
 		url: 'https://github.com/hendrasadewa',
 		username: 'hendrasadewa',
-		icon: '/icon_github.png'
-	},
-	{
-		name: 'Medium',
-		url: 'https://hendrasadewa.medium.com',
-		username: 'hendrasadewa',
-		icon: '/icon_medium.png'
+		icon: '/icons/github.svg'
 	}
 ];

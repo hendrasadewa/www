@@ -1,6 +1,7 @@
 <script>
 	import { navigating, page } from '$app/stores';
-	import { blur, fade } from 'svelte/transition';
+	import { socials } from '$lib/basicInfo';
+	import { fade } from 'svelte/transition';
 
 	let currentRoute = $page.route.id;
 
@@ -35,4 +36,9 @@
 			</a>
 		{/if}
 	</div>
+	<ul class="flex items-center gap-4">
+		{#each socials as social}
+			<li><img src={social.icon} alt={social.name} class="h-4" /></li>
+		{/each}
+	</ul>
 </nav>
