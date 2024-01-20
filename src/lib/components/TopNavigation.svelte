@@ -8,16 +8,14 @@
 	$: if ($navigating) {
 		currentRoute = $page.route.id;
 	}
-
-	function onBackClick() {
-		window.history.back();
-	}
 </script>
 
-<nav class="flex items-center justify-between p-4">
+<nav
+	class="flex items-center justify-between p-4 bg-spring-wood-50 bg-opacity-95"
+>
 	<div>
 		{#if currentRoute === '/'}
-			<a in:fade href="/">hendrasadewa</a>
+			<a in:fade href="/">hendra sadewa</a>
 		{:else}
 			<a in:fade href="/" class="flex items-center gap-1">
 				<svg
@@ -38,7 +36,11 @@
 	</div>
 	<ul class="flex items-center gap-4">
 		{#each socials as social}
-			<li><img src={social.icon} alt={social.name} class="h-4" /></li>
+			<li>
+				<a href={social.url}>
+					<img src={social.icon} alt={social.name} class="h-4" />
+				</a>
+			</li>
 		{/each}
 	</ul>
 </nav>
