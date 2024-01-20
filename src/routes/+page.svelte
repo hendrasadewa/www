@@ -1,3 +1,7 @@
-<p>another helpless boring blog</p>
+<script lang="ts">
+	import PostList from '$lib/components/PostList.svelte';
+	import type { PostInfo } from '$lib/types/blog';
+	export let data: { posts: PostInfo[] } = { posts: [] };
+</script>
 
-<p>yep, it's empty</p>
+<PostList {data} />

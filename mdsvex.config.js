@@ -7,10 +7,6 @@ import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 const mdsvexConfig = defineConfig({
 	extensions: ['.svelte.md', '.md', '.svx'],
 
-	layout: {
-		_: 'src/lib/components/PostLayout.svelte'
-	},
-
 	smartypants: {
 		dashes: 'oldschool'
 	},
