@@ -8,7 +8,7 @@
 	$: pathname = data.pathname;
 </script>
 
-<header class="sticky top-0">
+<header class="sticky top-0 bg-spring-wood-50 bg-opacity-95">
 	<TopNavigation />
 </header>
 

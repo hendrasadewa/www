@@ -10,9 +10,7 @@
 	}
 </script>
 
-<nav
-	class="flex items-center justify-between p-4 bg-spring-wood-50 bg-opacity-95"
->
+<nav class="flex items-center justify-between p-4 max-w-xl m-auto">
 	<div>
 		{#if currentRoute === '/'}
 			<a in:fade href="/">hendra sadewa</a>
