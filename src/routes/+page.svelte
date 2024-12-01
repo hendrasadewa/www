@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import ArticleList from '$lib/components/ArticleList.svelte';
+
+	export let data;
+</script>
+
+<article class="px-4">
+	<section class="space-y-2">
+		<h1 class="text-4xl font-bold">Articles</h1>
+		<ArticleList posts={data.posts} />
+	</section>
+</article>

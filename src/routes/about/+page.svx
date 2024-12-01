@@ -1,0 +1,41 @@
+---
+layout: article
+headerImage: /img/chin-chin.webp
+headerImageAlt: Hendra Sadewa (me) standing on the rooftop, showing a Jakarta cityscape in the noon
+title: About Me
+description: A brief introduction about myself
+---
+
+I am Hendra <small class="font-italic">(Hen-dra)</small>, a Web engineer based in Bekasi, Indonesia. Currently working full-time at [Stockbit](https://stockbit.com) as a Senior Web Engineer. Some of my latest deliveries are [Stockbit Academy](https://academy.stockbit.com) and [FR Bonds](https://snips.stockbit.com/edukasi/obligasi-fr) trading in Stockbit.
+
+Outside of my working hour, I love to explore latest tech trends, playing video games, listening to music, reading books, and playing with my cats.
+
+## Tech stacks
+
+Here are some tech stacks that I actively using
+
+### Language
+
+* Go
+* Javascript +Typescript
+
+### DB
+
+* Postgres
+* SQLite
+
+### UI 
+
+* React
+* Svelte
+* Tailwind
+* css-in-js (Styled-Components, Emotion)
+
+
+### Frameworks
+
+* Svelte Kit
+* Next.js
+* Hono
+* gin
+
