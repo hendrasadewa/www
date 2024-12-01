@@ -10,9 +10,14 @@
 <article>
 	<a class="" href="/post/{post.slug}">
 		<header class="flex items-center justify-between gap-3">
-			<h3 class=" text-xl">
-				{post.title}
-			</h3>
+			<div class="space-y-2">
+				<h3 class=" text-xl font-bold">
+					{post.title}
+				</h3>
+				<p class="hidden md:block">
+					{post.description}
+				</p>
+			</div>
 			<img
 				src={post.headerImageURL}
 				alt={post.headerImageAlt}

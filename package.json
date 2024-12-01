@@ -2,6 +2,11 @@
 	"name": "website",
 	"version": "0.0.1",
 	"type": "module",
+	"author": {
+		"name": "hendra sadewa",
+		"email": "me@hendrasadewa.com",
+		"url": "https://hendrasadewa.com"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",

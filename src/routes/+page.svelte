@@ -4,9 +4,9 @@
 	export let data;
 </script>
 
-<article class="px-4">
+<article class="px-4 sm:px-0">
 	<section class="space-y-2">
-		<h1 class="text-4xl font-bold">Articles</h1>
+		<h1 class="font-display text-4xl">Artikel Terbaru</h1>
 		<ArticleList posts={data.posts} />
 	</section>
 </article>

@@ -6,7 +6,7 @@
 	export let post: Post;
 </script>
 
-<article>
+<article class="space-y-2">
 	<a href="/post/{post.slug}">
 		<img
 			alt={post.headerImageAlt}
@@ -14,8 +14,8 @@
 			class="h-64 w-full rounded-lg object-cover shadow-sm transition-all hover:shadow-lg"
 		/>
 	</a>
-	<header class="py-2">
-		<h2 class=" text-2xl">{post.title}</h2>
+	<header class="space-y-2 py-2">
+		<h2 class=" font-display text-2xl md:text-4xl">{post.title}</h2>
 		<p>{post.description}</p>
 	</header>
 	<footer class="flex items-center justify-between gap-3">

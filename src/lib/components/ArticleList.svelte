@@ -13,11 +13,8 @@
 	<section id="highlight">
 		<ArticleHighlightItem post={highlighted} />
 	</section>
-
+	<hr />
 	<section class="space-y-2" id="posts">
-		<header class="mb-4 border-b py-2">
-			<h2 class=" text-3xl font-bold">Latest Post</h2>
-		</header>
 		<ul>
 			{#each rest as post}
 				<li class="pb-2">
