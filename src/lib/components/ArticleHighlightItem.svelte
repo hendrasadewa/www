@@ -7,11 +7,13 @@
 </script>
 
 <article>
-	<img
-		alt={post.headerImageAlt}
-		src={post.headerImageURL}
-		class="h-64 w-full rounded-lg object-cover shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-	/>
+	<a href="/post/{post.slug}">
+		<img
+			alt={post.headerImageAlt}
+			src={post.headerImageURL}
+			class="h-64 w-full rounded-lg object-cover shadow-sm transition-all hover:shadow-lg"
+		/>
+	</a>
 	<header class="py-2">
 		<h2 class=" text-2xl">{post.title}</h2>
 		<p>{post.description}</p>

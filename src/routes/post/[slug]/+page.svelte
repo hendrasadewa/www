@@ -17,7 +17,7 @@
 		<img
 			src={data.meta.headerImageURL}
 			alt={data.meta.headerImageAlt}
-			class="opacity-60"
+			class="opacity-30 dark:opacity-60"
 		/>
 		<div class="absolute bottom-0 bg-opacity-40 p-4">
 			<div class="flex items-center justify-between">
