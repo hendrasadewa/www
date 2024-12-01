@@ -35,4 +35,36 @@
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={headerImageURL} />
 	<meta name="twitter:image:alt" content={headerImageAlt} />
+
+	<!-- Structured Data (JSON-LD for Rich Results) -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Hendra Sadewa",
+			"jobTitle": "Senior Web Engineer",
+			"worksFor": {
+				"@type": "Organization",
+				"name": "Stockbit"
+			},
+			"url": "https://hendrasadewa.com",
+			"image": "/img/me.webp",
+			"description": "Hendra Sadewa is a Senior Web Engineer based in Bekasi, Indonesia, working at Stockbit. He is skilled in Go, JavaScript, TypeScript, React, Svelte, and more.",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Bekasi",
+				"addressCountry": "Indonesia"
+			},
+			"knowsAbout": [
+				"Web Development",
+				"Go Programming",
+				"JavaScript",
+				"TypeScript",
+				"React",
+				"Svelte",
+				"Tailwind CSS",
+				"Database Management"
+			]
+		}
+	</script>
 </svelte:head>
