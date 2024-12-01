@@ -11,7 +11,7 @@
 	<a class="" href="/post/{post.slug}">
 		<header class="flex items-center justify-between gap-3">
 			<div class="space-y-2">
-				<h3 class=" text-xl font-bold">
+				<h3 class=" font-display text-2xl md:text-3xl">
 					{post.title}
 				</h3>
 				<p class="hidden md:block">
@@ -26,7 +26,11 @@
 		</header>
 	</a>
 	<footer class="flex items-center justify-between gap-3">
-		<ArticleTags categories={post.categories} />
-		<ArticlePublishedDate publishedDate={post.date} />
+		<div class="w-2/3">
+			<ArticleTags categories={post.categories} />
+		</div>
+		<div>
+			<ArticlePublishedDate publishedDate={post.date} />
+		</div>
 	</footer>
 </article>

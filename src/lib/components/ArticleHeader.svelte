@@ -9,13 +9,13 @@
 	export let title: string = '';
 </script>
 
-<header class="relative rounded-lg">
+<header class="rounded-lg">
 	<img
 		src={headerImageURL}
 		alt={headerImageAlt}
 		class="rounded-lg bg-cover object-center dark:opacity-60"
 	/>
-	<div class="absolute bottom-0 left-0 w-full">
+	<div class="w-full">
 		<div
 			class="relative w-full rounded-b-lg bg-stone-100/70 p-4 backdrop-blur-sm dark:bg-stone-800/70"
 		>

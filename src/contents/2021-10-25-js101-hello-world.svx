@@ -1,0 +1,111 @@
+---
+title: JS101 - Hello World
+description: Semuanya diawali dengan menyapa dunia
+date: '2021-10-25'
+categories:
+  - javascript
+  - programming
+published: true
+headerImageAlt: image by claybanks from unsplash
+headerImageURL: https://images.unsplash.com/photo-1644792863360-40fa85ea52e7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+---
+
+Jika sebelumnya sudah pernah belajar pemrograman, pastinya sudah tau kan ritual awal para programmer jika menemukan teknologi atau bahasa pemrograman baru? Yap betul mencetak teks Hello World.
+
+Kalau belum mari kenalan dengan Hello world 👋
+
+Tujuan dari hello world adalah mencetak kalimat “Hello World” tanpa petik di terminal atau browser ataupun simulator mobile. Tujuannya untuk memastikan minimal installasi development environment sudah berhasil.
+
+Sebelum ngoding, download dan install terlebih dahulu paket installasi nodejs dari halaman web resmi Node.js berikut: [node.js](https://nodejs.org/en/)
+
+Pilih salah satu versi yang tersedia, yaitu LTS atau Latest.
+
+- LTS (Long Term Service) merupakan versi node yang akan didukung hingga 18 bulan, lalu setelah lewat 18 bulan, akan ditambah masa maintenance selama 12 bulan.
+
+- Latest merupakan versi node yang terkini, dan versi ini akan didukung hingga 6 bulan, setelah lewat 6 bulan versi ganjil akan berhenti didukung, dan versi genap akan masuk ke versi LTS.
+
+---
+
+Jika proses pemasangan selesai, mari periksa versi node yang terpasang melalui terminal dengan perintah:
+
+```shell
+node
+```
+
+Output dari perintah tadi akan sesuai dengan versi node yang terpasang di komputer. Umumnya akan muncul seperti berikut:
+
+```text
+Welcome to Node.js v13.11.0.
+Type ".help" for more information.
+>
+```
+
+intepreter runtime node js akan menunggu perintah dari user, mari jalankan perintah untuk mencetak teks di layar konsol dengan perintah:
+
+```js
+console.log('Hello World');
+```
+
+Kemudian setelah menekan Enter, akan muncul:
+```text
+Welcome to Node.js v13.11.0.
+Type ".help" for more information.
+> console.log('Hello World')
+Hello World
+undefined
+>
+```
+
+Runtime node js sudah berhasil terpasang, namun penasaran ga sih kenapa bisa mencetak teks di layar konsol dengan perintah tadi?
+
+```js
+console.log('Hello World');
+```
+
+Perintah terdiri dari objek `console` yang memanggil fungsi `log` dengan parameter `'Hello World'`.
+
+Q: Bentar bang, apasih objek, fungsi dan parameter?
+A: Sederhananya objek itu adalah representasi dari benda nyata, yang memiliki beberapa fungsi atau metode tertentu, dan fungsi ini dapat memiliki input berupa data yang dimasukan melalui parameter.
+
+Mari kita berandai andai 🦄
+
+Tadi, kita anggap console adalah sebuah objek, nah kita anggap `console` ini adalah terminal / cmd kita, dan `console` ini punya fungsi bernama `log` yang tugasnya (atau berfungsi) untuk mencetak teks ke layar dengan data yang diberikan atau nama lainnya `parameter`, dari perintah tadi, kita pakai nilai teks `'Hello World'` sebagai parameter karena kita ingin mencetak teks `'Hello World'` ke layar terminal.
+Sehingga bila kita gabungkan menjadi:
+
+```js
+console.log('Hello World');
+```
+
+
+Q: Oke bang, tapi itu kok petik (`'`) nya ngga kecetak juga ya ke layar?
+A: Petik yang mengapit teks `'Hello World'` menyatakan bentuk atau tipe data yang kita pakai adalah `String` atau Teks, javascript tidak dapat mengenali data yang kita masukan adalah teks bila tidak diberi petik.
+
+---
+
+Kita telah selesai menjalankan perintah melalui terminal, nah sekarang kita akan coba menulis program dalam bentuk file javascript (.js).
+
+Pertama buatlah file baru dengan ekstensi`.js`, dan beri nama `hello-world.js`.
+kemudian dalam file hello-world.js, mari kita tuliskan perintah berikut:
+
+```js
+console.log('Halo Halo Dunia');
+```
+
+
+jika sudah kembali ke terminal, dan pastikan berada dalam satu direktori dengan file hello-world.js, lalu jalankan perintah:
+
+```shell
+node hello-world.js
+```
+
+nanti akan tampil dilayar terminal teks seperti ini:
+```text
+Halo Halo Dunia
+```
+
+---
+
+Nah, sekarang kita sudah selesai membuat program sederhana dan juga kita sudah berusaha memahami apa yang terjadi, jika ada hal yang membuat bingung, jangan ragu-ragu untuk bertanya lewat mention akun [bsky 🦋](https://bsky.app/profile/hendrasadewa.com).
+
+Semoga artikel ini dapat bermanfaat dan sampai jumpa di artikel berikutnya.
+Cheers 🥂
