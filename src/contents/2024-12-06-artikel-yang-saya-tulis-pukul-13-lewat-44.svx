@@ -3,8 +3,7 @@ title: Tarian Jari di Tengah Kelelahan
 description: Artikel ini hanya tarian dari jari-jemari Saya yang bebas menuliskan apa yang ada di otak Saya sejak pukul 13.44 hingga 14.08.
 date: '2024-12-06'
 categories:
-  - pikiran
-  - free
+  - musing
 published: true
 headerImageAlt: image by Hendra Sadewa, a casio watch in the tank shape showing time 13.44
 headerImageURL: /img/1344.webp
@@ -20,26 +19,36 @@ Saya sadar 2 menit berlalu sejak paragraf pertama Saya tulis, sungguh tak berday
 
 Sembari berpikir, Saya menyadari jika lebar window VSCode Saya tak tepat, terlalu lebar. Aduh, hal ini mungkin memicu rasa kesal dan pikiran saya mulai bising meneriakkan umpatan kasar tiap kali melihat karakter yang melewati garis _ruler_ yang menandakan karakter tersebut telah melewati batas (80 kolom).
 
-Aduh... terpaksa... berat kali tangan ini, Saya perlu menyalurkan energi untuk menggerakkan mouse, andai saja saya dapat memasang window manager yang dapat diatur melalui keyboard, namun Saya perlu belajar serta melatih _muscle memory_ saya supaya terbiasa untuk menekan _hotkey_. Berat juga, sudahlah gunakan mouse saja.
+Aduh... terpaksa... berat kali tangan ini untuk digerakkan. Saya perlu menyalurkan energi untuk menggerakkan mouse, andai saja saya dapat memasang window manager yang dapat diatur melalui keyboard, namun Saya perlu belajar serta melatih _muscle memory_ saya supaya terbiasa untuk menekan _hotkey_. 
 
-Setelah menggeser sisi kanan _Window_ VSCode hingga tepat di 80 kolom, dan memastikan bila tiap baris tak melewati batas, tangan kanan Saya. Setidaknya isi kepala saya kembali hening, tak ada perdebatan, tenang, namun sungguh melelahkan...
+Berat juga, sudahlah gunakan mouse saja.
 
-Saya pun bingung mau tulis apalagi, Saya juga bingung mengapa Saya tulis artikel ini, apakah tulisan ini adalah bentuk usaha Saya untuk menghindari kewajiban Saya? hm... Padahal hari Senin Saya harus mempresentasikan hasil kerja Saya agar dapat menjadi pondasi dari proyek yang sedang Saya kerjakan. Mengapa begini? Mengapa muncul pertanyaan lagi, padahal urat di jidat saya sudah mulai terasa tegang dan kaki saya menjadi dingin ketika memikirkan hal ini?
+Setelah menggeser sisi kanan _Window_ VSCode hingga tepat di 80 kolom dan memastikan bila tiap karakter di tiap baris tak melewati batas. Setidaknya isi kepala saya kembali hening, tak ada perdebatan, tenang, namun sungguh melelahkan...
 
-Hmm... Notifikasi Slack mulai muncul, namun tidak ada yang _mention_ saya, sepertinya rekan kerja Saya sudah aktif bekerja, dan produktif. Sementara Saya sedang menulis artikel ini, yang setelah dibaca malah membuat banyak pertanyaan yang muncul di kepala  mungkin ada 27 pertanyaan yang muncul. Pertanyaan ini lebih menyiksa dibanding dengan bekerja. Namun biarlah, pun Saya tak punya energi untuk memikirkan itu, biarlah sisa energi Saya, digunakan untuk membiarkan jari-jemari menari dengan lihai di keyboard untuk menuliskan apa yang Saya rasakan, entah sampai kapan mereka akan terus menari, sepertinya mereka tak punya rasa lelah, apakah mereka menikmati tarian ini? Atau malah merasa bersalah karena menikmati?
+Saya pun bingung mau tulis apalagi, Saya juga bingung mengapa Saya tulis artikel ini, apakah tulisan ini adalah bentuk usaha Saya untuk menghindari kewajiban Saya? 
 
-ah,... Saya habis menghapus keluhan Saya lagi dan menggantinya dengan kalimat ini, Saya tau tak ada artinya menulis artikel ini, hanya buang-buang waktu saja. Tapi setidaknya, jam Saya menunjukan pukul 13.58, sudah waktunya Saya untuk kembali bekerja. Rasanya saya akan membuang artikel ini, karena setelah saya baca pun saya tak mengerti apa yang saya ingin sampaikan, mungkin tarian jari ini sedang menceritakan tentang seseorang, seorang yang.... ah sudahlah, hapus saja.
+hm... Padahal hari di Senin besok, Saya harus mempresentasikan hasil kerja Saya hari ini agar dapat dijadikan pondasi dari proyek yang sedang dikerjakan. Mengapa begini? Mengapa menghindar? Mengapa muncul pertanyaan lagi? Urat di jidat saya sudah mulai terasa tegang dan kaki saya menjadi dingin ketika memikirkan hal ini?
+
+> psst... tk.. tk...
+
+Hmm... Notifikasi Slack mulai muncul, namun tidak ada yang _mention_ Saya, sepertinya rekan kerja Saya sudah mulai aktif bekerja, dan produktif. Sementara Saya sedang menulis artikel ini, yang setelah dibaca malah membuat banyak pertanyaan yang muncul di kepala, mungkin ada 27 pertanyaan yang muncul atau lebih?. 
+
+Pertanyaan ini lebih menyiksa dibanding dengan bekerja. Namun biarlah, pun Saya tak punya energi untuk memikirkan itu, biarlah sisa energi digunakan untuk membiarkan jari-jemari menari dengan lihai di keyboard untuk menuliskan apa yang dirasakan, entah sampai kapan mereka akan terus menari, sepertinya mereka tak punya rasa lelah, apakah mereka menikmati tarian ini? Atau malah merasa bersalah karena menikmati?
+
+ah,... Saya habis menghapus keluhan Saya lagi dan menggantinya dengan kalimat ini. Saya tahu betul, tak ada artinya menulis artikel ini, hanya buang-buang waktu saja. Tapi setidaknya, waktu sudah menunjukan pukul 13.58, waktunya Saya untuk kembali bekerja. 
+
+Rasanya Saya akan membuang artikel ini, karena setelah saya baca pun saya tak mengerti apa yang saya ingin sampaikan, mungkin tarian jari ini sedang menceritakan tentang seseorang, seorang yang.... ah sudahlah, hapus saja.
 
 ---
 
-> Tapi Sayang sekali bila artikel ini Saya hapus, mungkin Saya akan publish artikel ini, mungkin juga tidak. 
+> Tapi Sayang sekali bila artikel ini Saya hapus, mungkin Saya akan publish artikel ini, mungkin juga tidak.
 
 Untuk publish artikel itu butuh _effort_, Saya harus memikirkan judul, perlu juga mengisi field header `imageHeader`, `imageHeaderAlt`, `descriptions` supaya meta-tag nya keisi. Sial, Saya pun harus _convert_ gambar _header_ menjadi webp agar lebih irit. 
 
-Semua hal itu memang sudah Saya atur sedemikian sehingga dapat secara efektif mendongkrak SEO, tapi ya sebenarnya artikel ini pun tak berarti..., walaupun naik ke halaman pertama setelah _googling_ dengan keyword "Hendra sadewa" pun tak ada artinya bila artikel ini muncul, sungguh sia-sia. Apalagi Saya tahu bahwa halaman profil dari website besar seperti LinkedIn dan Instagram dengan nama saya muncul duluan sebelum situs ini, tentu lebih menarik dan addictive mengunjungi dua situs tadi dibanding membaca untaian teks yang saya claim sebagai artikel ini.
+Semua hal itu memang sudah Saya atur sedemikian sehingga dapat secara efektif mendongkrak SEO, tapi ya sebenarnya artikel ini pun tak berarti..., walaupun naik ke halaman pertama setelah _googling_ dengan keyword "Hendra sadewa" pun tak ada artinya bila artikel ini muncul, sungguh sia-sia. Apalagi Saya tahu bahwa halaman profil dari website besar seperti LinkedIn dan Instagram, dengan profil saya muncul duluan di kedua situs ternama itu, sebelum situs milik saya sendiri, tentu lebih menarik untuk kedua pemain besar yang lebih dianggap kredibel dibanding membaca untaian teks yang saya claim sebagai artikel ini.
 
 ---
 
-Sudahlah, Saya lakukan saja, lagipula sudah tanggung juga, sayang sekali bila tidak dipublikasikan, tarian ini cukup indah, saya menikmati momen ketika menulis. Walaupun hasilnya hanya runtutan teks yang tak ada makna, biarlah.
+Sudahlah, Saya lakukan saja, lagipula sudah tanggung juga, sayang sekali bila tidak dipublikasikan. 
 
-Mungkin tarian ini adalah satu-satunya cara saya mengingatkan diri bahwa saya masih hidup.
+Tarian ini cukup indah, saya menikmati momen ketika menulis. Walaupun hasilnya hanya runtutan teks yang tak ada makna, biarlah. Mungkin tarian ini adalah satu-satunya cara saya mengingatkan diri bahwa saya masih hidup.
