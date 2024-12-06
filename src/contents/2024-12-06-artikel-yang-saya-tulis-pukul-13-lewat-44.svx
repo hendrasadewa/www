@@ -1,0 +1,37 @@
+---
+title: Tarian Jari di Tengah Kelelahan
+description: Artikel ini hanya tarian dari jari-jemari Saya yang bebas menuliskan apa yang ada di otak Saya sejak pukul 13.44 hingga 14.08.
+date: '2024-12-06'
+categories:
+  - pikiran
+  - free
+published: true
+headerImageAlt: image by Hendra Sadewa, a casio watch in the tank shape showing time 13.44
+headerImageURL: /img/1344.webp
+---
+
+Ruang kerja saya hening, saya bisa tahu bila hujan telah berhenti, hanya suara kipas yang terus berputar disamping saya berusaha tanpa lelah untuk membuat udara di ruang kerja saya tetap tersirkulasi dengan baik. Walaupun ada debu yang menempel di jaring-jarignya sih, cuma ya... tetap bisa _deliver value_ lah.
+
+Jam tangan Casio Saya tergeletak di bawah layar, menunjukan pukul 13.44, Saya masih saja terdiam depan layar, dan merasa sangat lelah dan berat untuk menjalankan aktivitas, apalagi bekerja. Saya tahu ini salah, namun beban dalam tubuh ini sangatlah berat untuk Saya pikul, menggerakan tubuh saja sulit, hanya jari-jemari saja yang masih dengan mudah untuk Saya gerakkan.
+
+Saya sadar 2 menit berlalu sejak paragraf pertama Saya tulis, sungguh tak berdaya Saya melawan rasa lelah ini. Namun sebenarnya apakah benar yang Saya rasakan adalah lelah secara fisik? Sepertinya kemarin Saya makan enak, lalu semalam Saya tidur cukup dan bangun tepat waktu saat adzan subuh berkumandang, seperti hari-hari sebelumnya saja. Namun darimanakah rasa lelah ini?
+
+Sembari berpikir, Saya menyadari jika lebar window VSCode Saya tak tepat, terlalu lebar. Aduh, hal ini mungkin memicu rasa kesal dan pikiran saya berisikan umpatan kasar tiap kali melihat karakter yang melewati garis _ruler_ yang menandakan ada di ujung kolom ke 80.
+
+Aduh... terpaksa... berat kali tangan ini Saya perlu gerakkan ke mouse, andai saja saya dapat memasang window manager yang dapat diatur melalui keyboard, namun Saya perlu belajar serta melatih _muscle memory_ saya supaya terbiasa untuk menekan _hotkey_. Berat juga, sudahlah gunakan mouse saja.
+
+Tangan kanan Saya kembali ke keyboard setelah sempat merantau untuk mengenggam mouse, dengan tujuan agar lebar window VSCode di layar Saya selaras dengan ruler yang Saya set tepat di 80 kolom.
+
+Sungguh melelahkan...
+
+Saya pun bingung mau tulis apalagi, Saya juga bingung mengapa Saya tulis artikel ini, apakah tulisan ini adalah bentuk usaha Saya untuk menghindari kewajiban Saya? hm... Padahal hari Senin Saya harus mempresentasikan hasil kerja Saya agar dapat menjadi pondasi dari proyek yang sedang Saya kerjakan. Mengapa begini? Mengapa muncul pertanyaan lagi, padahal urat di jidat saya sudah mulai terasa tegang dan kaki saya menjadi dingin ketika memikirkan hal ini?
+
+Hmm... Notifikasi Slack mulai muncul, namun tidak ada yang _mention_ saya, sepertinya rekan kerja Saya sudah aktif bekerja, dan produktif. Sementara Saya sedang menulis artikel ini, yang setelah dibaca malah membuat banyak pertanyaan yang muncul di kepala  mungkin ada 27 pertanyaan yang muncul. Pertanyaan ini lebih menyiksa dibanding dengan bekerja. Namun biarlah, pun Saya tak punya energi untuk memikirkan itu, biarlah sisa energi Saya, digunakan untuk membiarkan jari-jemari menari dengan lihai di keyboard untuk menuliskan apa yang Saya rasakan, entah sampai kapan mereka akan terus menari, sepertinya mereka tak punya rasa lelah, apakah mereka menikmati tarian ini? Atau malah merasa bersalah karena menikmati?
+
+ah,... Saya habis menghapus keluhan Saya lagi dan menggantinya dengan kalimat ini, Saya tau tak ada artinya menulis artikel ini, hanya buang-buang waktu saja. Tapi setidaknya, jam Saya menunjukan pukul 13.58, sudah waktunya Saya untuk kembali bekerja. Rasanya saya akan membuang artikel ini, karena setelah saya baca pun saya tak mengerti apa yang saya ingin sampaikan, mungkin tarian jari ini sedang menceritakan tentang seseorang, seorang yang.... ah sudahlah, hapus saja.
+
+...
+
+Tapi Sayang sekali bila artikel ini Saya hapus, mungkin Saya akan publish artikel ini, mungkin juga tidak. Untuk publish artikel itu butuh _effort_, Saya harus memikirkan judul, perlu juga mengisi field header image, alt, descriptions supaya meta-tag nya keisi. Sial, Saya pun harus convert gambar header Saya menjadi webp agar lebih irit. Semua hal itu memang sudah Saya atur sedemikian sehingga dapat secara efektif mendongkrak SEO, tapi ya sebenarnya artikel ini pun tak berarti..., walaupun naik ke halaman pertama setelah _googling_ dengan keyword "Hendra sadewa" pun tak ada artinya bila artikel ini muncul sungguh sia-sia, apalagi Saya tahu bahwa halaman profil dari website besar seperti LinkedIn dan Instagram dengan nama saya muncul duluan sebelum situs ini, usaha yang sungguh percuma.
+
+Sudahlah, Saya lakukan saja, lagipula sudah tanggung juga, kalo tidak dipublikasikan Sayang, tarian ini cukup indah, namun hasil artikel nya hanya runtutan teks yang tak ada makna, biarlah. Mungkin tarian ini adalah satu-satunya cara saya mengingatkan diri bahwa saya masih hidup.

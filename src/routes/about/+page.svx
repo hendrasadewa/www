@@ -7,8 +7,8 @@ categories:
   - introduction
   - personal
 published: true
-headerImageAlt: portrait of hendra sadewa the author of this website
-headerImageURL: /img/me.webp
+headerImageAlt: portrait of a cat paw
+headerImageURL: /img/paw.webp
 ---
 
 
