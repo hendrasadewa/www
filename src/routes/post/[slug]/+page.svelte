@@ -23,7 +23,7 @@
 	/>
 	<section
 		id="content"
-		class="prose-headings:font-display prose prose-lg p-4 dark:prose-invert prose-headings:font-normal"
+		class="prose prose-lg p-4 dark:prose-invert prose-headings:font-display prose-headings:font-normal"
 	>
 		<svelte:component this={data.content} />
 	</section>
