@@ -9,7 +9,7 @@
 		<div class="rounded-full bg-white/50 backdrop-blur-sm dark:bg-stone-800/50">
 			<div class="flex items-center gap-1 p-1 px-2">
 				<LucideTag size="12" />
-				<span class="text-sm capitalize">{category}</span>
+				<span class="text-xs capitalize md:text-sm">{category}</span>
 			</div>
 		</div>
 	{/each}

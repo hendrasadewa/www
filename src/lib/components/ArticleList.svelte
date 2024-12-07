@@ -14,8 +14,8 @@
 		<ArticleHighlightItem post={highlighted} />
 	</section>
 	<hr />
-	<section class="space-y-2" id="posts">
-		<ul>
+	<section id="posts">
+		<ul class="space-y-4">
 			{#each rest as post}
 				<li class="pb-2">
 					<ArticleItem {post} />

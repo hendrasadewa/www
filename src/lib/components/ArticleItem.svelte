@@ -14,7 +14,7 @@
 				<h3 class=" font-display text-2xl md:text-3xl">
 					{post.title}
 				</h3>
-				<p class="hidden md:block">
+				<p class="md:text-md text-sm md:block">
 					{post.description}
 				</p>
 			</div>

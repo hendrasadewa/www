@@ -13,7 +13,7 @@
 	<img
 		src={headerImageURL}
 		alt={headerImageAlt}
-		class="rounded-lg bg-cover object-center dark:opacity-60"
+		class="bg-cover object-center md:rounded-lg dark:opacity-60"
 	/>
 	<div class="w-full">
 		<div

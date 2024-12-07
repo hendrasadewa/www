@@ -15,5 +15,5 @@
 
 <div class="flex items-center gap-1">
 	<LucideCalendar size="12" />
-	<time>{formattedDate}</time>
+	<time class="md:text-md text-xs">{formattedDate}</time>
 </div>
