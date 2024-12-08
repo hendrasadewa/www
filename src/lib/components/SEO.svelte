@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import siteInfo from '$lib/configs/siteInfo';
 
 	export let title: string = siteInfo.defaultTitle;
@@ -9,11 +10,37 @@
 	export let headerImageURL: string = '';
 	export const published: boolean = false;
 	export let url: string = '';
+
+	const updateThemeColor = () => {
+		const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+		const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		if (metaThemeColor == null) {
+			return;
+		}
+		metaThemeColor.setAttribute('content', darkMode ? '#292524' : '#f5f5f4');
+	};
+
+	onMount(() => {
+		// Update the theme color on initial load
+		updateThemeColor();
+
+		// Listen for changes in the theme
+		const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+		mediaQuery.addEventListener('change', updateThemeColor);
+
+		return () => {
+			// Cleanup listener on component destroy
+			mediaQuery.removeEventListener('change', updateThemeColor);
+		};
+	});
 </script>
 
 <svelte:head>
 	<!-- Primary Meta Tags -->
 	<title>{title}</title>
+	<meta name="robots" content="index, follow" />
+
+	<!-- Page information -->
 	<meta name="description" content={description} />
 	<meta name="keywords" content={categories.join(', ')} />
 	<meta name="author" content={siteInfo.author} />
@@ -35,6 +62,10 @@
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={headerImageURL} />
 	<meta name="twitter:image:alt" content={headerImageAlt} />
+
+	<!-- Theme -->
+	<meta name="theme-color" content="#f5f5f4" />
+	<meta name="theme-color" content="#042524" />
 
 	<!-- Structured Data (JSON-LD for Rich Results) -->
 	<script type="application/ld+json">
