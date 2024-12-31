@@ -25,7 +25,7 @@ Here are some tech stacks that I actively using
 ### Language
 
 * Go
-* Javascript +Typescript
+* Javascript + Typescript
 
 ### DB
 

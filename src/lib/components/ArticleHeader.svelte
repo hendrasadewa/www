@@ -10,14 +10,9 @@
 </script>
 
 <header class="rounded-lg">
-	<img
-		src={headerImageURL}
-		alt={headerImageAlt}
-		class="bg-cover object-center md:rounded-lg dark:opacity-60"
-	/>
 	<div class="w-full">
 		<div
-			class="relative w-full rounded-b-lg bg-stone-100/70 p-4 backdrop-blur-sm dark:bg-stone-800/70"
+			class="relative w-full rounded-b-lg bg-stone-100/70 py-4 backdrop-blur-sm dark:bg-stone-800/70"
 		>
 			<div class="flex items-center justify-between">
 				<ArticleTags {categories} />
@@ -26,4 +21,9 @@
 			<h1 class="font-display text-4xl">{title}</h1>
 		</div>
 	</div>
+	<img
+		src={headerImageURL}
+		alt={headerImageAlt}
+		class="rounded-lg bg-cover object-center shadow transition-shadow hover:shadow-lg"
+	/>
 </header>

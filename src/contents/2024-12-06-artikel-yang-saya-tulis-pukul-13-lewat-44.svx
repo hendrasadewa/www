@@ -6,7 +6,7 @@ categories:
   - musing
 published: true
 headerImageAlt: image by Hendra Sadewa, a casio watch in the tank shape showing time 13.44
-headerImageURL: /img/1344.webp
+headerImageURL: /img/greenscreen.webp
 ---
 
 Ruang kerja saya hening, saya bahkan bisa tahu bila hujan telah berhenti, hanya suara kipas yang terus berputar disamping saya berusaha tanpa lelah untuk membuat udara di ruang kerja saya tetap tersirkulasi dengan baik. Walaupun ada debu yang menempel di jaring-jarignya sih, cuma ya... tetap bisa _deliver value_ lah.
