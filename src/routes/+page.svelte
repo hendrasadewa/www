@@ -1,6 +1,6 @@
 <script lang="ts">
-	import ArticleList from '$lib/components/ArticleList.svelte';
-	import Seo from '$lib/components/SEO.svelte';
+	import ArticleList from '$lib/components/blog/ArticleList.svelte';
+	import Seo from '$lib/components/common/SEO.svelte';
 
 	export let data;
 

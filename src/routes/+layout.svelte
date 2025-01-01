@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SiteHeader from '$lib/components/SiteHeader.svelte';
+	import SiteHeader from '$lib/components/common/SiteHeader.svelte';
 	import '../app.css';
 	let { children } = $props();
 </script>

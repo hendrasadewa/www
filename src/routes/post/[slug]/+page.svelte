@@ -1,6 +1,6 @@
 <script lang="ts">
-	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
-	import Seo from '$lib/components/SEO.svelte';
+	import Seo from '$lib/components/common/SEO.svelte';
+	import ArticleHeader from '$lib/components/blog/ArticleHeader.svelte';
 
 	export let data;
 </script>

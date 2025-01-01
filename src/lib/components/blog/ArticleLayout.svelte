@@ -1,7 +1,6 @@
 <script lang="ts">
-	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
-	import Seo from '$lib/components/SEO.svelte';
-	import siteInfo from '$lib/configs/siteInfo.js';
+	import Seo from '$lib/components/common/SEO.svelte';
+	import ArticleHeader from './ArticleHeader.svelte';
 
 	let {
 		children,
@@ -32,7 +31,7 @@
 	/>
 	<section
 		id="content"
-		class="prose-headings:font-display prose prose-lg p-4 dark:prose-invert prose-headings:font-normal"
+		class="prose prose-lg p-4 dark:prose-invert prose-headings:font-display prose-headings:font-normal"
 	>
 		{@render children()}
 	</section>
