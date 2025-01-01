@@ -1,15 +1,14 @@
-import { error } from '@sveltejs/kit';
+import { handleGetContentBySlug } from '$lib/services/blog/content-loader';
 
-export async function load({ params }) {
+export async function load({ params: { slug } }) {
 	try {
-		const post = await import(`../../../contents/${params.slug}.svx`);
-
+		const post = await handleGetContentBySlug(slug);
 		return {
 			content: post.default,
 			meta: post.metadata
 		};
 	} catch (err) {
-		console.error(err);
-		error(404, `Could not find ${params.slug}`);
+		console.error(`Error loading content for slug "${slug}":`, err);
+		throw new Error(`Content not found for slug: ${slug}`);
 	}
 }

@@ -8,3 +8,8 @@ export interface Post {
 	headerImageAlt: string;
 	headerImageURL: string;
 }
+
+export interface SearchPostParams {
+	category?: string | null;
+	keyword?: string | null;
+}

@@ -1,25 +1,14 @@
 import { json } from '@sveltejs/kit';
-import type { Post } from '$lib/types/post';
+import { handleGetContents } from '$lib/services/blog/content-loader';
 
-function createPost(path: string, file: unknown): Post | null {
-	const slug = path.split('/').at(-1)?.replace('.svx', '');
-	if (!file || typeof file !== 'object' || !('metadata' in file) || !slug)
-		return null;
+export async function GET({ url }) {
+	// Parse URL params
+	const params = url.searchParams;
+	const category = params.get('category');
+	const keyword = params.get('q');
 
-	const metadata = file.metadata as Omit<Post, 'slug'>;
-	return { ...metadata, slug };
-}
+	// call the get content handler
+	const posts = await handleGetContents({ category, keyword });
 
-async function getPosts() {
-	const paths = import.meta.glob('/src/contents/*.svx', { eager: true });
-
-	return Object.entries(paths)
-		.map(([path, file]) => createPost(path, file))
-		.filter((post): post is Post => post !== null && post.published)
-		.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
-}
-
-export async function GET() {
-	const posts = await getPosts();
 	return json(posts);
 }

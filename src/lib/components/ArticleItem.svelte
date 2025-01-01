@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Post } from '$lib/types/post';
-	import { LucideCalendar } from 'lucide-svelte';
 	import ArticleTags from './ArticleTags.svelte';
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';
 
