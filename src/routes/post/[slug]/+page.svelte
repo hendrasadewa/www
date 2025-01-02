@@ -13,12 +13,13 @@
 	headerImageURL={data.meta.headerImageURL}
 />
 
-<article>
+<article class="py-12">
 	<ArticleHeader
 		headerImageURL={data.meta.headerImageURL}
 		headerImageAlt={data.meta.headerImageAlt}
 		categories={data.meta.categories}
 		date={data.meta.date}
+		description={data.meta.description}
 		title={data.meta.title}
 	/>
 	<section

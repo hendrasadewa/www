@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Post } from '$lib/types/post';
-	import ArticleTags from './ArticleTags.svelte';
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';
 
 	export let post: Post;
@@ -8,28 +7,17 @@
 
 <article>
 	<a class="" href="/post/{post.slug}">
-		<header class="flex items-center justify-between gap-3">
-			<div class="space-y-2">
-				<h3 class=" font-display text-2xl md:text-3xl">
-					{post.title}
-				</h3>
-				<p class="md:text-md text-sm md:block">
-					{post.description}
-				</p>
-			</div>
+		<header class="flex flex-col items-center justify-between gap-3">
 			<img
 				src={post.headerImageURL}
 				alt={post.headerImageAlt}
-				class="w-1/3 rounded-lg object-cover"
+				class="h-40 w-40 rounded-lg shadow transition-all hover:rotate-6 hover:shadow-lg md:h-48 md:w-48"
 			/>
+			<h3 class="font-display">{post.title}</h3>
+			<ArticlePublishedDate publishedDate={post.date} />
 		</header>
 	</a>
 	<footer class="flex items-center justify-between gap-3">
-		<div class="w-2/3">
-			<ArticleTags categories={post.categories} />
-		</div>
-		<div>
-			<ArticlePublishedDate publishedDate={post.date} />
-		</div>
+		<div class="w-2/3"></div>
 	</footer>
 </article>

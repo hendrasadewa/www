@@ -5,25 +5,27 @@
 	export let headerImageURL: string = '';
 	export let headerImageAlt: string = '';
 	export let categories: string[] = [];
+	export let description: string = '';
 	export let date: string = '';
 	export let title: string = '';
 </script>
 
-<header class="rounded-lg">
-	<div class="w-full">
-		<div
-			class="relative w-full rounded-b-lg bg-stone-100/70 py-4 backdrop-blur-sm dark:bg-stone-800/70"
+<article
+	class="flex flex-col-reverse items-center justify-between gap-4 rounded-lg bg-stone-100 p-4 py-6 md:flex-row dark:bg-stone-700"
+>
+	<header class="flex w-full flex-col justify-between gap-4 md:min-h-64">
+		<ArticleTags {categories} />
+		<h2
+			class=" cursor-pointer font-display text-3xl hover:text-emerald-600 md:text-5xl"
 		>
-			<div class="flex items-center justify-between">
-				<ArticleTags {categories} />
-				<ArticlePublishedDate publishedDate={date} />
-			</div>
-			<h1 class="font-display text-4xl">{title}</h1>
-		</div>
-	</div>
+			{title}
+		</h2>
+		<p class="md:text-md text-sm italic">&quot;{description}&quot;</p>
+		<ArticlePublishedDate publishedDate={date} />
+	</header>
 	<img
-		src={headerImageURL}
 		alt={headerImageAlt}
-		class="rounded-lg bg-cover object-center shadow transition-shadow hover:shadow-lg"
+		src={headerImageURL}
+		class="cursor-pointer rounded-lg shadow transition-all hover:rotate-6 hover:shadow-lg md:h-64 md:w-64"
 	/>
-</header>
+</article>

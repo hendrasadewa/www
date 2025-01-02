@@ -2,22 +2,31 @@
 	import type { Post } from '$lib/types/post';
 
 	import ArticleItem from './ArticleItem.svelte';
-	import ArticleHighlightItem from './ArticleHighlightItem.svelte';
+	import ArticleHeader from './ArticleHeader.svelte';
 
 	export let posts: Post[] = [];
 
 	let [highlighted, ...rest] = posts;
 </script>
 
-<div class="space-y-4">
+<div class="space-y-4 pb-12">
 	<section id="highlight">
-		<ArticleHighlightItem post={highlighted} />
+		<a href={`/post/${highlighted.slug}`} class="cursor-default">
+			<ArticleHeader
+				headerImageURL={highlighted.headerImageURL}
+				headerImageAlt={highlighted.headerImageAlt}
+				categories={highlighted.categories}
+				date={highlighted.date}
+				description={highlighted.description}
+				title={highlighted.title}
+			/>
+		</a>
 	</section>
-	<hr />
+
 	<section id="posts">
-		<ul class="space-y-4">
+		<ul class="grid grid-cols-2 gap-2 md:grid-cols-3">
 			{#each rest as post}
-				<li class="pb-2">
+				<li>
 					<ArticleItem {post} />
 				</li>
 			{/each}
