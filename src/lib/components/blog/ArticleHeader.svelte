@@ -15,9 +15,7 @@
 >
 	<header class="flex w-full flex-col justify-between gap-4 md:min-h-64">
 		<ArticleTags {categories} />
-		<h2
-			class=" cursor-pointer font-display text-3xl hover:text-stone-600 md:text-5xl"
-		>
+		<h2 class=" cursor-pointer font-display text-3xl md:text-5xl">
 			{title}
 		</h2>
 		<p class="md:text-md text-sm italic">&quot;{description}&quot;</p>
