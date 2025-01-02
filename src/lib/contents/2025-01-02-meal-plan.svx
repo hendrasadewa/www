@@ -1,0 +1,57 @@
+---
+title: Mealplan
+description: Salah satu strategi untuk bertahan hidup dalam dunia kapitalis adalah dengan perencanaan yang baik.
+date: '2025-01-02'
+categories:
+  - food
+  - financial
+published: true
+headerImageAlt: image by Hendra Sadewa, photo of ayam cabai garam
+headerImageURL: /img/set-menu.webp
+---
+
+Tiga Bulan lalu, saya pusing melihat pengeluaran makan harian yang bisa sampai 9 juta rupiah (dan bisa lebih) tiap bulannya. Ini karena saya dan istri merupakan pekerja dan tak sempat untuk memasak tiap harinya, sehingga kami berdua tiap kali lapar, kami memesan makanan dari Grab food atau pergi ke restoran terdekat. Sehari saja bila 3 kali makan, bisa habis sekitar 300 ribu, angka yang seharusnya bisa dijadikan untuk makan beberapa hari bila kami dapat meluangkan waktu untuk memasak. 
+
+## Bertambahnya Tanggung Jawab
+
+Sampai tiba waktu dimana kami harus menambah pengeluaran untuk menambah dukungan kepada adik kami yang sedang kuliah, (sebelumnya kami telah menunjang 2 adik kami untuk kuliah). Pendapatan saya, setelah saya kalkulasi, ternyata tidak cukup untuk menunjang 3 orang kuliah dan 2 keluarga (internal saya dan mertua saya). Sehingga kami berputar otak untuk tetap dapat memenuhi semua kebutuhan dengan mengorbankan se-sedikit mungkin. Sehingga muncul ide dari istri saya untuk merencanakan, mempersiapkan masakan tiap minggu di _Weekend_ (Meal Planning).
+
+## Meal Planning
+Agar dalam menjalankan _Meal Planning_, terlaksanakan dengan baik, kami melakukan langkah-langkah berikut:
+
+### Mencari, Mengingat, dan Catat.
+
+Langkah pertama yang kami lakukan adalah mencari dan mengingat semua masakan yang pernah kami masak, atau kami sering melihat resep-resep atau masakan dari _Short Video_ youtube ataupun instagram, lalu mengumpulkannya dalam satu catatan. Masakan tersebut kemudian kami kategorikan menjadi Lauk, Set, Kondimen, Karbo, dan Sayur agar lebih mudah dicari.
+
+| Kategori     | Deskripsi                                    |
+|--------------|----------------------------------------------|
+| Lauk         | Menu protein utama (ayam, ikan, dll.)        |
+| Set          | Paket lengkap mencakup lauk, sayur, karbo    |
+| Sayur        | Aneka jenis sayuran                          |
+| Karbo        | Nasi, mie, kentang, dll.                     |
+
+![Daftar Menu](/img/daftar-menu.webp)
+
+ Setelah terkumpul, kami berdiskusi setiap hari Kamis untuk menentukan menu selama hari kerja (Senin-Jum'at). Kami memutuskan untuk tidak memasak saat weekend karena biasanya hari Sabtu sangat sibuk, dan Minggu digunakan untuk istirahat. Oleh karena itu, kami memilih membeli makanan untuk hari-hari tersebut.
+
+### Penentuan Menu Mingguan
+
+Dalam satu hari, kami memilih masing-masing satu menu dari kategori Lauk, Sayur, dan Karbo. Namun, jika menu yang dipilih adalah kategori Set, maka kategori lainnya tidak diperlukan karena menu tersebut sudah mencakup semua kebutuhan. Setelah menu ditentukan, kami mencari resep dan mencatat bahan-bahan yang diperlukan untuk menyusun daftar belanjaan. Jika perlu, kami berbelanja di supermarket pada Jumat malam, atau memesan bahan melalui Mang Jalal, tukang sayur yang melayani pengantaran di daerah kami. Pesanan biasanya dikirimkan pada Sabtu subuh.
+
+ ![contoh meal plan](/img/contoh-mealplan.webp)
+
+### Pembagian Tugas Saat _Weekend_
+
+Pada hari Sabtu, istri saya fokus mempersiapkan tiap menu agar lebih mudah dimasak saat hari kerja. Ia menyimpan bahan-bahan masakan dalam wadah yang hemat tempat dan memastikan bahan tetap awet. Untuk kebutuhan nasi, biasanya dimasak terlebih dahulu lalu disimpan dalam freezer. Sementara itu, saya bertugas mempersiapkan dapur dan peralatan masak, menunggu pesanan belanjaan dari Mang Jalal, dan melengkapi bahan yang kurang. Setelah semua selesai, saya bertanggung jawab untuk membersihkan dan merapikan dapur serta rumah.
+
+### Eksekusi pada _Weekdays_
+
+Ketika hari kerja tiba, kami hanya perlu memasak menu yang telah dipersiapkan sebelumnya dan memanaskan nasi yang telah dibekukan. Dengan cara ini, kami menghemat waktu sekaligus memastikan masakan tetap segar dan terencana dengan baik.
+
+### Manfaat
+
+Setelah menjalankan kegiatan _Meal Plan_ ini, kami dapat berhemat hingga pengeluaran untuk makan hanya memerlukan sekitar __5 juta__ tiap bulan. Lalu, kami pun tak terbebani untuk masak tiap hari yang biasanya memerlukan waktu dari pagi hari, karena sudah disiapkan sebelumnya, rata-rata kami butuh waktu sekitar 45 menit untuk memasak makanan untuk makan siang dan sore. 
+
+Selain bisa berhemat, kesehatan kami pun kerap membaik, karena makanan yang kami konsumsi, lebih terkontrol dari segi bumbu, karena kami menggunakan bumbu organik dan minim MSG serta gula (saya penderita ITP + Diabetes Melitus II).
+
+Demikian kegiatan _Meal Planning_ yang dapat saya bagikan, semoga dapat menginspirasi dan bermanfaat, sampai jumpa pada artikel berikutnya.
