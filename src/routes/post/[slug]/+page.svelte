@@ -13,7 +13,7 @@
 	headerImageURL={data.meta.headerImageURL}
 />
 
-<article class="py-12">
+<article class="mb-12 mt-6">
 	<ArticleHeader
 		headerImageURL={data.meta.headerImageURL}
 		headerImageAlt={data.meta.headerImageAlt}

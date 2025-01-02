@@ -16,7 +16,7 @@
 	<header class="flex w-full flex-col justify-between gap-4 md:min-h-64">
 		<ArticleTags {categories} />
 		<h2
-			class=" cursor-pointer font-display text-3xl hover:text-emerald-600 md:text-5xl"
+			class=" cursor-pointer font-display text-3xl hover:text-stone-600 md:text-5xl"
 		>
 			{title}
 		</h2>
@@ -26,6 +26,6 @@
 	<img
 		alt={headerImageAlt}
 		src={headerImageURL}
-		class="cursor-pointer rounded-lg shadow transition-all hover:rotate-6 hover:shadow-lg md:h-64 md:w-64"
+		class="rotate-6 cursor-pointer rounded-lg shadow transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-2xl md:h-64 md:w-64"
 	/>
 </article>
