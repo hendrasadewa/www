@@ -11,7 +11,7 @@
 </script>
 
 <article
-	class="flex flex-col-reverse items-center justify-between gap-4 rounded-lg bg-stone-100 p-4 py-6 md:flex-row dark:bg-stone-700"
+	class="flex flex-col-reverse items-center justify-between gap-4 rounded-lg bg-none p-4 py-6 md:flex-row md:bg-stone-100 dark:bg-stone-700"
 >
 	<header class="flex w-full flex-col justify-between gap-4 md:min-h-64">
 		<ArticleTags {categories} />
@@ -26,6 +26,6 @@
 	<img
 		alt={headerImageAlt}
 		src={headerImageURL}
-		class="rotate-6 cursor-pointer rounded-lg shadow transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-2xl md:h-64 md:w-64"
+		class="max-h-60 max-w-60 rotate-6 cursor-pointer rounded-lg shadow transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-2xl md:h-64 md:w-64"
 	/>
 </article>

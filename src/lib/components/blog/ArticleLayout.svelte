@@ -21,18 +21,20 @@
 	{headerImageURL}
 />
 
-<article>
+<section id="header">
 	<ArticleHeader
 		{headerImageURL}
 		{headerImageAlt}
+		{description}
 		{categories}
 		{date}
 		{title}
 	/>
-	<section
-		id="content"
-		class="prose prose-lg p-4 dark:prose-invert prose-headings:font-display prose-headings:font-normal"
-	>
-		{@render children()}
-	</section>
-</article>
+</section>
+
+<section
+	id="content"
+	class="prose prose-lg p-4 dark:prose-invert prose-headings:font-display prose-headings:font-normal"
+>
+	{@render children()}
+</section>
