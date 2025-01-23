@@ -30,10 +30,7 @@
 <Seo {...metaTags} />
 
 <div class="space-y-8 pb-8">
-	<section id="highlight" class="space-y-4">
-		<header class="py-4">
-			<h1 class="font-display text-4xl">Artikel Terbaru</h1>
-		</header>
+	<section id="highlight" class="mt-4 space-y-4">
 		<a href={`/post/${highlighted.slug}`} class="cursor-default">
 			<ArticleHeader
 				headerImageURL={highlighted.headerImageURL}
@@ -46,10 +43,7 @@
 		</a>
 	</section>
 
-	<section id="posts" class="space-y-4">
-		<header class="py-4">
-			<h1 class="font-display text-4xl">Artikel Lainnya</h1>
-		</header>
+	<section id="posts" class="space-y-4 border-t pt-5">
 		<ArticleList posts={rest} />
 	</section>
 </div>
