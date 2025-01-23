@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Post } from '$lib/types/post';
-
 	import ArticleItem from './ArticleItem.svelte';
 
 	export let posts: Post[] = [];

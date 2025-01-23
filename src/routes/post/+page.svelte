@@ -6,7 +6,20 @@
 
 <article class="px-4 sm:px-0">
 	<section class="space-y-2">
-		<h1 class="font-display text-4xl">Artikel Terbaru</h1>
+		<form
+			onsubmit={(e) => {
+				e.preventDefault();
+				const formData = new FormData(e.target as HTMLFormElement);
+				console.log({ formData });
+			}}
+		>
+			<div>
+				<label id="search">
+					<span>Search</span>
+					<input type="search" id="search" />
+				</label>
+			</div>
+		</form>
 		<ArticleList posts={data.posts} />
 	</section>
 </article>
