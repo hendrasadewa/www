@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { PencilIcon } from 'lucide-svelte';
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';
 	import ArticleTags from './ArticleTags.svelte';
+	import siteInfo from '$lib/configs/siteInfo';
+	import socialInfo from '$lib/configs/socialInfo';
 
 	export let headerImageURL: string = '';
 	export let headerImageAlt: string = '';
@@ -11,7 +14,7 @@
 </script>
 
 <article
-	class="flex flex-col-reverse items-center justify-between gap-4 rounded-lg bg-none p-4 py-6 md:flex-row md:bg-stone-100 dark:bg-stone-700"
+	class="flex flex-col-reverse items-center justify-between gap-4 rounded-lg bg-none px-4 py-6 md:flex-row md:bg-stone-100 md:px-6 dark:bg-stone-700"
 >
 	<header class="flex w-full flex-col justify-between gap-4 md:min-h-64">
 		<ArticleTags {categories} />
@@ -19,7 +22,18 @@
 			{title}
 		</h2>
 		<p class="md:text-md text-sm italic">&quot;{description}&quot;</p>
-		<ArticlePublishedDate publishedDate={date} />
+		<div class="flex items-center gap-2">
+			<ArticlePublishedDate publishedDate={date} />
+			<div class="flex items-center gap-1">
+				<PencilIcon size="12" />
+				<a
+					href="https://bsky.app/profile/hendrasadewa.com"
+					class="md:text-md text-xs"
+				>
+					{siteInfo.author}
+				</a>
+			</div>
+		</div>
 	</header>
 	<img
 		alt={headerImageAlt}

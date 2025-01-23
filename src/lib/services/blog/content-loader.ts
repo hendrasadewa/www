@@ -44,7 +44,9 @@ export async function handleGetContents(params: SearchPostParams) {
 					// filter by query
 					(!category || post.categories.includes(category)) &&
 					// filter by keyword
-					(!searchRegExp || searchRegExp.test(post.title))
+					(!searchRegExp ||
+						searchRegExp.test(post.title) ||
+						searchRegExp.test(post.categories.join(',')))
 			)
 			// sort by release date, descending order
 			.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
