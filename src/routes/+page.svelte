@@ -31,16 +31,15 @@
 
 <div class="space-y-8 pb-8">
 	<section id="highlight" class="mt-4 space-y-4">
-		<a href={`/post/${highlighted.slug}`} class="cursor-default">
-			<ArticleHeader
-				headerImageURL={highlighted.headerImageURL}
-				headerImageAlt={highlighted.headerImageAlt}
-				categories={highlighted.categories}
-				date={highlighted.date}
-				description={highlighted.description}
-				title={highlighted.title}
-			/>
-		</a>
+		<ArticleHeader
+			headerImageURL={highlighted.headerImageURL}
+			headerImageAlt={highlighted.headerImageAlt}
+			categories={highlighted.categories}
+			date={highlighted.date}
+			description={highlighted.description}
+			title={highlighted.title}
+			url={`/post/${highlighted.slug}`}
+		/>
 	</section>
 
 	<section id="posts" class="space-y-4 border-t pt-5">

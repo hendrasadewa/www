@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { PencilIcon } from 'lucide-svelte';
+	import siteInfo from '$lib/configs/siteInfo';
+
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';
 	import ArticleTags from './ArticleTags.svelte';
-	import siteInfo from '$lib/configs/siteInfo';
-	import socialInfo from '$lib/configs/socialInfo';
 
 	export let headerImageURL: string = '';
 	export let headerImageAlt: string = '';
@@ -11,6 +11,7 @@
 	export let description: string = '';
 	export let date: string = '';
 	export let title: string = '';
+	export let url: string = '';
 </script>
 
 <article
@@ -18,9 +19,11 @@
 >
 	<header class="flex w-full flex-col justify-between gap-4 md:min-h-64">
 		<ArticleTags {categories} />
-		<h2 class=" cursor-pointer font-display text-3xl md:text-5xl">
-			{title}
-		</h2>
+		<a href={url}>
+			<h2 class=" cursor-pointer font-display text-3xl md:text-5xl">
+				{title}
+			</h2>
+		</a>
 		<p class="md:text-md text-sm italic">&quot;{description}&quot;</p>
 		<div class="flex items-center gap-2">
 			<ArticlePublishedDate publishedDate={date} />
@@ -35,9 +38,11 @@
 			</div>
 		</div>
 	</header>
-	<img
-		alt={headerImageAlt}
-		src={headerImageURL}
-		class="max-h-60 max-w-60 rotate-6 cursor-pointer rounded-lg shadow transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-2xl md:h-64 md:w-64"
-	/>
+	<a href={url}>
+		<img
+			alt={headerImageAlt}
+			src={headerImageURL}
+			class="max-h-60 max-w-60 rotate-6 cursor-pointer rounded-lg shadow transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-2xl md:h-64 md:w-64"
+		/>
+	</a>
 </article>
