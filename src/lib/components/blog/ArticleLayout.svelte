@@ -21,7 +21,7 @@
 	{headerImageURL}
 />
 
-<section id="header">
+<section id="header" class="py-2">
 	<ArticleHeader
 		{headerImageURL}
 		{headerImageAlt}

@@ -3,6 +3,7 @@
 	import ArticleHeader from '$lib/components/blog/ArticleHeader.svelte';
 	import siteInfo from '$lib/configs/siteInfo.js';
 	import { PencilIcon } from 'lucide-svelte';
+	import Author from '$lib/components/common/Author.svelte';
 
 	export let data;
 </script>
@@ -31,20 +32,8 @@
 	>
 		<svelte:component this={data.content} />
 	</section>
-	<hr class="my-2" />
-	<div class="m-4 my-8">
-		<div class="flex items-center gap-4">
-			<img
-				src="/img/me.webp"
-				alt="author"
-				class="h-16 w-16 content-center rounded-full border object-cover"
-			/>
-			<div class="flex flex-col gap-1">
-				<span class="text-lg">Written by {siteInfo.author}</span>
-				<span class="text-gray-600 dark:text-gray-400">
-					{siteInfo.defaultDescription}
-				</span>
-			</div>
-		</div>
+
+	<div class="my-8 flex w-full justify-center">
+		<Author />
 	</div>
 </article>

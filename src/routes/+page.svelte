@@ -41,8 +41,7 @@
 			url={`/post/${highlighted.slug}`}
 		/>
 	</section>
-
-	<section id="posts" class="space-y-4 border-t pt-5">
+	<section id="posts" class="space-y-4">
 		<ArticleList posts={rest} />
 	</section>
 </div>

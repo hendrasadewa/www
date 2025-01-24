@@ -3,7 +3,7 @@
 </script>
 
 <header
-	class="sticky top-0 z-10 w-full bg-stone-100/70 px-4 backdrop-blur-sm dark:bg-stone-800"
+	class="sticky top-0 z-10 w-full bg-stone-100/70 px-4 backdrop-blur-sm dark:bg-stone-800/70"
 >
 	<nav class="m-auto flex max-w-screen-md items-center justify-between py-4">
 		<div class="flex items-center gap-2">
