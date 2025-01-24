@@ -39,6 +39,7 @@
 			description={highlighted.description}
 			title={highlighted.title}
 			url={`/post/${highlighted.slug}`}
+			bskyPostURI={highlighted.bskyURI}
 		/>
 	</section>
 	<section id="posts" class="space-y-4">

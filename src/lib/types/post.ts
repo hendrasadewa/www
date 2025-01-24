@@ -7,6 +7,7 @@ export interface Post {
 	published: boolean;
 	headerImageAlt: string;
 	headerImageURL: string;
+	bskyURI: string;
 }
 
 export interface SearchPostParams {

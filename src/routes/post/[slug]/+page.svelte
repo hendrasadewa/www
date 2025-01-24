@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Seo from '$lib/components/common/SEO.svelte';
 	import ArticleHeader from '$lib/components/blog/ArticleHeader.svelte';
-	import siteInfo from '$lib/configs/siteInfo.js';
-	import { PencilIcon } from 'lucide-svelte';
 	import Author from '$lib/components/common/Author.svelte';
 
 	export let data;
@@ -24,6 +22,7 @@
 		date={data.meta.date}
 		description={data.meta.description}
 		title={data.meta.title}
+		bskyPostURI={data.meta.bskyURI}
 	/>
 
 	<section

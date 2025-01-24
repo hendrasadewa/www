@@ -9,7 +9,8 @@
 		headerImageAlt = 'header',
 		title,
 		categories,
-		date
+		date,
+		bskyPostURI
 	} = $props();
 </script>
 
@@ -29,6 +30,7 @@
 		{categories}
 		{date}
 		{title}
+		{bskyPostURI}
 	/>
 </section>
 

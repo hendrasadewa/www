@@ -8,6 +8,7 @@ categories:
 published: true
 headerImageAlt: image by Hendra Sadewa, photo of ayam cabai garam
 headerImageURL: /img/set-menu.webp
+bskyURI: at://did:plc:5w4ifuyajpfxryeietzea222/app.bsky.feed.post/3leqym3trlc2c
 ---
 
 Tiga Bulan lalu, saya pusing melihat pengeluaran makan harian yang bisa sampai 9 juta rupiah (dan bisa lebih) tiap bulannya. Ini karena saya dan istri merupakan pekerja dan tak sempat untuk memasak tiap harinya, sehingga kami berdua tiap kali lapar, kami memesan makanan dari Grab food atau pergi ke restoran terdekat. Sehari saja bila 3 kali makan, bisa habis sekitar 300 ribu, angka yang seharusnya bisa dijadikan untuk makan beberapa hari bila kami dapat meluangkan waktu untuk memasak. 

@@ -4,6 +4,7 @@
 
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';
 	import ArticleTags from './ArticleTags.svelte';
+	import BskyLikeCount from '../bsky/BskyLikeCount.svelte';
 
 	export let headerImageURL: string = '';
 	export let headerImageAlt: string = '';
@@ -12,6 +13,7 @@
 	export let date: string = '';
 	export let title: string = '';
 	export let url: string = '';
+	export let bskyPostURI: string = '';
 </script>
 
 <article
@@ -36,6 +38,9 @@
 					{siteInfo.author}
 				</a>
 			</div>
+			{#if bskyPostURI}
+				<BskyLikeCount postURI={bskyPostURI} />
+			{/if}
 		</div>
 	</header>
 	<a href={url}>

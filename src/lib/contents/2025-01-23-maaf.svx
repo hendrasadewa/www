@@ -9,6 +9,7 @@ categories:
 published: true
 headerImageAlt: image by Hendra Sadewa, photo of Panda (bukan panda) looking through the mirror
 headerImageURL: /img/maaf.webp
+bskyURI: at://did:plc:5w4ifuyajpfxryeietzea222/app.bsky.feed.post/3lgfbe4buns2j
 ---
 
 Saya heran, mengapa permohonan maaf itu, sangatlah mudah untuk dilontarkan dan sangatlah tabu untuk tidak memaafkan seseorang atas kesalahannya. Mau kesalahan ringan ataupun fatal. Lalu yang membuat saya kaget lagi, permohonan ini pun dapat diwakilkan! 
