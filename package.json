@@ -39,7 +39,9 @@
 		"vite": "^5.0.3"
 	},
 	"dependencies": {
+		"@atproto/api": "^0.13.35",
 		"@tailwindcss/typography": "^0.5.15",
+		"ky": "^1.7.4",
 		"lucide-svelte": "^0.462.0"
 	}
 }
