@@ -1,7 +1,7 @@
 ---
 date: '2025-04-02'
-title: "Kemewahan agar dekat dengan Tuhan"
-description: "Mengapa dalam rumah ibadah perlu mengedepankan estetika?"
+title: "Bermewah-mewah agar dekat dengan Tuhan"
+description: "Mengapa dalam rumah ibadah perlu mengedepankan kemewahan yang tak perlu?"
 categories:
   - questions
   - personal
@@ -9,7 +9,7 @@ categories:
 published: true
 headerImageAlt: a dead tree
 headerImageURL: /img/dead-tree.webp
-bskyURI: at://did:plc:5w4ifuyajpfxryeietzea222/app.bsky.feed.post/3lgfbe4buns2j
+bskyURI: at://did:plc:5w4ifuyajpfxryeietzea222/app.bsky.feed.post/3lnmxkmwppc26
 ---
 
 
@@ -28,7 +28,7 @@ Kemewahan yang saya maksud adalah hal *kosmetik yang mengedepankan estetika* dan
 
 Saya tak tahu.
 
-Saya hanya merasa aneh dan heran saja, rumah ibadah yang sudah sangatlah mewah dan megah, layaknya istana. Jamaatnya tetap rela berpanas-panasan mengumpulkan donasi di jalanan ataupun rela menggelar malam donasi yang mewah untuk mengundang para donatur yang kaya-raya dengan tujuan "mendandani" rumah ibadah. Namun, jika melihat sekitar rumah ibadah itu, tampak ada anak yang putus sekolah terpaksa ikut bapaknya mulung di jalan, orang tua yang tak terurus yang sedang duduk-duduk bingung apa yang harus dilakukan untuk bertahan hidup dengan sisa usianya, dan balita yang sedang digendong oleh ibunya yang tengah sibuk meminta-minta uang sambil memutar musik dangdut di _speaker_ yang dia gantung di leher. 
+Saya hanya merasa aneh dan heran saja, rumah ibadah yang sudah sangatlah mewah dan megah, layaknya istana. Jamaatnya tetap rela berpanas-panasan mengumpulkan donasi di jalanan, ataupun rela menggelar malam donasi yang mewah untuk mengundang para donatur yang kaya-raya dengan tujuan "mendandani" rumah ibadah. Namun, jika melihat sekitar rumah ibadah itu, tampak ada anak yang putus sekolah terpaksa ikut bapaknya mulung di jalan, orang tua yang tak terurus yang sedang duduk-duduk bingung apa yang harus dilakukan untuk bertahan hidup dengan sisa usianya, dan balita yang sedang digendong oleh ibunya yang tengah sibuk meminta-minta uang sambil memutar musik dangdut di _speaker_ yang dia gantung di leher. 
 
 Tragis...
 
