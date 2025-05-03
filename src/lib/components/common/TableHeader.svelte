@@ -15,9 +15,11 @@
 <header
 	class={clsx([
 		'flex items-center justify-between',
-		'min-h-12  p-2',
+		'min-h-12 p-2',
 		'border border-t-0',
-		isTableEmpty ? 'bg-stone-100' : 'bg-stone-50'
+		isTableEmpty
+			? 'bg-stone-100 dark:bg-stone-700'
+			: 'bg-stone-50/70 dark:bg-stone-800/70'
 	])}
 >
 	<div class="flex items-center">
@@ -36,7 +38,7 @@
 		<button
 			onclick={onNextClick}
 			disabled={isTableEmpty}
-			class="flex items-center justify-center rounded-lg p-1 hover:bg-stone-200"
+			class="flex items-center justify-center rounded-lg p-1 hover:bg-stone-200 dark:hover:bg-stone-500/70"
 		>
 			<ChevronRightCircle
 				size="18"

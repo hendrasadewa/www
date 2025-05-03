@@ -23,7 +23,7 @@
 				'border-y',
 				'p-2',
 				'shadow-sm backdrop-blur-sm',
-				'bg-stone-100/70 dark:bg-stone-400/70'
+				'bg-stone-100/70 dark:bg-stone-800/70'
 			)}
 		>
 			<tr>

@@ -101,8 +101,8 @@
 	description="Collection of CSV Utilities"
 	title="Tukang CSV"
 />
-<BlockMobile />
-<div class="h-[calc(100vh-56px)] w-full items-start">
+
+<div class="flex h-[calc(100vh-56px)] w-full items-start">
 	<div class="h-full w-2/6 xl:w-1/5">
 		<div class={clsx(['h-full'])}>
 			<FileDirectory bind:fileList {onFileSelect} {selectedFileIndex} />
