@@ -14,6 +14,8 @@
 		isLoading: boolean;
 		onNextClick(): void;
 		onPrevClick(): void;
+		onExportJSONClick(): void;
+		onExportTextClick(): void;
 	}
 
 	let {
@@ -24,14 +26,22 @@
 		endIndex,
 		totalRecords,
 		onNextClick,
-		onPrevClick
+		onPrevClick,
+		onExportJSONClick = () => {},
+		onExportTextClick = () => {}
 	}: Props = $props();
 
 	let isTableEmpty = $derived(records.length <= 0);
 </script>
 
 <div class="flex h-full flex-col justify-between dark:bg-stone-900">
-	<TableHeader {isTableEmpty} {onNextClick} {onPrevClick} />
+	<TableHeader
+		{isTableEmpty}
+		{onNextClick}
+		{onPrevClick}
+		{onExportJSONClick}
+		{onExportTextClick}
+	/>
 	{#if !isTableEmpty}
 		<TableView {fields} {records} {isLoading} />
 	{:else}

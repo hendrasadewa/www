@@ -1,4 +1,7 @@
 // Read a file and return the content as a string
+
+import type { WorkerResponse } from '$lib/types/common';
+
 // This is a worker so it can be used in the background
 self.onmessage = async (e: MessageEvent) => {
 	const file = e.data;

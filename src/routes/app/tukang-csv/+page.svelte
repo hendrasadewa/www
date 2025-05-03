@@ -94,6 +94,58 @@
 			page -= 1;
 		}
 	}
+
+	function onExportJSONClick() {
+		try {
+			if (selectedFileIndex === null) {
+				alert('selected file index is null');
+				return;
+			}
+
+			if (selectedFileIndex < 0) {
+				alert('invalid file index');
+				return;
+			}
+
+			if (!fileList) {
+				alert('file list is empty!');
+				return;
+			}
+
+			let target = fileList[selectedFileIndex];
+
+			if (!target) {
+				alert('target is missing');
+				return;
+			}
+
+			const json = parsedData.map((row) =>
+				fields.reduce(
+					(prev, field) => ({
+						...prev,
+						[field.split(' ').join('_').toLocaleLowerCase()]: row[field]
+					}),
+					{}
+				)
+			);
+
+			const jsonString = JSON.stringify(json, null, 2);
+			const blob = new Blob([jsonString], { type: 'application/json' });
+			const url = URL.createObjectURL(blob);
+
+			const a = document.createElement('a');
+			a.href = url;
+			a.download = 'result.json';
+			a.click();
+			URL.revokeObjectURL(url);
+		} catch (error) {
+			console.error(error);
+		}
+	}
+
+	function onExportTextClick() {
+		alert('on construction');
+	}
 </script>
 
 <Seo
@@ -119,6 +171,8 @@
 				{totalRecords}
 				{onNextClick}
 				{onPrevClick}
+				{onExportJSONClick}
+				{onExportTextClick}
 			/>
 		</div>
 	</div>
