@@ -6,6 +6,8 @@
 	import Table from '$lib/components/common/Table.svelte';
 	import clsx from 'clsx';
 	import Seo from '$lib/components/common/SEO.svelte';
+	import { blur } from 'svelte/transition';
+	import BlockMobile from './BlockMobile.svelte';
 
 	// state - generic
 	let isLoading = $state(false);
@@ -99,8 +101,8 @@
 	description="Collection of CSV Utilities"
 	title="Tukang CSV"
 />
-
-<div class="flex h-[calc(100vh-56px)] w-full items-start">
+<BlockMobile />
+<div class="h-[calc(100vh-56px)] w-full items-start">
 	<div class="h-full w-2/6 xl:w-1/5">
 		<div class={clsx(['h-full'])}>
 			<FileDirectory bind:fileList {onFileSelect} {selectedFileIndex} />
