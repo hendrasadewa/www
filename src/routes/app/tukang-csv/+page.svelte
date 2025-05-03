@@ -153,27 +153,29 @@
 	description="Collection of CSV Utilities"
 	title="Tukang CSV"
 />
-
-<div class="flex h-[calc(100vh-56px)] w-full items-start">
-	<div class="h-full w-2/6 xl:w-1/5">
-		<div class={clsx(['h-full'])}>
-			<FileDirectory bind:fileList {onFileSelect} {selectedFileIndex} />
+<div class="relative">
+	<BlockMobile />
+	<div class="flex h-[calc(100vh-56px)] w-full items-start">
+		<div class="h-full w-2/6 xl:w-1/5">
+			<div class={clsx(['h-full'])}>
+				<FileDirectory bind:fileList {onFileSelect} {selectedFileIndex} />
+			</div>
 		</div>
-	</div>
-	<div class="relative h-full w-4/6 xl:w-4/5">
-		<div class="h-full w-full overflow-scroll">
-			<Table
-				{fields}
-				{records}
-				{isLoading}
-				{startIndex}
-				{endIndex}
-				{totalRecords}
-				{onNextClick}
-				{onPrevClick}
-				{onExportJSONClick}
-				{onExportTextClick}
-			/>
+		<div class="relative h-full w-4/6 xl:w-4/5">
+			<div class="h-full w-full overflow-scroll">
+				<Table
+					{fields}
+					{records}
+					{isLoading}
+					{startIndex}
+					{endIndex}
+					{totalRecords}
+					{onNextClick}
+					{onPrevClick}
+					{onExportJSONClick}
+					{onExportTextClick}
+				/>
+			</div>
 		</div>
 	</div>
 </div>
