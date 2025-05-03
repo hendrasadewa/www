@@ -25,7 +25,7 @@
 		'sticky bottom-0 left-0 z-40',
 		'h-10 p-2',
 		'shadow-sm',
-		'border border-b-0',
+		'border border-b-0  dark:border-0',
 		'bg-stone-100 dark:bg-stone-800/70',
 		'flex items-center justify-between'
 	)}

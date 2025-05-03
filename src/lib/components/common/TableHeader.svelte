@@ -16,9 +16,9 @@
 	class={clsx([
 		'flex items-center justify-between',
 		'min-h-12 p-2',
-		'border border-t-0',
+		'border border-t-0 dark:border-0',
 		isTableEmpty
-			? 'bg-stone-100 dark:bg-stone-700'
+			? 'bg-stone-100 dark:bg-stone-800'
 			: 'bg-stone-50/70 dark:bg-stone-800/70'
 	])}
 >
