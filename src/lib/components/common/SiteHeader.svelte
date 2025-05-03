@@ -1,11 +1,17 @@
 <script>
 	import socialInfo from '$lib/configs/socialInfo';
+	import clsx from 'clsx';
 </script>
 
 <header
-	class="sticky top-0 z-10 w-full bg-stone-100/70 px-4 backdrop-blur-sm dark:bg-stone-800/70"
+	class={clsx(
+		'sticky top-0 z-10',
+		'h-14 px-4 py-2',
+		'shadow-sm backdrop-blur-sm',
+		'bg-stone-100/70 dark:bg-stone-800/70'
+	)}
 >
-	<nav class="m-auto flex max-w-screen-md items-center justify-between py-4">
+	<nav class="flex items-center justify-between py-4">
 		<div class="flex items-center gap-2">
 			<a class="font-bold" href="/">Hendra Sadewa</a> |
 			<a class="" href="/about">About</a>

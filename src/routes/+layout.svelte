@@ -6,7 +6,7 @@
 
 <div class="relative flex flex-col">
 	<SiteHeader />
-	<main class="mx-auto max-w-screen-md flex-1 px-2 md:px-0">
+	<main>
 		{@render children()}
 	</main>
 </div>

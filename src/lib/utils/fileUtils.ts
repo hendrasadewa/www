@@ -1,0 +1,30 @@
+export async function loadFile<T = string | ArrayBuffer | null>(file: File) {
+	return new Promise<T>((resolve, reject) => {
+		// spawn a new worker
+		const worker = new Worker(
+			new URL('../workers/fileReader.worker.ts', import.meta.url),
+			{
+				type: 'module'
+			}
+		);
+
+		// handle the message from the worker
+		worker.onmessage = (e: MessageEvent<WorkerResponse<T>>) => {
+			if (e.data.success) {
+				resolve(e.data.data);
+			} else {
+				reject(new Error(e.data.message));
+			}
+			worker.terminate();
+		};
+
+		// handle the error from the worker
+		worker.onerror = (error) => {
+			reject(error);
+			worker.terminate();
+		};
+
+		// send file into the web worker
+		worker.postMessage(file);
+	});
+}
