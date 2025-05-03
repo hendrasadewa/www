@@ -2,6 +2,7 @@
 	import Seo from '$lib/components/common/SEO.svelte';
 	import ArticleHeader from '$lib/components/blog/ArticleHeader.svelte';
 	import Author from '$lib/components/common/Author.svelte';
+	import clsx from 'clsx';
 
 	export let data;
 </script>
@@ -27,7 +28,13 @@
 
 	<section
 		id="content"
-		class="prose prose-lg p-4 dark:prose-invert prose-headings:font-display prose-headings:font-normal prose-img:rounded-lg prose-img:shadow-lg"
+		class={clsx([
+			'p-4',
+			'prose prose-lg',
+			'prose-headings:font-display prose-headings:font-normal',
+			'prose-img:rounded-lg prose-img:shadow-lg',
+			'dark:prose-invert'
+		])}
 	>
 		<svelte:component this={data.content} />
 	</section>

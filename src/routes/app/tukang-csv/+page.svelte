@@ -2,51 +2,60 @@
 	import Papa from 'papaparse';
 
 	import type { RowData } from '$lib/types/csv';
-	import type { Pagination, TableInfo } from '$lib/types/table';
-	import PageLoading from '$lib/components/common/PageLoading.svelte';
 	import FileDirectory from '$lib/components/csv/FileDirectory.svelte';
 	import Table from '$lib/components/common/Table.svelte';
-	import { initialPagination, initialTableInfo } from '$lib/configs/table';
+	import clsx from 'clsx';
+	import Seo from '$lib/components/common/SEO.svelte';
 
-	// states
+	// state - generic
 	let isLoading = $state(false);
-	let data: RowData[] = $state([]);
+	let isOpen = $state(false);
+
+	// state - files
+	let parsedData: RowData[] = $state([]);
 	let fileList: FileList | null = $state(null);
 	let selectedFileIndex: number | null = $state(null);
-	let controller: Papa.Parser | null = null;
 
-	let pagination: Pagination = $state(initialPagination);
-	let tableInfo: TableInfo = $state(initialTableInfo);
+	// state - pagination
+	let page = $state(1);
+	let perPage = $state(25);
+
+	// derived states - pagination
+	let totalPage = $derived(Math.floor(parsedData.length / perPage));
+	let totalRecords = $derived(parsedData.length);
+	let startIndex = $derived(page * perPage - perPage);
+	let endIndex = $derived(page * perPage);
+
+	// derived states - table metas
+	let fields: string[] = $derived(
+		parsedData.length > 0 ? Object.keys(parsedData[0]) : []
+	);
+	let records: RowData[] = $derived(
+		parsedData.length > 0 ? parsedData.slice(startIndex, endIndex) : []
+	);
 
 	// event handlers
-	function clearTableInfo() {
-		data = [];
-
-		tableInfo.records = [];
-		tableInfo.fields = [];
-		tableInfo.selected = null;
+	function toggleOpen() {
+		isOpen = !isOpen;
 	}
 
-	function fullParse(file: File, chunkSize = 500) {
+	function clearTableInfo() {
+		parsedData = [];
+	}
+
+	function parseCSV(file: File, chunkSize = 500) {
 		isLoading = true;
 
 		Papa.parse<RowData>(file, {
 			header: true,
 			worker: true,
 			chunkSize,
-
-			step(results, parser) {
-				if (!parser) {
-					controller = parser;
-				}
-
-				if (data.length > pagination.perPage) {
+			step(results) {
+				if (isLoading && parsedData.length > chunkSize) {
 					isLoading = false;
 				}
-
-				data = [...data, results.data];
+				parsedData = [...parsedData, results.data];
 			},
-
 			complete: function () {
 				isLoading = false;
 			},
@@ -58,12 +67,7 @@
 
 	function onFileSelect(index: number) {
 		if (!fileList) {
-			alert('File is empty');
 			return;
-		}
-
-		if (controller) {
-			controller.abort();
 		}
 
 		clearTableInfo();
@@ -74,54 +78,43 @@
 		}
 
 		selectedFileIndex = index;
-		fullParse(fileList[index]);
+		parseCSV(fileList[index]);
 	}
 
 	function onNextClick() {
-		if (pagination.page < pagination.totalPage) {
-			pagination.page += 1;
+		if (page < totalPage) {
+			page += 1;
 		}
 	}
 
 	function onPrevClick() {
-		if (pagination.page > 1) {
-			pagination.page -= 1;
+		if (page > 1) {
+			page -= 1;
 		}
 	}
-
-	$effect(() => {
-		const { page, perPage } = pagination;
-
-		tableInfo.fields = data.length > 0 ? Object.keys(data[0]) : [];
-
-		pagination.totalRecords = data.length;
-		pagination.startIndex = page * perPage - perPage;
-		pagination.endIndex = page * perPage;
-		pagination.totalPage = Math.floor(data.length / perPage);
-
-		if (data.length > 0) {
-			tableInfo.records = data.slice(
-				pagination.startIndex,
-				pagination.endIndex
-			);
-		} else {
-			tableInfo.records = [];
-		}
-	});
 </script>
 
+<Seo
+	categories={['Apps']}
+	description="Collection of CSV Utilities"
+	title="Tukang CSV"
+/>
+
 <div class="flex h-[calc(100vh-56px)] w-full items-start">
-	<div class="h-full w-1/5">
-		<FileDirectory bind:fileList {onFileSelect} {selectedFileIndex} />
+	<div class="h-full w-2/6 xl:w-1/5">
+		<div class={clsx(['h-full'])}>
+			<FileDirectory bind:fileList {onFileSelect} {selectedFileIndex} />
+		</div>
 	</div>
-	<div class="relative h-full w-4/5">
-		<PageLoading {isLoading} />
+	<div class="relative h-full w-4/6 xl:w-4/5">
 		<div class="h-full w-full overflow-scroll">
 			<Table
-				title="title"
-				bind:pagination
-				bind:tableInfo
-				bind:isLoading
+				{fields}
+				{records}
+				{isLoading}
+				{startIndex}
+				{endIndex}
+				{totalRecords}
 				{onNextClick}
 				{onPrevClick}
 			/>

@@ -2,6 +2,7 @@
 	import ArticleHeader from '$lib/components/blog/ArticleHeader.svelte';
 	import ArticleList from '$lib/components/blog/ArticleList.svelte';
 	import Seo from '$lib/components/common/SEO.svelte';
+	import { fade } from 'svelte/transition';
 
 	export let data;
 

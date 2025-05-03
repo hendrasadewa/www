@@ -21,22 +21,23 @@
 	{headerImageAlt}
 	{headerImageURL}
 />
+<div class="mx-auto w-full max-w-screen-md">
+	<section id="header" class="py-2">
+		<ArticleHeader
+			{headerImageURL}
+			{headerImageAlt}
+			{description}
+			{categories}
+			{date}
+			{title}
+			{bskyPostURI}
+		/>
+	</section>
 
-<section id="header" class="py-2">
-	<ArticleHeader
-		{headerImageURL}
-		{headerImageAlt}
-		{description}
-		{categories}
-		{date}
-		{title}
-		{bskyPostURI}
-	/>
-</section>
-
-<section
-	id="content"
-	class="prose prose-lg p-4 dark:prose-invert prose-headings:font-display prose-headings:font-normal"
->
-	{@render children()}
-</section>
+	<section
+		id="content"
+		class="prose prose-lg p-4 dark:prose-invert prose-headings:font-display prose-headings:font-normal"
+	>
+		{@render children()}
+	</section>
+</div>

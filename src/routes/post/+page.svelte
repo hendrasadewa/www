@@ -4,10 +4,17 @@
 	import { page } from '$app/stores';
 	import ArticleList from '$lib/components/blog/ArticleList.svelte';
 	import ArticleSearchInput from '$lib/components/blog/ArticleSearchInput.svelte';
+	import Seo from '$lib/components/common/SEO.svelte';
 
 	const keyword = $page.url.searchParams.get('keyword');
 	let { data } = $props();
 </script>
+
+<Seo
+	categories={['Posts']}
+	description="Post written by Hendra"
+	title="Posts"
+/>
 
 <article class="px-4 sm:px-0">
 	<section class="space-y-4 py-2">

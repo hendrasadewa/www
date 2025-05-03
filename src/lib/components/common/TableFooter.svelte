@@ -2,17 +2,20 @@
 	import clsx from 'clsx';
 	import LoaderCircle from 'lucide-svelte/icons/loader-circle';
 	import { numberFormatter } from '$lib/utils/formatters';
-	import type { Pagination } from '$lib/types/table';
 
 	interface Props {
 		isLoading: boolean;
 		isTableEmpty: boolean;
-		pagination: Pagination;
+		startIndex: number;
+		endIndex: number;
+		totalRecords: number;
 	}
 
 	let {
-		pagination = $bindable(),
-		isLoading = $bindable(),
+		startIndex = 0,
+		endIndex = 0,
+		totalRecords = 0,
+		isLoading = false,
 		isTableEmpty = true
 	}: Props = $props();
 </script>
@@ -30,7 +33,7 @@
 	{#if isLoading}
 		<div class="flex items-center gap-1">
 			<LoaderCircle size="16" class="animate-spin" />
-			Parsing data...
+			Loading data...
 		</div>
 	{:else if isTableEmpty}
 		<div></div>
@@ -39,15 +42,15 @@
 			<p>
 				Displaying
 				<span class="font-mono">
-					{numberFormatter.format(pagination.startIndex + 1)}
+					{numberFormatter.format(startIndex + 1)}
 				</span>
 				-
 				<span class="font-mono">
-					{numberFormatter.format(pagination.endIndex)}
+					{numberFormatter.format(endIndex)}
 				</span>
 				of
 				<span class="font-mono">
-					{numberFormatter.format(pagination.totalRecords)}
+					{numberFormatter.format(totalRecords)}
 				</span>
 			</p>
 		</div>
