@@ -1,6 +1,7 @@
 <script lang="ts">
 	import FileUploader from './FileUploader.svelte';
 	import FileItem from './FileItem.svelte';
+	import clsx from 'clsx';
 
 	interface Props {
 		fileList: FileList | null;
@@ -15,12 +16,19 @@
 	}: Props = $props();
 </script>
 
-<div class="z-20 h-full px-4 shadow-lg dark:bg-stone-800">
-	<header class="flex items-center justify-between py-2">
-		<h2 class="text-xl font-bold">Files</h2>
+<div
+	class={clsx([
+		'flex h-full flex-col',
+		'h-full',
+		'z-20 shadow-lg',
+		'bg-stone-50 dark:bg-stone-800'
+	])}
+>
+	<header class="flex items-center justify-between px-4 py-2">
+		<h2 class="py-2 text-xl font-bold">Files</h2>
 		<FileUploader bind:fileList />
 	</header>
-	<div class="space-y-1">
+	<div class="h-full flex-1 space-y-1 overflow-y-scroll px-2">
 		{#if fileList}
 			{#each fileList as file, index}
 				<FileItem
@@ -31,7 +39,7 @@
 				/>
 			{/each}
 		{:else}
-			<div>
+			<div class="px-2">
 				<p class="text-gray-500">No file uploaded</p>
 			</div>
 		{/if}

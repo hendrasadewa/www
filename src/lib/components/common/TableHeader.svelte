@@ -5,7 +5,12 @@
 	import ChevronLeftCircle from 'lucide-svelte/icons/circle-chevron-left';
 	import ChevronRightCircle from 'lucide-svelte/icons/circle-chevron-right';
 
+	import FieldSelector from './FieldSelector.svelte';
+	import IconButton from './IconButton.svelte';
+
 	interface Props {
+		fields: string[];
+		selectedFields: string[];
 		isTableEmpty: boolean;
 		onPrevClick(): void;
 		onNextClick(): void;
@@ -14,6 +19,8 @@
 	}
 
 	let {
+		fields = [],
+		selectedFields = $bindable([]),
 		isTableEmpty = true,
 		onPrevClick = () => {},
 		onNextClick = () => {},
@@ -32,56 +39,34 @@
 			: 'bg-stone-50/70 dark:bg-stone-800/70'
 	])}
 >
-	<div class="flex items-center">
-		<button
-			onclick={onPrevClick}
-			disabled={isTableEmpty}
-			class="flex items-center justify-center rounded-lg p-1"
-		>
-			<ChevronLeftCircle
-				size="18"
-				class={clsx(
-					isTableEmpty ? 'cursor-not-allowed text-blue-200' : 'text-blue-500'
-				)}
+	<div class="flex items-center gap-2">
+		<div class="flex items-center">
+			<IconButton
+				icon={ChevronLeftCircle}
+				onClick={onPrevClick}
+				disabled={isTableEmpty}
 			/>
-		</button>
-		<button
-			onclick={onNextClick}
-			disabled={isTableEmpty}
-			class="flex items-center justify-center rounded-lg p-1 hover:bg-stone-200 dark:hover:bg-stone-500/70"
-		>
-			<ChevronRightCircle
-				size="18"
-				class={clsx(
-					isTableEmpty ? 'cursor-not-allowed text-blue-200' : 'text-blue-500'
-				)}
+			<IconButton
+				icon={ChevronRightCircle}
+				onClick={onNextClick}
+				disabled={isTableEmpty}
+				hoverEffect={true}
 			/>
-		</button>
+		</div>
+		<FieldSelector {isTableEmpty} {fields} bind:selectedFields />
 	</div>
 	<div class="flex items-center gap-1">
-		<button
-			onclick={onExportJSONClick}
+		<IconButton
+			icon={FileJSONIcon}
+			onClick={onExportJSONClick}
 			disabled={isTableEmpty}
-			class="flex items-center justify-center rounded-lg p-1"
-		>
-			<FileJSONIcon
-				size="18"
-				class={clsx(
-					isTableEmpty ? 'cursor-not-allowed text-blue-200' : 'text-blue-500'
-				)}
-			/>
-		</button>
-		<button
-			onclick={onExportTextClick}
+			hoverEffect={true}
+		/>
+		<IconButton
+			icon={FileTextIcon}
+			onClick={onExportTextClick}
 			disabled={isTableEmpty}
-			class="flex items-center justify-center rounded-lg p-1"
-		>
-			<FileTextIcon
-				size="18"
-				class={clsx(
-					isTableEmpty ? 'cursor-not-allowed text-blue-200' : 'text-blue-500'
-				)}
-			/>
-		</button>
+			hoverEffect={true}
+		/>
 	</div>
 </header>

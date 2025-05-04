@@ -7,6 +7,7 @@
 
 	interface Props {
 		fields: string[];
+		selectedFields: string[];
 		records: RowData[];
 		startIndex: number;
 		endIndex: number;
@@ -21,6 +22,7 @@
 	let {
 		records,
 		fields,
+		selectedFields = $bindable([]),
 		isLoading,
 		startIndex,
 		endIndex,
@@ -36,6 +38,8 @@
 
 <div class="flex h-full flex-col justify-between dark:bg-stone-900">
 	<TableHeader
+		bind:selectedFields
+		{fields}
 		{isTableEmpty}
 		{onNextClick}
 		{onPrevClick}
@@ -43,10 +47,12 @@
 		{onExportTextClick}
 	/>
 	{#if !isTableEmpty}
-		<TableView {fields} {records} {isLoading} />
+		<TableView fields={selectedFields} {records} {isLoading} />
 	{:else}
 		<div class="flex h-full w-full items-center justify-center">
-			<p class="text-2xl font-bold text-gray-400">No file selected</p>
+			<p class="text-2xl font-bold text-stone-400 dark:text-stone-700">
+				No file selected
+			</p>
 		</div>
 	{/if}
 	<TableFooter

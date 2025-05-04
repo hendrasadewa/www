@@ -11,6 +11,7 @@
 		isLoading: boolean;
 	}
 	let { records = [], fields = [], isLoading = false }: Props = $props();
+	console.log('tableview', { fields });
 </script>
 
 <div class="relative flex-1 overflow-scroll" transition:blur>
@@ -18,7 +19,7 @@
 	<table class="border-collapse rounded-lg border">
 		<thead
 			class={clsx(
-				'sticky top-0 z-40',
+				'sticky top-0 z-10',
 				'shadow-lg',
 				'border-y',
 				'p-2',
