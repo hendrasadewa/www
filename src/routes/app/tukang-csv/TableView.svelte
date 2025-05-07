@@ -3,7 +3,7 @@
 	import { blur } from 'svelte/transition';
 
 	import type { RowData } from '$lib/types/csv';
-	import BlockingLoader from './BlockingLoader.svelte';
+	import BlockingLoader from '$lib/components/common/BlockingLoader.svelte';
 
 	interface Props {
 		records: RowData[];

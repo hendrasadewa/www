@@ -1,13 +1,21 @@
 <script lang="ts">
 	import Papa from 'papaparse';
+	import clsx from 'clsx';
 
 	import type { RowData } from '$lib/types/csv';
-	import FileDirectory from '$lib/components/csv/FileDirectory.svelte';
-	import Table from '$lib/components/common/Table.svelte';
-	import clsx from 'clsx';
-	import Seo from '$lib/components/common/SEO.svelte';
-	import BlockMobile from './BlockMobile.svelte';
 	import { downloadFile } from '$lib/utils/fileUtils';
+
+	import FileDirectory from './FileDirectory.svelte';
+	import Seo from '$lib/components/common/SEO.svelte';
+	import FieldSelector from '$lib/components/common/FieldSelector.svelte';
+
+	import TableHeader from './TableHeader.svelte';
+	import TableNavigation from './TableNavigation.svelte';
+	import TableActions from './TableActions.svelte';
+	import TableView from './TableView.svelte';
+	import TableFooter from './TableFooter.svelte';
+	import TableRecordCounter from './TableRecordCounter.svelte';
+	import BlockMobile from './BlockMobile.svelte';
 
 	// state - generic
 	let isLoading = $state(false);
@@ -32,11 +40,12 @@
 	let selectedFields: string[] = $state([]);
 
 	// derived states - table metas
-	let fields: string[] = $derived(
-		parsedData.length > 0 ? Object.keys(parsedData[0]) : []
+	const isTableEmpty = $derived(parsedData.length <= 0);
+	const fields: string[] = $derived(
+		!isTableEmpty ? Object.keys(parsedData[0]) : []
 	);
-	let records: RowData[] = $derived(
-		parsedData.length > 0 ? parsedData.slice(startIndex, endIndex) : []
+	const records: RowData[] = $derived(
+		!isTableEmpty ? parsedData.slice(startIndex, endIndex) : []
 	);
 
 	$effect(() => {
@@ -46,6 +55,8 @@
 	// event handlers
 	function clearTableInfo() {
 		parsedData = [];
+		page = 1;
+		perPage = 25;
 	}
 
 	function parseCSV(file: File, chunkSize = 500) {
@@ -90,7 +101,7 @@
 	}
 
 	function onNextClick() {
-		if (page < totalPage) {
+		if (page <= totalPage) {
 			page += 1;
 		}
 	}
@@ -188,19 +199,38 @@
 		</div>
 		<div class="relative h-full w-4/6 xl:w-4/5">
 			<div class="h-full w-full overflow-scroll">
-				<Table
-					{fields}
-					bind:selectedFields
-					{records}
-					{isLoading}
-					{startIndex}
-					{endIndex}
-					{totalRecords}
-					{onNextClick}
-					{onPrevClick}
-					{onExportJSONClick}
-					{onExportTextClick}
-				/>
+				<div class="flex h-full flex-col justify-between dark:bg-stone-900">
+					<TableHeader {isTableEmpty}>
+						<div class="flex items-center justify-between">
+							<div class="flex items-center gap-2">
+								<TableNavigation
+									{onPrevClick}
+									{onNextClick}
+									{isTableEmpty}
+									bind:page
+								/>
+								<FieldSelector {isTableEmpty} {fields} bind:selectedFields />
+							</div>
+							<TableActions
+								{onExportJSONClick}
+								{onExportTextClick}
+								{isTableEmpty}
+							/>
+						</div>
+					</TableHeader>
+					{#if !isTableEmpty}
+						<TableView fields={selectedFields} {records} {isLoading} />
+					{:else}
+						<div class="flex h-full w-full items-center justify-center">
+							<p class="text-2xl font-bold text-stone-400 dark:text-stone-700">
+								No file selected
+							</p>
+						</div>
+					{/if}
+					<TableFooter {isTableEmpty} {isLoading}>
+						<TableRecordCounter {startIndex} {endIndex} {totalRecords} />
+					</TableFooter>
+				</div>
 			</div>
 		</div>
 	</div>

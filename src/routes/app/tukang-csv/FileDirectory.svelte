@@ -1,7 +1,7 @@
 <script lang="ts">
+	import clsx from 'clsx';
 	import FileUploader from './FileUploader.svelte';
 	import FileItem from './FileItem.svelte';
-	import clsx from 'clsx';
 
 	interface Props {
 		fileList: FileList | null;
