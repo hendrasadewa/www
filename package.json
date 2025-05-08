@@ -41,6 +41,7 @@
 	},
 	"dependencies": {
 		"@atproto/api": "^0.13.35",
+		"@sveltejs/svelte-scroller": "^2.0.7",
 		"@tailwindcss/typography": "^0.5.15",
 		"clsx": "^2.1.1",
 		"ky": "^1.7.4",

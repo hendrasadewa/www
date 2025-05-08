@@ -5,13 +5,11 @@
 	import type { RowData } from '$lib/types/csv';
 	import BlockingLoader from '$lib/components/common/BlockingLoader.svelte';
 
-	interface Props {
-		records: RowData[];
-		fields: string[];
-		isLoading: boolean;
-	}
-	let { records = [], fields = [], isLoading = false }: Props = $props();
-	console.log('tableview', { fields });
+	export let records: RowData[] = [];
+	export let fields: string[] = [];
+	export let isLoading = false;
+
+	console.log({ records, fields, isLoading });
 </script>
 
 <div class="relative flex-1 overflow-scroll" transition:blur>
@@ -34,7 +32,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each records as record, index}
+			{#each records as record}
 				<tr>
 					{#each fields as field}
 						<td

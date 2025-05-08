@@ -8,6 +8,9 @@ dependencies:
   '@atproto/api':
     specifier: ^0.13.35
     version: 0.13.35
+  '@sveltejs/svelte-scroller':
+    specifier: ^2.0.7
+    version: 2.0.7
   '@tailwindcss/typography':
     specifier: ^0.5.15
     version: 0.5.15(tailwindcss@3.4.15)
@@ -1216,6 +1219,10 @@ packages:
       tiny-glob: 0.2.9
       vite: 5.4.11
     dev: true
+
+  /@sveltejs/svelte-scroller@2.0.7:
+    resolution: {integrity: sha512-GuVePK4S0ubUJVYw2ixO1/8AVa792rNlhORXLeb2z7JHRKTqxOvg8Ye7sb4nZry/stgZEOlCpDV9qJeqHQKesw==}
+    dev: false
 
   /@sveltejs/vite-plugin-svelte-inspector@3.0.1(@sveltejs/vite-plugin-svelte@4.0.2)(svelte@5.2.12)(vite@5.4.11):
     resolution: {integrity: sha512-2CKypmj1sM4GE7HjllT7UKmo4Q6L5xFRd7VMGEWhYnZ+wc6AUVU01IBd7yUi6WnFndEwWoMNOd6e8UjoN0nbvQ==}

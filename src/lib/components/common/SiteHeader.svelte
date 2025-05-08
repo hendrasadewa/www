@@ -2,8 +2,6 @@
 	import { page } from '$app/stores';
 	import socialInfo from '$lib/configs/socialInfo';
 	import clsx from 'clsx';
-
-	let paths = $page.url.pathname.split('/').filter(Boolean);
 </script>
 
 <header
