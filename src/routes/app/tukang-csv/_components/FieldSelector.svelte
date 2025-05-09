@@ -29,7 +29,7 @@
 	);
 </script>
 
-<Dropdown disabled={isTableEmpty}>
+<Dropdown disabled={isTableEmpty} align="left">
 	{#snippet toggle()}
 		<Columns
 			size="18"
