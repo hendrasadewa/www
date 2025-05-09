@@ -1,6 +1,6 @@
 <script lang="ts">
 	// 3rd parties
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 
 	// common components
 	import Seo from '$lib/components/common/SEO.svelte';
@@ -91,9 +91,9 @@
 />
 <div class="relative">
 	<BlockMobile />
-	<div class="flex h-[calc(100vh-56px)] w-full items-start">
+	<div class="flex h-[calc(100vh-32px)] w-full items-start">
 		<div class="h-full w-2/6 xl:w-1/5">
-			<div class={clsx(['h-full'])}>
+			<div class={cn(['h-full'])}>
 				<FileDirectory
 					bind:fileList={file.fileList}
 					selectedFileIndex={file.selectedFileIndex}

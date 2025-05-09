@@ -1,5 +1,5 @@
 <script lang="ts">
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 	import Columns from 'lucide-svelte/icons/columns';
 	import Dropdown from '$lib/components/common/Dropdown.svelte';
 
@@ -33,8 +33,10 @@
 	{#snippet toggle()}
 		<Columns
 			size="18"
-			class={clsx(
-				isTableEmpty ? 'cursor-not-allowed text-blue-200' : 'text-blue-500'
+			class={cn(
+				isTableEmpty
+					? 'cursor-not-allowed text-blue-200 dark:text-blue-100/40'
+					: 'text-blue-500'
 			)}
 		/>
 	{/snippet}
@@ -42,7 +44,7 @@
 	{#each options as option}
 		<label
 			for="option-{option.field}"
-			class={clsx([
+			class={cn([
 				'cursor-pointer',
 				'flex items-center gap-2',
 				'px-2 py-1',

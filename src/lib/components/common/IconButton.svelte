@@ -1,6 +1,6 @@
 <!-- IconButton.svelte -->
 <script lang="ts">
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 	import type { ComponentType, SvelteComponent } from 'svelte';
 
 	// Props
@@ -19,16 +19,16 @@
 		secondary: 'bg-stone-100 dark:bg-stone-800'
 	};
 
-	$: buttonClass = clsx(
+	$: buttonClass = cn(
 		'flex items-center justify-center rounded-lg p-1',
 		disabled ? 'cursor-not-allowed' : 'cursor-pointer',
-		hoverEffect && !disabled && 'hover:bg-stone-200 dark:hover:bg-stone-500/70',
+		hoverEffect && !disabled && 'hover:bg-stone-200 dark:hover:bg-stone-700',
 		variantClasses[variant] || ''
 	);
 
-	$: iconClassFinal = clsx(
+	$: iconClassFinal = cn(
 		iconClass,
-		disabled ? 'text-blue-200' : 'text-blue-500'
+		disabled ? 'text-blue-200 dark:text-blue-100/40' : 'text-blue-500'
 	);
 </script>
 

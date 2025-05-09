@@ -1,5 +1,5 @@
 <script lang="ts">
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 	import { blur } from 'svelte/transition';
 
 	import type { RowData } from '$lib/types/csv';
@@ -16,7 +16,7 @@
 	<BlockingLoader {isLoading} />
 	<table class="border-collapse rounded-lg border">
 		<thead
-			class={clsx(
+			class={cn(
 				'sticky top-0 z-10',
 				'shadow-lg',
 				'border-y',
@@ -36,7 +36,7 @@
 				<tr>
 					{#each fields as field}
 						<td
-							class={clsx([
+							class={cn([
 								'text-nowrap border px-3 py-2 ',
 								'hover:bg-stone-100 dark:hover:bg-stone-600',
 								'hover:shadow-inner'

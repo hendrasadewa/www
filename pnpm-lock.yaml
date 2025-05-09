@@ -26,6 +26,9 @@ dependencies:
   papaparse:
     specifier: ^5.5.2
     version: 5.5.2
+  tailwind-merge:
+    specifier: ^3.2.0
+    version: 3.2.0
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -3105,6 +3108,10 @@ packages:
       locate-character: 3.0.0
       magic-string: 0.30.14
       zimmerframe: 1.1.2
+
+  /tailwind-merge@3.2.0:
+    resolution: {integrity: sha512-FQT/OVqCD+7edmmJpsgCsY820RTD5AkBryuG5IUqR5YQZSdj5xlH5nLgH7YPths7WsLPSpSBNneJdM8aS8aeFA==}
+    dev: false
 
   /tailwindcss@3.4.15:
     resolution: {integrity: sha512-r4MeXnfBmSOuKUWmXe6h2CcyfzJCEk4F0pptO5jlnYSIViUkVmsawj80N5h2lO3gwcmSb4n3PuN+e+GC1Guylw==}

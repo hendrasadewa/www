@@ -1,5 +1,5 @@
 <script lang="ts">
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 	import FilePlus from 'lucide-svelte/icons/file-plus';
 
 	interface Props {
@@ -11,7 +11,7 @@
 
 <label for="file-input">
 	<div
-		class={clsx([
+		class={cn([
 			'flex items-center justify-center',
 			'h-8 w-8',
 			'cursor-pointer',
@@ -21,7 +21,7 @@
 		])}
 	>
 		<FilePlus
-			class={clsx(['text-blue-500 ', 'hover:cursor-pointer'])}
+			class={cn(['text-blue-500 ', 'hover:cursor-pointer'])}
 			size="18"
 		/>
 	</div>

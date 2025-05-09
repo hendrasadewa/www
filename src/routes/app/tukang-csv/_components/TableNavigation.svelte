@@ -1,5 +1,5 @@
 <script lang="ts">
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 	import ChevronLeftCircle from 'lucide-svelte/icons/circle-chevron-left';
 	import ChevronRightCircle from 'lucide-svelte/icons/circle-chevron-right';
 
@@ -28,7 +28,13 @@
 	/>
 	<input
 		type="number"
-		class={clsx(['w-16', 'rounded-lg border', 'px-2 py-1'])}
+		class={cn([
+			'w-16',
+			'rounded-lg border',
+			'px-2 py-1',
+			'bg-transparent',
+			'border border-blue-500'
+		])}
 		disabled={isTableEmpty}
 		bind:value={page}
 	/>

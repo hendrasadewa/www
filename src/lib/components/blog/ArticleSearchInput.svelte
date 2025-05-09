@@ -28,7 +28,7 @@
 		e.preventDefault();
 		handleKeywordChanged();
 	}}
-	class="rounded-full border bg-stone-100 px-2 py-1"
+	class="rounded-full border bg-transparent px-2 py-1"
 >
 	<label id="search" class="flex items-center gap-2">
 		<SearchIcon size="16" />

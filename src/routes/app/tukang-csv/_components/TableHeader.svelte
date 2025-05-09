@@ -1,10 +1,10 @@
 <script lang="ts">
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 	export let isTableEmpty = true;
 </script>
 
 <header
-	class={clsx([
+	class={cn([
 		'min-h-14 p-2',
 		'border border-t-0 dark:border-0',
 		'flex items-center justify-between',

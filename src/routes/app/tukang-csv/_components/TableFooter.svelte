@@ -1,12 +1,12 @@
 <script lang="ts">
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 	import LoaderCircle from 'lucide-svelte/icons/loader-circle';
 
 	export let isLoading = false;
 </script>
 
 <div
-	class={clsx(
+	class={cn(
 		'sticky bottom-0 left-0 z-40',
 		'min-h-10 p-2',
 		'shadow-sm',

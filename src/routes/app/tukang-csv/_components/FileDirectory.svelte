@@ -1,5 +1,5 @@
 <script lang="ts">
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 	import FileUploader from './FileUploader.svelte';
 	import FileItem from './FileItem.svelte';
 
@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class={clsx([
+	class={cn([
 		'flex h-full flex-col',
 		'h-full',
 		'z-20 shadow-lg',

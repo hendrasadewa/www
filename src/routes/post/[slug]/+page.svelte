@@ -2,7 +2,7 @@
 	import Seo from '$lib/components/common/SEO.svelte';
 	import ArticleHeader from '$lib/components/blog/ArticleHeader.svelte';
 	import Author from '$lib/components/common/Author.svelte';
-	import clsx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 
 	export let data;
 </script>
@@ -28,7 +28,7 @@
 
 	<section
 		id="content"
-		class={clsx([
+		class={cn([
 			'p-4',
 			'prose prose-lg',
 			'prose-headings:font-display prose-headings:font-normal',
