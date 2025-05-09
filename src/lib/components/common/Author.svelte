@@ -12,7 +12,7 @@
 	</a>
 	<div class="flex flex-col gap-1">
 		<span class="text-lg">Written by {siteInfo.author}</span>
-		<span class="text-gray-600 dark:text-gray-400">
+		<span class="text-stone-600 dark:text-stone-400">
 			{siteInfo.defaultDescription}
 		</span>
 	</div>

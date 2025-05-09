@@ -6,7 +6,13 @@
 	export let name: string = '';
 </script>
 
-<div class={cn(['flex flex-col items-center', 'gap-2'])}>
+<div
+	class={cn([
+		'flex flex-col items-center',
+		'gap-2',
+		'text-stone-700 dark:text-stone-300'
+	])}
+>
 	<div
 		class={cn([
 			'flex items-center justify-center',
@@ -14,14 +20,15 @@
 			'rounded-xl border',
 			'p-2',
 			'transition-shadow hover:shadow-lg',
-			'bg-gradient-to-tr from-gray-50 to-gray-100'
+			'bg-gradient-to-tr from-stone-50 to-stone-100',
+			'to-stone-600 dark:from-stone-700'
 		])}
 	>
 		{#if icon}
-			<svelte:component this={icon} class={cn(['text-gray-500'])} />
+			<svelte:component this={icon} />
 		{/if}
 	</div>
-	<span class={cn(['text-center text-xs text-gray-700'])}>
+	<span class={cn(['text-center text-xs '])}>
 		{name}
 	</span>
 </div>

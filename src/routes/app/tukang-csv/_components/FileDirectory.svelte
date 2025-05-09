@@ -40,7 +40,7 @@
 			{/each}
 		{:else}
 			<div class="px-2">
-				<p class="text-gray-500">No file uploaded</p>
+				<p class="text-stone-500">No file uploaded</p>
 			</div>
 		{/if}
 	</div>

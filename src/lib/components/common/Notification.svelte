@@ -54,7 +54,7 @@
 			'bg-stone-100/75 dark:bg-stone-800/70'
 		])}
 	>
-		<XIcon size="14" class="text-gray-400" />
+		<XIcon size="14" class="text-stone-400" />
 	</button>
 
 	{#if left}
@@ -65,7 +65,7 @@
 	<div class="flex-1 overflow-hidden">
 		<header class="flex items-end justify-between gap-2">
 			<h1 class="truncate text-sm font-bold">{title}</h1>
-			<time class="text-xs text-gray-500">{time}</time>
+			<time class="text-xs text-stone-500">{time}</time>
 		</header>
 		<main>
 			<p class="text-sm">{message}</p>
