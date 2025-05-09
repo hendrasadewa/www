@@ -91,7 +91,7 @@
 />
 <div class="relative">
 	<BlockMobile />
-	<div class="flex h-[calc(100vh-32px)] w-full items-start">
+	<div class="flex h-[calc(100vh-44px)] w-full items-start">
 		<div class="h-full w-2/6 xl:w-1/5">
 			<div class={cn(['h-full'])}>
 				<FileDirectory

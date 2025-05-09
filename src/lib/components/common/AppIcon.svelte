@@ -20,8 +20,8 @@
 			'rounded-xl border',
 			'p-2',
 			'transition-shadow hover:shadow-lg',
-			'bg-gradient-to-tr from-stone-50 to-stone-100',
-			'to-stone-600 dark:from-stone-700'
+			'bg-gradient-to-tr from-stone-50 to-stone-200',
+			'dark:from-stone-700 dark:to-stone-600'
 		])}
 	>
 		{#if icon}
