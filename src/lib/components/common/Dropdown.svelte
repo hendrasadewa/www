@@ -4,7 +4,7 @@
 	import { fade, scale } from 'svelte/transition';
 
 	let isExpanded = $state(false);
-	let { disabled = false, toggle, children, align = 'right' } = $props(); // added `align`
+	let { disabled = false, toggle, children, align = 'right' } = $props();
 
 	let container: HTMLDivElement;
 
@@ -34,28 +34,40 @@
 		onclick={toggleExpand}
 		{disabled}
 		class={cn([
-			'flex items-center justify-center rounded-lg p-1',
-			'transition-colors',
+			// Layout
+			'flex items-center justify-center',
+			// Style
+			'rounded-lg transition-colors',
+			isExpanded ? 'bg-blue-200' : '',
 			'hover:bg-blue-50 dark:hover:bg-stone-700',
 			'disabled:text-blue-200 disabled:dark:text-blue-100/40',
-			isExpanded ? 'bg-blue-200' : 'bg-none'
+			// Spacing
+			'p-1'
 		])}
 	>
 		{@render toggle()}
 	</button>
+
 	{#if isExpanded}
 		<div
 			in:scale={{ start: 0.2, easing: cubicInOut }}
 			out:fade
 			class={cn([
-				'absolute top-full z-20 mt-2',
+				// Positioning
+				'absolute top-full z-30 mt-2',
+				dropdownPosition,
+
+				// Layout
 				'flex flex-col gap-2',
-				'max-h-[480px] min-w-[240px]',
-				'overflow-y-scroll',
-				'p-1',
-				'bg-stone-50 shadow-lg dark:bg-stone-800',
-				'rounded border dark:border-0',
-				dropdownPosition
+				'max-h-[480px] min-w-[240px] overflow-y-scroll',
+
+				// Style
+				'rounded-xl border dark:border-0',
+				'bg-stone-100 dark:bg-stone-800',
+				'shadow-lg',
+
+				// Spacing
+				'p-1'
 			])}
 		>
 			{@render children()}
