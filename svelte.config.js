@@ -6,13 +6,13 @@ import adapter from '@sveltejs/adapter-cloudflare';
 const config = {
 	preprocess: [vitePreprocess(), mdsvex({
 		smartypants: {
-			quotes: true,
+			quotes: false,
 			ellipses: true,
 			backticks: true,
 			dashes: 'oldschool',
 		},
 		layout: {
-			article: './src/lib/components/blog/ArticleLayout.svelte'
+			article: './src/lib/components/features/Blog/ArticleLayout.svelte'
 		}
 	})],
 	kit: {

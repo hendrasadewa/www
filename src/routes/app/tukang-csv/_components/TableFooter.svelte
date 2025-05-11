@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cssUtils';
-	import LoaderCircle from 'lucide-svelte/icons/loader-circle';
+	import LoaderCircleIcon from 'lucide-svelte/icons/loader-circle';
 
 	export let isLoading = false;
 </script>
@@ -17,7 +17,7 @@
 >
 	{#if isLoading}
 		<div class="flex items-center gap-1">
-			<LoaderCircle size="16" class="animate-spin" />
+			<LoaderCircleIcon size="16" class="animate-spin" />
 			Loading data...
 		</div>
 	{:else}

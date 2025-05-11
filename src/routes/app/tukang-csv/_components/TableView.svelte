@@ -3,13 +3,11 @@
 	import { blur } from 'svelte/transition';
 
 	import type { RowData } from '$lib/types/csv';
-	import BlockingLoader from '$lib/components/common/BlockingLoader.svelte';
+	import { BlockingLoader } from '$lib/components/features/Loader';
 
 	export let records: RowData[] = [];
 	export let fields: string[] = [];
 	export let isLoading = false;
-
-	console.log({ records, fields, isLoading });
 </script>
 
 <div class="relative flex-1 overflow-scroll" transition:blur>

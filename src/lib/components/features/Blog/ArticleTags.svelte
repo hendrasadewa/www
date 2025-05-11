@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { LucideTag } from 'lucide-svelte';
+	import LucideTagIcon from 'lucide-svelte/icons/tag';
 
 	export let categories: string[] = [];
 </script>
@@ -13,7 +13,7 @@
 				class="flex items-center gap-1 p-1 px-2"
 				href="/post?keyword={category}"
 			>
-				<LucideTag size="12" />
+				<LucideTagIcon size="12" />
 				<span class="text-xs capitalize md:text-sm">{category}</span>
 			</a>
 		</div>

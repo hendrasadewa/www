@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cssUtils';
-	import Columns from 'lucide-svelte/icons/columns';
-	import Dropdown from '$lib/components/common/Dropdown.svelte';
+	import ColumnsIcon from 'lucide-svelte/icons/columns';
+
+	import { Dropdown } from '$lib/components/common/Dropdown';
 
 	interface Props {
 		fields: string[];
@@ -31,7 +32,7 @@
 
 <Dropdown disabled={isTableEmpty} align="left">
 	{#snippet toggle()}
-		<Columns
+		<ColumnsIcon
 			size="18"
 			class={cn(
 				isTableEmpty

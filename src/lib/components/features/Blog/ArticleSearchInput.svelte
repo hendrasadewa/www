@@ -1,7 +1,9 @@
 <script lang="ts">
+	import XIcon from 'lucide-svelte/icons/x';
+	import SearchIcon from 'lucide-svelte/icons/search';
+
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { SearchIcon, XIcon } from 'lucide-svelte';
 
 	let keyword = $state('');
 

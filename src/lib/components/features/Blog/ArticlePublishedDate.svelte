@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { LucideCalendar } from 'lucide-svelte';
+	import LucideCalendarIcon from 'lucide-svelte/icons/calendar';
 
 	export let publishedDate: string = '';
 
@@ -14,6 +14,6 @@
 </script>
 
 <div class="flex items-center gap-1">
-	<LucideCalendar size="12" />
+	<LucideCalendarIcon size="12" />
 	<time class="md:text-md text-xs">{formattedDate}</time>
 </div>

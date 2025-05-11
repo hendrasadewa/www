@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Seo from '$lib/components/common/SEO.svelte';
 	import TableIcon from 'lucide-svelte/icons/table';
+	import { SEO } from '$lib/components/features/SEO';
 </script>
 
-<Seo
+<SEO
 	categories={['Apps']}
 	description="Collection of apps that I built"
 	title="Apps"

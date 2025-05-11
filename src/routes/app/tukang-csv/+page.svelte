@@ -3,7 +3,7 @@
 	import { cn } from '$lib/utils/cssUtils';
 
 	// common components
-	import Seo from '$lib/components/common/SEO.svelte';
+	import { SEO } from '$lib/components/features/SEO';
 	import FieldSelector from './_components/FieldSelector.svelte';
 
 	// components
@@ -84,7 +84,7 @@
 	});
 </script>
 
-<Seo
+<SEO
 	categories={['Apps']}
 	description="Collection of CSV Utilities"
 	title="Tukang CSV"

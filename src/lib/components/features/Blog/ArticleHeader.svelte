@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { PencilIcon } from 'lucide-svelte';
+	import PencilIcon from 'lucide-svelte/icons/pencil';
+
 	import siteInfo from '$lib/configs/siteInfo';
 
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';
 	import ArticleTags from './ArticleTags.svelte';
-	import BskyLikeCount from '../bsky/BskyLikeCount.svelte';
+	import { BskyLikeCount } from '../Bsky';
 
 	export let headerImageURL: string = '';
 	export let headerImageAlt: string = '';

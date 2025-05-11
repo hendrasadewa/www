@@ -1,7 +1,9 @@
 <script lang="ts">
-	import ArticleHeader from '$lib/components/blog/ArticleHeader.svelte';
-	import ArticleList from '$lib/components/blog/ArticleList.svelte';
-	import Seo from '$lib/components/common/SEO.svelte';
+	import { SEO } from '$lib/components/features/SEO';
+	import {
+		ArticleHeader,
+		ArticleList
+	} from '$lib/components/features/Blog/index.js';
 
 	export let data;
 
@@ -27,7 +29,7 @@
 	let [highlighted, ...rest] = data.posts;
 </script>
 
-<Seo {...metaTags} />
+<SEO {...metaTags} />
 
 <div class="mx-auto w-full max-w-screen-md">
 	<div class="space-y-8 pb-8">

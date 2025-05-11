@@ -1,15 +1,16 @@
 <script lang="ts">
-	import Notification from '$lib/components/common/Notification.svelte';
-	import NotificationList from '$lib/components/common/NotificationList.svelte';
-	import SiteHeader from '$lib/components/common/SiteHeader.svelte';
+	import { AlertList } from '$lib/components/common/Alert';
+	import SiteHeader from '$lib/components/features/SiteHeader';
+
 	import '../app.css';
+
 	let { children } = $props();
 </script>
 
 <div class="relative flex flex-col">
-	<NotificationList />
+	<AlertList />
 	<SiteHeader />
-	<main>
+	<main class="flex-1">
 		{@render children()}
 	</main>
 </div>

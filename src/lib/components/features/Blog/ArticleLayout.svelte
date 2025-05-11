@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Seo from '$lib/components/common/SEO.svelte';
+	import { SEO } from '$lib/components/features/SEO';
 	import ArticleHeader from './ArticleHeader.svelte';
 
 	let {
@@ -14,7 +14,7 @@
 	} = $props();
 </script>
 
-<Seo
+<SEO
 	categories={['about']}
 	{description}
 	{title}

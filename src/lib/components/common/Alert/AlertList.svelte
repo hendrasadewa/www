@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cssUtils';
-	import Notification from './Notification.svelte';
+	import Notification from './Alert.svelte';
 
 	const notifs = $state([]);
 

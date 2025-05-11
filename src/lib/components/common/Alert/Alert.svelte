@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
-	import { XIcon } from 'lucide-svelte';
 	import type { Snippet } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import XIcon from 'lucide-svelte/icons/x';
+
+	import { cn } from '$lib/utils/cssUtils';
 
 	interface Props {
 		title?: string;

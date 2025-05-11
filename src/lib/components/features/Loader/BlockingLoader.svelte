@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { blur } from 'svelte/transition';
 	import LoaderPinwheelIcon from 'lucide-svelte/icons/loader-pinwheel';
-	import cx from 'clsx';
+	import { cn } from '$lib/utils/cssUtils';
 
 	export let isLoading = false;
 	export let message = 'Loading...';
@@ -10,7 +10,7 @@
 {#if isLoading}
 	<div
 		transition:blur
-		class={cx([
+		class={cn([
 			'flex items-center justify-center',
 			'absolute m-auto',
 			'h-full w-full',
@@ -20,7 +20,7 @@
 		])}
 	>
 		<div
-			class={cx([
+			class={cn([
 				'h-14 min-w-40 rounded-full px-6 py-4 ',
 				'bg-stone-50 dark:bg-stone-800',
 				'shadow-lg transition-all hover:-translate-y-2 hover:shadow-2xl'

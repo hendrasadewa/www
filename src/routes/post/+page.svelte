@@ -1,16 +1,18 @@
 <script lang="ts">
-	import { PackageOpenIcon } from 'lucide-svelte';
+	import PackageOpenIcon from 'lucide-svelte/icons/package-open';
 
 	import { page } from '$app/stores';
-	import ArticleList from '$lib/components/blog/ArticleList.svelte';
-	import ArticleSearchInput from '$lib/components/blog/ArticleSearchInput.svelte';
-	import Seo from '$lib/components/common/SEO.svelte';
+	import { SEO } from '$lib/components/features/SEO';
+	import {
+		ArticleList,
+		ArticleSearchInput
+	} from '$lib/components/features/Blog/index.js';
 
 	const keyword = $page.url.searchParams.get('keyword');
 	let { data } = $props();
 </script>
 
-<Seo
+<SEO
 	categories={['Posts']}
 	description="Post written by Hendra"
 	title="Posts"

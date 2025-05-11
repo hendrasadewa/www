@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/cssUtils';
-	import FilePlus from 'lucide-svelte/icons/file-plus';
+	import FilePlusIcon from 'lucide-svelte/icons/file-plus';
 
 	interface Props {
 		fileList: FileList | null;
@@ -20,7 +20,7 @@
 			'transition-colors'
 		])}
 	>
-		<FilePlus
+		<FilePlusIcon
 			class={cn(['text-blue-500 ', 'hover:cursor-pointer'])}
 			size="18"
 		/>

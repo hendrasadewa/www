@@ -1,13 +1,12 @@
 <script lang="ts">
-	import Seo from '$lib/components/common/SEO.svelte';
-	import ArticleHeader from '$lib/components/blog/ArticleHeader.svelte';
-	import Author from '$lib/components/common/Author.svelte';
+	import { SEO } from '$lib/components/features/SEO';
+	import { ArticleHeader, Author } from '$lib/components/features/Blog';
 	import { cn } from '$lib/utils/cssUtils';
 
 	export let data;
 </script>
 
-<Seo
+<SEO
 	categories={['about']}
 	description={data.meta.description}
 	title={data.meta.title}

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
-	import ChevronLeftCircle from 'lucide-svelte/icons/circle-chevron-left';
-	import ChevronRightCircle from 'lucide-svelte/icons/circle-chevron-right';
+	import ChevronLeftCircleIcon from 'lucide-svelte/icons/circle-chevron-left';
+	import ChevronRightCircleIcon from 'lucide-svelte/icons/circle-chevron-right';
 
-	import IconButton from '$lib/components/common/IconButton.svelte';
+	import { cn } from '$lib/utils/cssUtils';
+	import { IconButton } from '$lib/components/common/Button';
 
 	interface Props {
 		onPrevClick(): void;
@@ -22,7 +22,7 @@
 
 <div class="flex items-center gap-1">
 	<IconButton
-		icon={ChevronLeftCircle}
+		icon={ChevronLeftCircleIcon}
 		onClick={onPrevClick}
 		disabled={isTableEmpty}
 	/>
@@ -39,7 +39,7 @@
 		bind:value={page}
 	/>
 	<IconButton
-		icon={ChevronRightCircle}
+		icon={ChevronRightCircleIcon}
 		onClick={onNextClick}
 		disabled={isTableEmpty}
 		hoverEffect={true}
