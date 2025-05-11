@@ -8,3 +8,11 @@ export interface WorkerResponse<T = unknown> {
 	data: T;
 	message: string;
 }
+
+export enum StatusEnum {
+	UNSPECIFIED,
+	INFO,
+	WARNING,
+	ERROR,
+	SUCCESS
+}

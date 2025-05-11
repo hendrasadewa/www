@@ -1,21 +1,13 @@
 <script lang="ts">
-	import LucideTagIcon from 'lucide-svelte/icons/tag';
+	import { Tag } from '$lib/components/common/Badge';
 
 	export let categories: string[] = [];
 </script>
 
-<div class="flex flex-wrap items-center gap-2 py-2">
+<div class="flex flex-wrap gap-1">
 	{#each categories as category}
-		<div
-			class="rounded-full border bg-white/50 backdrop-blur-sm transition-shadow hover:shadow-md dark:bg-stone-800/50"
-		>
-			<a
-				class="flex items-center gap-1 p-1 px-2"
-				href="/post?keyword={category}"
-			>
-				<LucideTagIcon size="12" />
-				<span class="text-xs capitalize md:text-sm">{category}</span>
-			</a>
-		</div>
+		<a href="/post?keyword={category}">
+			<Tag name={category} />
+		</a>
 	{/each}
 </div>
