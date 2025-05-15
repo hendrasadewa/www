@@ -1,8 +1,10 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
-	import { cubicInOut } from 'svelte/easing';
 	import { fade, scale } from 'svelte/transition';
-	import Button from '../Button/Button.svelte';
+	import { cubicInOut } from 'svelte/easing';
+
+	import { cn } from '$lib/utils/cssUtils';
+
+	import { Button } from '../Button';
 
 	let isExpanded = $state(false);
 	let { disabled = false, toggle, children, align = 'right' } = $props();

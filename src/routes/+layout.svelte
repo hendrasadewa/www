@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AlertList } from '$lib/components/common/Alert';
+	import { AlertList } from '$lib/common/components/Alert';
 	import SiteHeader from '$lib/components/features/SiteHeader';
 
 	import '../app.css';
