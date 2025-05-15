@@ -9,7 +9,7 @@
 	class={cn(
 		'sticky bottom-0 left-0 z-40',
 		'min-h-10 p-2',
-		'shadow-sm',
+		'shadow-xs',
 		'border border-b-0  dark:border-0',
 		'bg-stone-100 dark:bg-stone-800/70',
 		'flex items-center gap-2'

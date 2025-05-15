@@ -42,7 +42,7 @@
 		'w-[340px]',
 		'px-4 py-2',
 		'rounded-xl border',
-		'shadow-xl backdrop-blur-sm',
+		'shadow-xl backdrop-blur-xs',
 		'bg-stone-100/75 dark:bg-stone-800/70'
 	])}
 >
@@ -51,7 +51,7 @@
 		class={cn([
 			'absolute -right-2 -top-2',
 			'rounded-xl border',
-			'shadow-xl backdrop-blur-sm',
+			'shadow-xl backdrop-blur-xs',
 			'bg-stone-100/75 dark:bg-stone-800/70'
 		])}
 	>

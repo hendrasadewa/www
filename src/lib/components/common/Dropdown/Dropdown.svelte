@@ -2,6 +2,7 @@
 	import { cn } from '$lib/utils/cssUtils';
 	import { cubicInOut } from 'svelte/easing';
 	import { fade, scale } from 'svelte/transition';
+	import Button from '../Button/Button.svelte';
 
 	let isExpanded = $state(false);
 	let { disabled = false, toggle, children, align = 'right' } = $props();
@@ -30,23 +31,9 @@
 <svelte:window on:click={handleClickOutside} />
 
 <div class="relative" bind:this={container}>
-	<button
-		onclick={toggleExpand}
-		{disabled}
-		class={cn([
-			// Layout
-			'flex items-center justify-center',
-			// Style
-			'rounded-lg transition-colors',
-			isExpanded ? 'bg-blue-200' : '',
-			'hover:bg-blue-50 dark:hover:bg-stone-700',
-			'disabled:text-blue-200 disabled:dark:text-blue-100/40',
-			// Spacing
-			'p-1'
-		])}
-	>
+	<Button onclick={toggleExpand} {disabled}>
 		{@render toggle()}
-	</button>
+	</Button>
 
 	{#if isExpanded}
 		<div

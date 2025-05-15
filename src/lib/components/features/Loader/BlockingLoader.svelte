@@ -14,7 +14,7 @@
 			'flex items-center justify-center',
 			'absolute m-auto',
 			'h-full w-full',
-			'backdrop-blur-sm',
+			'backdrop-blur-xs',
 			'bg-stone-50/70 dark:bg-stone-600/70',
 			'z-50'
 		])}

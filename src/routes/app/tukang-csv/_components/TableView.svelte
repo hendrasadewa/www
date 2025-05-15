@@ -19,7 +19,7 @@
 				'shadow-lg',
 				'border-y',
 				'p-2',
-				'shadow-sm backdrop-blur-sm',
+				'shadow-xs backdrop-blur-xs',
 				'bg-stone-100/70 dark:bg-stone-800/70'
 			)}
 		>

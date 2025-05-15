@@ -38,7 +38,7 @@
 			type="text"
 			id="search"
 			name="keyword"
-			class="w-full bg-transparent outline-none"
+			class="w-full bg-transparent outline-hidden"
 			placeholder="Cari artikel..."
 			bind:value={keyword}
 		/>

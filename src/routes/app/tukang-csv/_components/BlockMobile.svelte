@@ -14,7 +14,7 @@
 
 {#if w <= 640}
 	<div
-		class="absolute z-50 flex h-screen w-full flex-col items-center justify-center bg-stone-400/20 backdrop-blur-sm sm:hidden"
+		class="absolute z-50 flex h-screen w-full flex-col items-center justify-center bg-stone-400/20 backdrop-blur-xs sm:hidden"
 		transition:blur={{ duration: 2000 }}
 	>
 		<span class="animate-pulse text-4xl">🚧</span>

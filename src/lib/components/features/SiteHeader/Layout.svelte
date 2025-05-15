@@ -7,7 +7,7 @@
 	class={cn(
 		'sticky top-0 z-20',
 		'px-4 py-1',
-		'shadow-sm backdrop-blur-sm',
+		'shadow-xs backdrop-blur-xs',
 		'bg-stone-100/70 dark:bg-stone-800/70',
 		'text-sm'
 	)}

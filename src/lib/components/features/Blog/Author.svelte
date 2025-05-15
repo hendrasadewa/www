@@ -7,7 +7,7 @@
 		<img
 			src="/img/me-2.webp"
 			alt="author"
-			class="h-24 w-24 -rotate-6 shadow-sm transition-all hover:-translate-y-2 hover:shadow-xl"
+			class="h-24 w-24 -rotate-6 shadow-xs transition-all hover:-translate-y-2 hover:shadow-xl"
 		/>
 	</a>
 	<div class="flex flex-col gap-1">

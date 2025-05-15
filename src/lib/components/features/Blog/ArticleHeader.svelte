@@ -23,7 +23,7 @@
 	<header class="flex w-full flex-col justify-between gap-4 md:min-h-64">
 		<ArticleTags {categories} />
 		<a href={url}>
-			<h2 class=" cursor-pointer font-display text-3xl md:text-5xl">
+			<h2 class="font-display cursor-pointer text-3xl md:text-5xl">
 				{title}
 			</h2>
 		</a>
@@ -48,7 +48,7 @@
 		<img
 			alt={headerImageAlt}
 			src={headerImageURL}
-			class="max-h-60 max-w-60 rotate-6 cursor-pointer rounded-lg shadow transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-2xl md:h-64 md:w-64"
+			class="max-h-60 max-w-60 rotate-6 cursor-pointer rounded-lg shadow-sm transition-all hover:-translate-x-2 hover:-translate-y-2 hover:shadow-2xl md:h-64 md:w-64"
 		/>
 	</a>
 </article>

@@ -26,7 +26,7 @@
 	<button
 		class={cn([
 			'flex w-full items-center gap-2 ',
-			'disabled:text-blue-200 disabled:dark:text-blue-100/40',
+			'disabled:text-blue-200 dark:disabled:text-blue-100/40',
 			'flex w-full items-center gap-2 ',
 			selected ? 'text-blue-500 dark:text-blue-400' : ''
 		])}

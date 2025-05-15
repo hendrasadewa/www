@@ -17,7 +17,7 @@
 	class={cn([
 		// Outer shell
 		'relative inline-flex items-center justify-center rounded-md',
-		'bg-gradient-to-b from-white/40 to-white/5',
+		'bg-linear-to-b from-white/40 to-white/5',
 		'shadow-[inset_0_1px_0_rgba(255,255,255,0.4),0_2px_5px_rgba(0,0,0,0.2)]',
 		'transition active:translate-y-px active:shadow-inner',
 
@@ -33,7 +33,7 @@
 			'transition-colors duration-150 ease-in-out',
 
 			// Focus
-			'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2',
+			'focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2',
 
 			// Base state (default blue)
 			'bg-blue-500 hover:bg-blue-600 active:bg-blue-700',
@@ -41,7 +41,7 @@
 			// Danger state
 
 			// Disabled inner state (no hover or active)
-			rest.disabled && 'cursor-not-allowed !bg-gray-400 !text-white'
+			rest.disabled && 'cursor-not-allowed bg-gray-400! text-white!'
 		])}
 	>
 		{#if IconLeft}

@@ -14,7 +14,7 @@
 	headerImageURL={data.meta.headerImageURL}
 />
 
-<article class="mb-12 mt-6">
+<article class="mt-6 mb-12">
 	<ArticleHeader
 		headerImageURL={data.meta.headerImageURL}
 		headerImageAlt={data.meta.headerImageAlt}
@@ -29,9 +29,19 @@
 		id="content"
 		class={cn([
 			'p-4',
+			'transition-all',
+			// prose configs
 			'prose prose-lg',
-			'prose-headings:font-display prose-headings:font-normal',
-			'prose-img:rounded-lg prose-img:shadow-lg',
+			'prose-headings:font-display',
+
+			'prose-a:hover:text-blue-500',
+			// image
+			'prose-img:rounded-lg',
+			'prose-img:transition-all',
+			'prose-img:shadow prose-img:hover:shadow-xl',
+			'prose-img:hover:-translate-y-3',
+			// blockquote
+			'prose-blockquote:font-normal',
 			'dark:prose-invert'
 		])}
 	>

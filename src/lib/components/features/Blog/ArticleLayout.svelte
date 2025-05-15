@@ -21,7 +21,7 @@
 	{headerImageAlt}
 	{headerImageURL}
 />
-<div class="mx-auto w-full max-w-screen-md">
+<div class="mx-auto w-full max-w-(--breakpoint-md)">
 	<section id="header" class="py-2">
 		<ArticleHeader
 			{headerImageURL}
@@ -36,7 +36,7 @@
 
 	<section
 		id="content"
-		class="prose prose-lg p-4 dark:prose-invert prose-headings:font-display prose-headings:font-normal"
+		class="prose prose-lg dark:prose-invert prose-headings:font-serif prose-headings:font-normal p-4 font-serif"
 	>
 		{@render children()}
 	</section>
