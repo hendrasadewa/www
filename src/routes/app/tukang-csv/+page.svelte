@@ -1,38 +1,34 @@
 <script lang="ts">
-	// 3rd parties
+	import {
+		CSVStore,
+		FileStore,
+		PaginationStore,
+		TableStore
+	} from '$lib/interactor/TukangCSV';
 	import { cn } from '$lib/utils/css-utils';
-
-	// common components
 	import { SEO } from '$lib/view/SEO';
-	import FieldSelector from './_components/FieldSelector.svelte';
+	import {
+		FieldSelector,
+		FileDirectory,
+		TableHeader,
+		TableNavigation,
+		TableActions,
+		TableView,
+		TableFooter,
+		TableRecordCounter,
+		BlockMobile
+	} from '$lib/view/TukangCSV';
 
-	// components
-	import FileDirectory from './_components/FileDirectory.svelte';
-	import TableHeader from './_components/TableHeader.svelte';
-	import TableNavigation from './_components/TableNavigation.svelte';
-	import TableActions from './_components/TableActions.svelte';
-	import TableView from './_components/TableView.svelte';
-	import TableFooter from './_components/TableFooter.svelte';
-	import TableRecordCounter from './_components/TableRecordCounter.svelte';
-	import BlockMobile from './_components/BlockMobile.svelte';
-
-	// state managements
-	import { PaginationStore } from './_stores/pagination.svelte';
-	import { FileStore } from './_stores/file.svelte';
-	import { TableStore } from './_stores/table.svelte';
-	import { CSVStore } from './_stores/csv.svelte';
-
-	// state - generic
+	const csv = new CSVStore();
 	const file = new FileStore();
 	const pagination = new PaginationStore(25);
 	const table = new TableStore();
-	const csv = new CSVStore();
 
 	// computed values
 	const isTableEmpty = $derived(table.records.length <= 0);
 
 	// Event handlers
-	function onFileSelect(index: number) {
+	export function onFileSelect(index: number) {
 		file.onFileSelect(index);
 
 		if (!file.selectedFile) {
@@ -48,11 +44,11 @@
 		pagination.page = 1;
 	}
 
-	function onExportJSONClick() {
+	export function onExportJSONClick() {
 		csv.exportJSON(table.selectedFields);
 	}
 
-	function onExportTextClick() {
+	export function onExportTextClick() {
 		csv.exportCSV(table.selectedFields);
 	}
 

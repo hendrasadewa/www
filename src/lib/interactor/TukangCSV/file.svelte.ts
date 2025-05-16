@@ -1,9 +1,3 @@
-import Papa from 'papaparse';
-import type { ParseStepResult } from 'papaparse';
-
-import type { RowData } from '$lib/entity/csv.entity';
-import { downloadFile } from '$lib/utils/file-utils';
-
 export class FileStore {
 	fileList: FileList | null = $state(null);
 	selectedFileIndex: number | null = $state(null);
