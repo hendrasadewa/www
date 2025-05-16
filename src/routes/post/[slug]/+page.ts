@@ -1,8 +1,8 @@
-import blogInteractor from '$lib/interactor/blog.interactor';
+import blogRepository from '$lib/domains/blog/repository/blog.repository';
 
 export async function load({ params: { slug } }) {
 	try {
-		const post = await blogInteractor.handleGetContentBySlug(slug);
+		const post = await blogRepository.handleGetContentBySlug(slug);
 		return {
 			content: post.default,
 			meta: post.metadata

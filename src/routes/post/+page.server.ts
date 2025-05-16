@@ -1,4 +1,4 @@
-import blogInteractor from '$lib/interactor/blog.interactor.js';
+import blogRepository from '$lib/domains/blog/repository/blog.repository';
 
 export async function load({ url }) {
 	const { searchParams } = url;
@@ -6,7 +6,7 @@ export async function load({ url }) {
 	// parse the search params
 	const category = searchParams.get('category');
 	const keyword = searchParams.get('keyword');
-	const response = blogInteractor.handleGetContents({ category, keyword });
+	const response = blogRepository.handleGetContents({ category, keyword });
 
 	return { posts: response };
 }

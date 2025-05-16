@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { AlertList } from '$lib/view/Common/Alert';
-	import SiteHeader from '$lib/view/SiteHeader';
+	import { AlertList } from '$lib/commons/components/Alert';
+	import SiteHeader from '$lib/commons/components/SiteHeader';
 
 	import '../app.css';
 

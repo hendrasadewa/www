@@ -1,6 +1,6 @@
 <script lang="ts">
 	import TableIcon from 'lucide-svelte/icons/table';
-	import { SEO } from '$lib/view/SEO';
+	import { SEO } from '$lib/commons/components/SEO';
 </script>
 
 <SEO
@@ -16,7 +16,7 @@
 	</header>
 	<main class="flex items-center">
 		<div class="grid w-full grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-			<article class="rounded-lg border p-2 transition-shadow hover:shadow-lg">
+			<article class="rounded-lg p-2 transition-shadow hover:shadow-lg">
 				<a href="app/tukang-csv" class="flex items-center gap-2">
 					<TableIcon size="48" class="" />
 					<div class="flex flex-col">

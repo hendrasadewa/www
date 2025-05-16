@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import blogInteractor from '$lib/interactor/blog.interactor';
+import blogRepository from '$lib/domains/blog/repository/blog.repository';
 
 export async function GET({ url }) {
 	// Parse URL params
@@ -8,7 +8,7 @@ export async function GET({ url }) {
 	const keyword = params.get('q');
 
 	// call the get content handler
-	const posts = blogInteractor.handleGetContents({ category, keyword });
+	const posts = blogRepository.handleGetContents({ category, keyword });
 
 	return json(posts);
 }

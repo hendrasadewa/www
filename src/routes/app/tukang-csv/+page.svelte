@@ -4,20 +4,20 @@
 		FileStore,
 		PaginationStore,
 		TableStore
-	} from '$lib/interactor/TukangCSV';
-	import { cn } from '$lib/utils/css-utils';
-	import { SEO } from '$lib/view/SEO';
+	} from '$lib/domains/tukang-csv/stores';
+	import { cn } from '$lib/commons/utils/css-utils';
+	import { SEO } from '$lib/commons/components/SEO';
 	import {
+		BlockMobile,
 		FieldSelector,
 		FileDirectory,
+		TableActions,
+		TableFooter,
 		TableHeader,
 		TableNavigation,
-		TableActions,
-		TableView,
-		TableFooter,
 		TableRecordCounter,
-		BlockMobile
-	} from '$lib/view/TukangCSV';
+		TableView
+	} from '$lib/domains/tukang-csv/components';
 
 	const csv = new CSVStore();
 	const file = new FileStore();
