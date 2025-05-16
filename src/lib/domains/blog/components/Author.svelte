@@ -1,5 +1,5 @@
 <script>
-	import metadata from '$lib/configs/site.config';
+	import metadata from '$lib/commons/configs/site.config';
 </script>
 
 <div class="flex items-center gap-4">

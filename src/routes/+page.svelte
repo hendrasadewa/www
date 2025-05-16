@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { SEO } from '$lib/commons/components/SEO';
 
-	import metadata from '$lib/configs/site.config';
+	import metadata from '$lib/commons/configs/site.config.js';
 	import { ArticleHeader, ArticleList } from '$lib/domains/blog/components';
 
 	export let data;

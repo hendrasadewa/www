@@ -1,7 +1,7 @@
 <script lang="ts">
 	import PencilIcon from 'lucide-svelte/icons/pencil';
 
-	import metadata from '$lib/configs/site.config';
+	import metadata from '$lib/commons/configs/site.config';
 
 	import BskyLikeCount from './BskyLikeCount.svelte';
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';

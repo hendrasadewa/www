@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import metadata from '$lib/configs/site.config';
+	import metadata from '$lib/commons/configs/site.config';
 
 	let {
 		title = metadata.title,

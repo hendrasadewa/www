@@ -1,7 +1,7 @@
 import { AppBskyFeedPost } from '@atproto/api';
 import { AppBskyFeedDefs } from '@atproto/api';
 
-import { atpAgent } from '$lib/configs/atproto.config';
+import { atpAgent } from '$lib/commons/configs/atproto.config';
 
 const bskyRepository = {
 	getPostByURI: async (uri: string) => {
