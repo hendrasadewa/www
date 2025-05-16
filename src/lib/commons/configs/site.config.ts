@@ -4,7 +4,7 @@ import type { Metadata, SocialInfo } from '$lib/commons/entity/site.entity';
 export const metadata: Metadata = {
 	title: 'Hendra Sadewa - Web Engineer | Senior Web Developer in Indonesia',
 	description:
-		'I am Hendra Sadewa, a Web Engineer based in Bekasi, Indonesia. Currently working at Stockbit as a Senior Web Engineer. Discover my projects, tech stacks, and interests.',
+		'Hello there, I am Hendra Sadewa, a Web Engineer based in Bekasi, Indonesia. Currently working at Stockbit as a Senior Web Engineer. Discover my projects, tech stacks, and interests.',
 	categories: [
 		'Hendra',
 		'Hendra Sadewa',
