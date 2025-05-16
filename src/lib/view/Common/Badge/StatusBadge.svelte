@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { StatusEnum } from '$lib/entity/common';
-	import { cn } from '$lib/utils/cssUtils';
+	import { StatusEnum } from '$lib/entity/common.entity';
+	import { cn } from '$lib/utils/css-utils';
 
 	let {
 		status = StatusEnum.UNSPECIFIED,

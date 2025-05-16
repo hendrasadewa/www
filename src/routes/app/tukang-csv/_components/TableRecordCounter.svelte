@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { numberFormatter } from '$lib/utils/formatters';
+	import { numberFormatter } from '$lib/utils/formatter-utils';
 
 	export let startIndex = 0;
 	export let endIndex = 0;

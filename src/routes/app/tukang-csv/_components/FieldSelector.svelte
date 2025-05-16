@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 	import ColumnsIcon from 'lucide-svelte/icons/columns';
 
 	import { Dropdown } from '$lib/view/Common/Dropdown';

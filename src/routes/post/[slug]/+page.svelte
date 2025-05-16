@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { SEO } from '$lib/view/SEO';
 	import { ArticleHeader, Author } from '$lib/view/Blog';
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils.js';
 
 	export let data;
 </script>

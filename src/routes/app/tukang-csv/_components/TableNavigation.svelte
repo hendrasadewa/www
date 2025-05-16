@@ -2,7 +2,7 @@
 	import ChevronLeftCircleIcon from 'lucide-svelte/icons/circle-chevron-left';
 	import ChevronRightCircleIcon from 'lucide-svelte/icons/circle-chevron-right';
 
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 	import { IconButton } from '$lib/view/Common/Button';
 
 	interface Props {

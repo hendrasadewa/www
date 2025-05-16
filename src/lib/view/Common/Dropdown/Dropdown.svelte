@@ -2,7 +2,7 @@
 	import { fade, scale } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
 
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 
 	import { Button } from '../Button';
 

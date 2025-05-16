@@ -1,6 +1,6 @@
 <script lang="ts">
 	// 3rd parties
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 
 	// common components
 	import { SEO } from '$lib/view/SEO';

@@ -1,4 +1,4 @@
-import { loadFile } from './fileUtils';
+import { loadFile } from './file-utils';
 
 export async function loadCSVFile(file: File) {
 	const text = await loadFile<string>(file);

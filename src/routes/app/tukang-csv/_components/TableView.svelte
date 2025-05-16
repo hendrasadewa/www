@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 	import { blur } from 'svelte/transition';
 
-	import type { RowData } from '$lib/entity/csv';
+	import type { RowData } from '$lib/entity/csv.entity';
 	import { BlockingLoader } from '$lib/view/Loader';
 
 	export let records: RowData[] = [];

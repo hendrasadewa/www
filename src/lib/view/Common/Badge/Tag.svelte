@@ -1,7 +1,7 @@
 <script>
 	import TagIcon from 'lucide-svelte/icons/tag';
 
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 
 	export let name = '';
 </script>

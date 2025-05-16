@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { blur } from 'svelte/transition';
 	import LoaderPinwheelIcon from 'lucide-svelte/icons/loader-pinwheel';
-	
-	import { cn } from '$lib/utils/cssUtils';
+
+	import { cn } from '$lib/utils/css-utils';
 
 	export let isLoading = false;
 	export let message = 'Loading...';

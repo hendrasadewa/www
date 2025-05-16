@@ -2,8 +2,8 @@
 	import cx from 'clsx';
 	import { blur } from 'svelte/transition';
 	import FileTextIcon from 'lucide-svelte/icons/file-text';
-	import { formatDisplayFileSize } from '$lib/utils/formatters';
-	import { cn } from '$lib/utils/cssUtils';
+	import { formatDisplayFileSize } from '$lib/utils/formatter-utils';
+	import { cn } from '$lib/utils/css-utils';
 
 	export let file: File;
 	export let index: number;

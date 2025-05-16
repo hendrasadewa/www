@@ -1,6 +1,6 @@
 <!-- IconButton.svelte -->
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 	import type { ComponentType, SvelteComponent } from 'svelte';
 
 	// Props

@@ -3,7 +3,7 @@
 	import { fade } from 'svelte/transition';
 	import XIcon from 'lucide-svelte/icons/x';
 
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 
 	interface Props {
 		title?: string;
@@ -49,7 +49,7 @@
 	<button
 		onclick={() => onDismiss(index)}
 		class={cn([
-			'absolute -right-2 -top-2',
+			'absolute -top-2 -right-2',
 			'rounded-xl border',
 			'shadow-xl backdrop-blur-xs',
 			'bg-stone-100/75 dark:bg-stone-800/70'

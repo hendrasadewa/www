@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 	import FileUploader from './FileUploader.svelte';
 	import FileItem from './FileItem.svelte';
 

@@ -1,5 +1,5 @@
 <script>
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 	let { children } = $props();
 </script>
 

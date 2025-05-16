@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 	import Notification from './Alert.svelte';
 
 	const notifs = $state([]);
@@ -9,7 +9,7 @@
 	}
 </script>
 
-<div class="fixed right-4 top-16 z-50">
+<div class="fixed top-16 right-4 z-50">
 	<div class={cn(['space-y-2'])}>
 		{#each notifs as { title, message, notifiedAt }, index}
 			<Notification {onDismiss} {index} {title} {message} {notifiedAt} />

@@ -3,7 +3,7 @@
 	import type { IconProps } from 'lucide-svelte';
 	import type { Component } from 'svelte';
 
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 
 	interface Props extends HTMLButtonAttributes {
 		iconLeft?: Component<IconProps>;
@@ -33,7 +33,7 @@
 			'transition-colors duration-150 ease-in-out',
 
 			// Focus
-			'focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2',
+			'focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:outline-hidden',
 
 			// Base state (default blue)
 			'bg-blue-500 hover:bg-blue-600 active:bg-blue-700',

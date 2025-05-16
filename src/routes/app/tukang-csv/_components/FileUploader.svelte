@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cssUtils';
+	import { cn } from '$lib/utils/css-utils';
 	import FilePlusIcon from 'lucide-svelte/icons/file-plus';
 
 	interface Props {

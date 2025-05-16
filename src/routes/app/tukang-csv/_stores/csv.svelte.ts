@@ -2,7 +2,7 @@ import Papa from 'papaparse';
 import type { ParseStepResult, Parser } from 'papaparse';
 
 import type { RowData } from '$lib/entity/csv.entity';
-import { downloadFile } from '$lib/utils/fileUtils';
+import { downloadFile } from '$lib/utils/file-utils';
 
 export class CSVStore {
 	isParsing = $state(false);
