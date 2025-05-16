@@ -1,4 +1,4 @@
-import type { RowData } from '$lib/types/csv';
+import type { RowData } from '$lib/entity/csv.entity';
 
 export class TableStore {
 	totalRecord = $state(0);

@@ -1,3 +1,15 @@
+export interface Metadata {
+	title: string;
+	description: string;
+	categories: string[];
+	headerImageAlt: string;
+	headerImageURL: string;
+	published: boolean;
+	url: string;
+	author: string;
+	email: string;
+}
+
 export interface APIResponse<T = unknown> {
 	message: string;
 	data: T;

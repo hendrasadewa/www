@@ -5,8 +5,8 @@
 	import InfoIcon from 'lucide-svelte/icons/info';
 	import TableIcon from 'lucide-svelte/icons/table';
 
-	import { AppAvatar } from '$lib/common/components/Avatar';
-	import { Dropdown } from '$lib/common/components/Dropdown';
+	import { AppAvatar } from '$lib/view/Common/Avatar';
+	import { Dropdown } from '$lib/view/Common/Dropdown';
 	import socialInfo from '$lib/configs/socialInfo';
 
 	import NavLink from './NavLink.svelte';

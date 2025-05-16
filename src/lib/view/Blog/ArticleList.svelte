@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Post } from '$lib/types/post';
+	import type { Post } from '$lib/entity/blog.entity';
 	import ArticleItem from './ArticleItem.svelte';
 
 	export let posts: Post[] = [];

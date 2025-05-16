@@ -1,4 +1,4 @@
-import type { WorkerResponse } from '$lib/types/common';
+import type { WorkerResponse } from '$lib/entity/common.entity';
 
 export async function loadFile<T = string | ArrayBuffer | null>(file: File) {
 	return new Promise<T>((resolve, reject) => {

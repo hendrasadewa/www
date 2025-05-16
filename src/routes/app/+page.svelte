@@ -1,6 +1,6 @@
 <script lang="ts">
 	import TableIcon from 'lucide-svelte/icons/table';
-	import { SEO } from '$lib/components/features/SEO';
+	import { SEO } from '$lib/view/SEO';
 </script>
 
 <SEO

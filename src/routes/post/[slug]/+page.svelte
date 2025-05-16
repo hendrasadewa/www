@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { SEO } from '$lib/components/features/SEO';
-	import { ArticleHeader, Author } from '$lib/components/features/Blog';
+	import { SEO } from '$lib/view/SEO';
+	import { ArticleHeader, Author } from '$lib/view/Blog';
 	import { cn } from '$lib/utils/cssUtils';
 
 	export let data;

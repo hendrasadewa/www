@@ -3,12 +3,12 @@
 	import HeartCrackIcon from 'lucide-svelte/icons/heart-crack';
 	import LoaderIcon from 'lucide-svelte/icons/loader';
 
-	import { postHandlers } from '$lib/services/atproto/handlers/posts';
+	import bskInteractor from '$lib/interactor/bsky.interactor';
 
 	export let postURI = '';
 </script>
 
-{#await postHandlers.getPostByURI(postURI)}
+{#await bskInteractor.getPostByURI(postURI)}
 	<LoaderIcon size="12" class="animate-spin" />
 {:then post}
 	<div class="flex items-center gap-1">

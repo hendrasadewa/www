@@ -3,7 +3,7 @@
 	import { cn } from '$lib/utils/cssUtils';
 
 	// common components
-	import { SEO } from '$lib/components/features/SEO';
+	import { SEO } from '$lib/view/SEO';
 	import FieldSelector from './_components/FieldSelector.svelte';
 
 	// components

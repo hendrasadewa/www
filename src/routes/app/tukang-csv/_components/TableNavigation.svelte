@@ -3,7 +3,7 @@
 	import ChevronRightCircleIcon from 'lucide-svelte/icons/circle-chevron-right';
 
 	import { cn } from '$lib/utils/cssUtils';
-	import { IconButton } from '$lib/common/components/Button';
+	import { IconButton } from '$lib/view/Common/Button';
 
 	interface Props {
 		onPrevClick(): void;

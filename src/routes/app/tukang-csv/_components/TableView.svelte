@@ -2,8 +2,8 @@
 	import { cn } from '$lib/utils/cssUtils';
 	import { blur } from 'svelte/transition';
 
-	import type { RowData } from '$lib/types/csv';
-	import { BlockingLoader } from '$lib/components/features/Loader';
+	import type { RowData } from '$lib/entity/csv';
+	import { BlockingLoader } from '$lib/view/Loader';
 
 	export let records: RowData[] = [];
 	export let fields: string[] = [];
@@ -25,7 +25,7 @@
 		>
 			<tr>
 				{#each fields as field}
-					<th class="text-nowrap border p-2">{field}</th>
+					<th class="border p-2 text-nowrap">{field}</th>
 				{/each}
 			</tr>
 		</thead>
@@ -35,7 +35,7 @@
 					{#each fields as field}
 						<td
 							class={cn([
-								'text-nowrap border px-3 py-2 ',
+								'border px-3 py-2 text-nowrap ',
 								'hover:bg-stone-100 dark:hover:bg-stone-600',
 								'hover:shadow-inner'
 							])}

@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import siteInfo from '$lib/configs/siteInfo';
+	import metadata from '$lib/configs/site.config';
 
-	export let title: string = siteInfo.defaultTitle;
-	export let description: string = siteInfo.defaultDescription;
-	export let date: string = '';
-	export let categories: string[] = [];
-	export let headerImageAlt: string = '';
-	export let headerImageURL: string = '';
-	export const published: boolean = false;
-	export let url: string = '';
+	let {
+		title = metadata.title,
+		description = metadata.description,
+		categories = metadata.categories,
+		headerImageAlt = metadata.headerImageAlt,
+		headerImageURL = metadata.headerImageURL,
+		url = metadata.url,
+		date = ''
+	} = $props();
 
 	const updateThemeColor = () => {
 		const metaThemeColor = document.querySelector('meta[name="theme-color"]');
@@ -43,7 +44,7 @@
 	<!-- Page information -->
 	<meta name="description" content={description} />
 	<meta name="keywords" content={categories.join(', ')} />
-	<meta name="author" content={siteInfo.author} />
+	<meta name="author" content={metadata.author} />
 	<meta name="date" content={date} />
 
 	<!-- Open Graph / Facebook -->

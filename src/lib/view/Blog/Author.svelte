@@ -1,5 +1,5 @@
 <script>
-	import siteInfo from '$lib/configs/siteInfo';
+	import metadata from '$lib/configs/site.config';
 </script>
 
 <div class="flex items-center gap-4">
@@ -11,9 +11,9 @@
 		/>
 	</a>
 	<div class="flex flex-col gap-1">
-		<span class="text-lg">Written by {siteInfo.author}</span>
+		<span class="text-lg">Written by {metadata.author}</span>
 		<span class="text-stone-600 dark:text-stone-400">
-			{siteInfo.defaultDescription}
+			{metadata.defaultDescription}
 		</span>
 	</div>
 </div>

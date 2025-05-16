@@ -2,11 +2,8 @@
 	import PackageOpenIcon from 'lucide-svelte/icons/package-open';
 
 	import { page } from '$app/stores';
-	import { SEO } from '$lib/components/features/SEO';
-	import {
-		ArticleList,
-		ArticleSearchInput
-	} from '$lib/components/features/Blog/index.js';
+	import { SEO } from '$lib/view/SEO';
+	import { ArticleList, ArticleSearchInput } from '$lib/view/Blog';
 
 	const keyword = $page.url.searchParams.get('keyword');
 	let { data } = $props();

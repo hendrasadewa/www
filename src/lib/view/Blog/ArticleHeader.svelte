@@ -1,11 +1,11 @@
 <script lang="ts">
 	import PencilIcon from 'lucide-svelte/icons/pencil';
 
-	import siteInfo from '$lib/configs/siteInfo';
+	import metadata from '$lib/configs/site.config';
 
+	import { BskyLikeCount } from '../Bsky';
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';
 	import ArticleTags from './ArticleTags.svelte';
-	import { BskyLikeCount } from '../Bsky';
 
 	export let headerImageURL: string = '';
 	export let headerImageAlt: string = '';
@@ -36,7 +36,7 @@
 					href="https://bsky.app/profile/hendrasadewa.com"
 					class="md:text-md text-xs"
 				>
-					{siteInfo.author}
+					{metadata.author}
 				</a>
 			</div>
 			{#if bskyPostURI}

@@ -1,4 +1,4 @@
-import type { Post } from '$lib/types/post';
+import type { Post } from '$lib/entity/blog.entity';
 
 export async function load({ fetch }) {
 	const response = await fetch('/api/posts');

@@ -1,6 +1,6 @@
 // Read a file and return the content as a string
 
-import type { WorkerResponse } from '$lib/types/common';
+import type { WorkerResponse } from '$lib/entity/common.entity';
 
 // This is a worker so it can be used in the background
 self.onmessage = async (e: MessageEvent) => {

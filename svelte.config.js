@@ -12,7 +12,7 @@ const config = {
 			dashes: 'oldschool',
 		},
 		layout: {
-			article: './src/lib/components/features/Blog/ArticleLayout.svelte'
+			article: './src/lib/view/Blog/ArticleLayout.svelte'
 		}
 	})],
 	kit: {

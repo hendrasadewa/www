@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Tag } from '$lib/common/components/Badge';
+	import { Tag } from '$lib/view/Common/Badge';
 
 	export let categories: string[] = [];
 </script>

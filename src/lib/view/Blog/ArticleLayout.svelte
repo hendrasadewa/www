@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SEO } from '$lib/components/features/SEO';
+	import { SEO } from '$lib/view/SEO';
 	import ArticleHeader from './ArticleHeader.svelte';
 
 	let {

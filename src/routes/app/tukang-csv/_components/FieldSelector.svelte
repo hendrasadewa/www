@@ -2,7 +2,7 @@
 	import { cn } from '$lib/utils/cssUtils';
 	import ColumnsIcon from 'lucide-svelte/icons/columns';
 
-	import { Dropdown } from '$lib/common/components/Dropdown';
+	import { Dropdown } from '$lib/view/Common/Dropdown';
 
 	interface Props {
 		fields: string[];

@@ -2,7 +2,7 @@
 	import FileJSONIcon from 'lucide-svelte/icons/file-json-2';
 	import FileTextIcon from 'lucide-svelte/icons/file-text';
 
-	import IconButton from '$lib/common/components/Button/IconButton.svelte';
+	import IconButton from '$lib/view/Common/Button/IconButton.svelte';
 
 	export let onExportJSONClick = () => {};
 	export let onExportTextClick = () => {};

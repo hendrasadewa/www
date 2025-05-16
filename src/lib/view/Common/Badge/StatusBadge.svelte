@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { StatusEnum } from '$lib/types/common';
+	import { StatusEnum } from '$lib/entity/common';
 	import { cn } from '$lib/utils/cssUtils';
 
 	let {
