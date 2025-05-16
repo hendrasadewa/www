@@ -7,7 +7,7 @@
 
 	import { AppAvatar } from '$lib/commons/components/Avatar';
 	import { Dropdown } from '$lib/commons/components/Dropdown';
-	import socialInfo from '$lib/configs/socialInfo';
+	import { socialInfo } from '$lib/configs/site.config';
 
 	import NavLink from './NavLink.svelte';
 </script>

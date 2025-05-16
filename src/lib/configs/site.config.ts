@@ -1,7 +1,7 @@
 import { dev } from '$app/environment';
-import type { Metadata } from '$lib/entity/common.entity';
+import type { Metadata, SocialInfo } from '$lib/commons/entity/site.entity';
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
 	title: 'Hendra Sadewa - Web Engineer | Senior Web Developer in Indonesia',
 	description:
 		'I am Hendra Sadewa, a Web Engineer based in Bekasi, Indonesia. Currently working at Stockbit as a Senior Web Engineer. Discover my projects, tech stacks, and interests.',
@@ -19,5 +19,10 @@ const metadata: Metadata = {
 	author: 'Hendra Sadewa',
 	email: 'me@hendrasadewa.com'
 };
+
+export const socialInfo: Array<SocialInfo> = [
+	{ name: 'bsky', url: 'https://bsky.app/profile/hendrasadewa.com' },
+	{ name: 'linkedIn', url: 'https://id.linkedin.com/in/hendra-sadewa' }
+];
 
 export default metadata;

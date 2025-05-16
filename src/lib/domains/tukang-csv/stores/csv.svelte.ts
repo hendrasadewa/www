@@ -1,7 +1,7 @@
 import Papa from 'papaparse';
 import type { ParseStepResult, Parser } from 'papaparse';
 
-import type { RowData } from '$lib/entity/csv.entity';
+import type { RowData } from '$lib/commons/entity/csv.entity';
 import { downloadFile } from '$lib/commons/utils/file-utils';
 
 export class CSVStore {

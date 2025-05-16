@@ -1,6 +1,6 @@
 import type { SvelteComponent } from 'svelte';
 
-import type { Post, SearchPostParams } from '$lib/entity/blog.entity';
+import type { Post, SearchPostParams } from '$lib/commons/entity/blog.entity';
 
 const blogRepository = {
 	handleGetContents: (params: SearchPostParams) => {
