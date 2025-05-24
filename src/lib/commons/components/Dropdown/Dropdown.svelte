@@ -33,7 +33,7 @@
 <svelte:window on:click={handleClickOutside} />
 
 <div class="relative" bind:this={container}>
-	<Button onclick={toggleExpand} {disabled} class="bg-none">
+	<Button onclick={toggleExpand} {disabled}>
 		{@render toggle()}
 	</Button>
 

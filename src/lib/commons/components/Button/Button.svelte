@@ -23,10 +23,7 @@
 	class={cn([
 		// Outer shell
 		'relative inline-flex items-center justify-center rounded-md',
-		'bg-linear-to-b from-white/40 to-white/5',
-		'shadow-[inset_0_1px_0_rgba(255,255,255,0.4),0_2px_5px_rgba(0,0,0,0.2)]',
 		'transition active:translate-y-px active:shadow-inner',
-
 		// Disabled
 		rest.disabled && 'pointer-events-none cursor-not-allowed opacity-50'
 	])}
@@ -44,14 +41,19 @@
 			// Base state (default blue)
 			variant == 'solid' &&
 				'bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700',
-			variant == 'ghost' && 'text-blue-500',
-
-			// Disabled inner state (no hover or active)
-			rest.disabled && 'cursor-not-allowed bg-gray-400! text-white!'
+			variant == 'ghost' &&
+				'bg-transparent hover:bg-gray-200 active:bg-blue-200'
 		])}
 	>
 		{#if IconLeft}
-			<IconLeft size="13" />
+			<IconLeft
+				size="13"
+				className={cn([
+					rest.disabled
+						? 'text-blue-200 dark:text-blue-100/40'
+						: 'text-blue-500'
+				])}
+			/>
 		{/if}
 		{@render children?.()}
 	</div>
