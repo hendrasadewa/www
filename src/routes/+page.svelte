@@ -13,7 +13,7 @@
 
 <div class="mx-auto w-full max-w-(--breakpoint-md)">
 	<div class="space-y-8 pb-8">
-		<section id="highlight" class="mt-4 space-y-4">
+		<section id="highlight" class="mt-4 space-y-4 p-4">
 			<ArticleHeader
 				headerImageURL={highlighted.headerImageURL}
 				headerImageAlt={highlighted.headerImageAlt}

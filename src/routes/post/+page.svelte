@@ -8,8 +8,16 @@
 		ArticleSearchInput
 	} from '$lib/domains/blog/components/index';
 
-	const keyword = page.url.searchParams.get('keyword');
+	const keyword = $derived(page.url.searchParams.get('keyword'));
+
 	let { data } = $props();
+
+	let title = $derived.by(() => {
+		if (keyword) {
+			return `Artikel dengan kata kunci "${keyword}"`;
+		}
+		return 'Semua Artikel';
+	});
 </script>
 
 <SEO
@@ -19,8 +27,14 @@
 />
 
 <article class="px-4 sm:px-0">
+	<header class="py-4">
+		<h1 class="font-display py-1 text-4xl">
+			{title}<sup class="font-mono text-sm">({data.posts.length})</sup>
+		</h1>
+		<div><ArticleSearchInput /></div>
+	</header>
+
 	<section class="space-y-4 py-2">
-		<ArticleSearchInput />
 		{#if data.posts.length > 0}
 			<ArticleList posts={data.posts} />
 		{:else if data.posts.length === 0 && keyword}

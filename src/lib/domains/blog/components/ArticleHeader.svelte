@@ -18,7 +18,7 @@
 </script>
 
 <article
-	class="flex flex-col-reverse items-center justify-between gap-4 rounded-lg bg-none px-4 py-6 shadow md:flex-row md:bg-stone-100 md:px-6 dark:bg-stone-700"
+	class="flex flex-col-reverse items-center justify-between gap-4 rounded-lg bg-stone-100 bg-none px-4 py-6 md:flex-row md:px-6 dark:bg-stone-700"
 >
 	<header class="flex w-full flex-col justify-between gap-4 md:min-h-64">
 		<ArticleTags {categories} />

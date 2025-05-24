@@ -1,20 +1,46 @@
 <script lang="ts">
-	import type { Post } from '$lib/entity/blog.entity';
+	import { goto } from '$app/navigation';
+	import type { Post } from '$lib/commons/entity/blog.entity';
+	import { cn } from '$lib/commons/utils/css-utils';
+
 	import ArticlePublishedDate from './ArticlePublishedDate.svelte';
+	import ArticleTags from './ArticleTags.svelte';
 
 	export let post: Post;
+
+	function onElementClick() {
+		goto(`/post/${post.slug}`);
+	}
 </script>
 
-<article>
-	<a class="" href="/post/{post.slug}">
-		<header class="flex flex-col items-center justify-between gap-3">
+<article class="min-h-42">
+	<div class="flex h-full justify-between">
+		<div class="flex h-full w-full flex-col justify-between gap-3">
+			<header>
+				<a href="/post/{post.slug}" class="flex flex-col gap-3">
+					<h2 class="font-display text-2xl md:text-3xl">
+						{post.title}
+					</h2>
+					<h3 class="text-md max-w-5/6 text-gray-500">{post.description}</h3>
+				</a>
+			</header>
+			<footer>
+				<ArticlePublishedDate publishedDate={post.date} />
+			</footer>
+		</div>
+		<button
+			class="flex h-full min-w-40 cursor-pointer items-center justify-center"
+			type="button"
+			on:click={onElementClick}
+		>
 			<img
 				src={post.headerImageURL}
 				alt={post.headerImageAlt}
-				class="h-40 w-40 rounded-lg shadow-sm transition-all hover:rotate-6 hover:shadow-lg md:h-48 md:w-48"
+				class={cn([
+					'transition-all hover:rotate-6 hover:shadow-lg',
+					'h-42 w-42 rounded-lg shadow-sm'
+				])}
 			/>
-			<h3 class="text-center">{post.title}</h3>
-			<ArticlePublishedDate publishedDate={post.date} />
-		</header>
-	</a>
+		</button>
+	</div>
 </article>
