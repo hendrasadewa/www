@@ -41,7 +41,7 @@
 <form onsubmit={handleSubmitSearch} class="rounded-full bg-transparent">
 	<label
 		id="search"
-		class="flex items-center gap-2 rounded-xl bg-stone-100 px-2 py-1"
+		class="flex items-center gap-2 rounded-xl bg-stone-100 px-2 py-1 dark:bg-stone-700"
 	>
 		<SearchIcon size="16" />
 		<input

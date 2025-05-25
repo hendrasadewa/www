@@ -21,7 +21,9 @@
 					<h2 class="font-display text-2xl md:text-3xl">
 						{post.title}
 					</h2>
-					<h3 class="text-md max-w-5/6 text-gray-500">{post.description}</h3>
+					<h3 class="text-md max-w-5/6 text-gray-500 dark:text-gray-300">
+						{post.description}
+					</h3>
 				</a>
 			</header>
 			<footer>
