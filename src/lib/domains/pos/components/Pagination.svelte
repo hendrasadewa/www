@@ -11,7 +11,7 @@
 	let pageIndexes = $derived([...new Array(totalPage)]);
 </script>
 
-<nav class="border-t border-gray-200 py-2">
+<nav class="border-t border-stone-200 py-2">
 	<ul class="flex w-full items-center justify-center gap-2">
 		{#each pageIndexes as _, index}
 			<PaginationButton {index} {currentPage} onClick={onPageClick} />

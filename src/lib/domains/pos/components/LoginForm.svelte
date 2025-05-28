@@ -8,13 +8,13 @@
 <form class="flex w-[420px] flex-col gap-3" method="POST">
 	<header>
 		<h1 class="text-xl">Welcome back</h1>
-		<p class="text-gray-500">Please login with your account to continue</p>
+		<p class="text-stone-500">Please login with your account to continue</p>
 	</header>
 	<section
-		class="flex border-collapse flex-col gap-2 rounded-xl border border-gray-200"
+		class="flex border-collapse flex-col gap-2 rounded-xl border border-stone-200"
 	>
-		<label for="username" class="border-b border-gray-200 px-2 py-1">
-			<span class="text-sm text-gray-500"> Username or Email </span>
+		<label for="username" class="border-b border-stone-200 px-2 py-1">
+			<span class="text-sm text-stone-500"> Username or Email </span>
 			<input
 				id="username"
 				type="text"
@@ -24,7 +24,7 @@
 			/>
 		</label>
 		<label for="password" class="px-2 py-1">
-			<span class="text-sm text-gray-500">Password</span>
+			<span class="text-sm text-stone-500">Password</span>
 			<input
 				id="password"
 				type="password"

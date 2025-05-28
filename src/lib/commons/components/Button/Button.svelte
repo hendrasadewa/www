@@ -42,7 +42,7 @@
 			variant == 'solid' &&
 				'bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700',
 			variant == 'ghost' &&
-				'bg-transparent hover:bg-gray-200 active:bg-blue-200'
+				'bg-transparent hover:bg-stone-200 active:bg-blue-200'
 		])}
 	>
 		{#if IconLeft}

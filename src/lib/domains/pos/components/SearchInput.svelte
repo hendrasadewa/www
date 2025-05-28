@@ -9,7 +9,7 @@
 		class={cn([
 			'w-full',
 			'py-2',
-			'border-b border-gray-200 focus:border-gray-800',
+			'border-b border-stone-200 focus:border-stone-800',
 			'focus:outline-none',
 			'placeholder:font-display'
 		])}

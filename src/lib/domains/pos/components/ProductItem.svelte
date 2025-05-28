@@ -7,7 +7,7 @@
 
 <article class="flex w-full flex-col gap-1 rounded">
 	<header>
-		<p class="text-sm text-gray-500 underline dark:text-gray-300">
+		<p class="text-sm text-stone-500 underline dark:text-stone-300">
 			{product.brand || 'FakeMart'}
 		</p>
 		<h1>{product.title}</h1>

@@ -12,7 +12,7 @@
 
 	let dotBgColor = $derived(
 		{
-			[StatusEnum.UNSPECIFIED]: 'bg-gray-400',
+			[StatusEnum.UNSPECIFIED]: 'bg-stone-400',
 			[StatusEnum.INFO]: 'bg-blue-400',
 			[StatusEnum.SUCCESS]: 'bg-green-400',
 			[StatusEnum.WARNING]: 'bg-yellow-400',

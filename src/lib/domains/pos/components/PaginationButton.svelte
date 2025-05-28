@@ -17,7 +17,7 @@
 		'cursor-pointer',
 		'rounded',
 		currentPage == index + 1
-			? 'bg-gray-800/70 text-white dark:bg-white/70 dark:text-gray-800'
+			? 'bg-stone-800/70 text-white dark:bg-white/70 dark:text-stone-800'
 			: 'bg-none'
 	])}
 >
