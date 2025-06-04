@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 		'senior web developer'
 	],
 	headerImageAlt: 'Hendra Sadewa portrait',
-	headerImageURL: '/img/me.webp',
+	headerImageURL: '/img/me-2.webp',
 	published: true,
 	url: dev ? 'http://localhost:5173/' : 'https://hendrasadewa.com/',
 	author: 'Hendra Sadewa',
