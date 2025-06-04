@@ -1,8 +1,9 @@
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 
 import { mdsvex } from 'mdsvex';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import adapter from '@sveltejs/adapter-cloudflare';
+import { fileURLToPath } from 'node:url';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,7 +15,7 @@ const config = {
 			dashes: 'oldschool',
 		},
 		layout: {
-			article: join(import.meta.dirname, './src/lib/domains/Blog/components/ArticleLayout.svelte')
+			article: dirname(fileURLToPath(import.meta.url)) + '/src/lib/domains/Blog/components/ArticleLayout.svelte'
 		}
 	})],
 	kit: {
