@@ -1,11 +1,3 @@
-import { loadFile } from './file-utils';
-
-export async function loadCSVFile(file: File) {
-	const text = await loadFile<string>(file);
-
-	return text.split('\n').map((line) => line.split(','));
-}
-
 export function copyToClipboard(text: string) {
 	if (!navigator) {
 		return;
