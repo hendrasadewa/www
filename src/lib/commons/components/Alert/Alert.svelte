@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { fade } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import XIcon from 'lucide-svelte/icons/x';
 
 	import { cn } from '$lib/commons/utils/css-utils';
@@ -35,7 +35,6 @@
 </script>
 
 <article
-	in:fade
 	class={cn([
 		'relative',
 		'flex items-center justify-between gap-1',
@@ -45,6 +44,7 @@
 		'shadow-xl backdrop-blur-xs',
 		'bg-stone-100/75 dark:bg-stone-800/70'
 	])}
+	transition:fly
 >
 	<button
 		onclick={() => onDismiss(index)}

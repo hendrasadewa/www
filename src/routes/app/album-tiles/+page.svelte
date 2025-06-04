@@ -14,6 +14,22 @@
 
 	pageStore.onLoadAlbum(data.albums);
 
+	function onShareClick() {
+		page.url.searchParams.set('code', pageStore.code);
+		navigator.clipboard.writeText(page.url.toString());
+		globalStore.notifyUser(
+			'Link Copied',
+			'The current url has been copied to your clipboard, now you can share the link into your social media accounts'
+		);
+
+		setTimeout(() => {
+			const target = globalStore.notifications.length - 1;
+			if (globalStore.notifications.length >= target) {
+				globalStore.dismissNotification(target);
+			}
+		}, 2500);
+	}
+
 	onMount(async () => {
 		const code = page.url.searchParams.get('code');
 		if (!code) {
@@ -36,15 +52,10 @@
 			<h1 class="font-display text-center text-4xl">Top 10 Album</h1>
 			<p>pick your top 10 albums</p>
 		</div>
-		<div>
-			<IconButton
-				icon={ShareIcon}
-				onClick={() => {
-					page.url.searchParams.set('code', pageStore.code);
-					navigator.clipboard.writeText(page.url.toString());
-					alert('url was copied to your clipboard');
-				}}
-			/>
+		<div class="mt-4 flex items-center justify-center">
+			<IconButton icon={ShareIcon} onClick={onShareClick} iconClass="mr-2">
+				Share
+			</IconButton>
 		</div>
 	</header>
 	<AlbumTile
