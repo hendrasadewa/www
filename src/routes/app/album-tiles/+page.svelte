@@ -49,6 +49,7 @@
 	categories={['Apps', 'Music']}
 	description="Pick your Top 10 Album, and share it to your friends using this Top 10 album tile maker"
 	title="Top 10 Album"
+	headerImageURL="/img/concert.webp"
 />
 
 <div
