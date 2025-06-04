@@ -6,7 +6,4 @@
 	<li>
 		<NavLink href="/post">Blog</NavLink>
 	</li>
-	<li>
-		<NavLink href="/about">About</NavLink>
-	</li>
 </ul>

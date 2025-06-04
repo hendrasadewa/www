@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex w-full items-center gap-4">
-	<a href="/about" class="flex w-1/4 items-center justify-center">
+	<a href="/" class="flex w-1/4 items-center justify-center">
 		<img
 			src="/img/me-2.webp"
 			alt="author"

@@ -31,11 +31,6 @@
 						<AppAvatar name="Apps" icon={BoxesIcon} />
 					</NavLink>
 				</li>
-				<li>
-					<NavLink href="/about">
-						<AppAvatar name="About" icon={InfoIcon} />
-					</NavLink>
-				</li>
 			</ul>
 		</section>
 		<section id="applications">
