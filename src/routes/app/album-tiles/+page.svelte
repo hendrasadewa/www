@@ -1,74 +1,58 @@
 <script lang="ts">
-	import { Button } from '$lib/commons/components/Button';
-	import { cn } from '$lib/commons/utils/css-utils.js';
-
+	import IconButton from '$lib/commons/components/Button/IconButton.svelte';
+	import { globalStore } from '$lib/commons/stores/global.svelte.js';
 	import AlbumFinder from '$lib/domains/lastfm/components/AlbumFinder.svelte';
 	import AlbumTile from '$lib/domains/lastfm/components/AlbumTile.svelte';
-	import type { Album } from '$lib/domains/lastfm/entity/album.entity';
+	import Modal from '$lib/domains/lastfm/components/Modal.svelte';
+	import ShareIcon from 'lucide-svelte/icons/share';
 
-	import { XIcon } from 'lucide-svelte';
-	import { blur, scale } from 'svelte/transition';
+	import { pageStore } from './page.svelte.js';
+	import { page } from '$app/state';
 
 	const { data } = $props();
 
-	let innerWidth = $state(0);
-	let isFinderOpen = $state(false);
-	let rowCount = $state(3);
-	let colCount = $state(3);
-	let isMobile = $derived(innerWidth <= 480);
-
-	let tiles = $state(data.albums);
-	let selectedIndex: number | null = $state(null);
-
-	function handleAlbumClick(album: Album) {
-		if (selectedIndex == null) {
-			return;
-		}
-
-		tiles[selectedIndex] = album;
-		isFinderOpen = false;
-		selectedIndex = null;
-	}
-
-	function handleTileClick(_: Album, index: number) {
-		selectedIndex = index;
-		isFinderOpen = true;
-	}
-
-	function closeFinder() {
-		isFinderOpen = false;
-	}
+	pageStore.onLoadAlbum(data.albums);
 </script>
 
-<svelte:window bind:innerWidth />
-
-<div class={cn(['relative'])}>
-	<header>
-		<h1 class="font-display text-center text-2xl">Album Tilemaker</h1>
-	</header>
-	<!-- Tiles -->
-	<div class="p-4">
-		<AlbumTile albums={tiles} onClick={handleTileClick} {rowCount} {colCount} />
-	</div>
-	<!-- Search Modal -->
-	{#if isFinderOpen}
-		<div
-			class={cn([
-				'absolute top-0 z-40 h-full min-h-screen w-full p-4',
-				'bg-stone-800/65',
-				'flex items-start justify-center'
-			])}
-			transition:scale
-		>
-			<div
-				class="flex w-full flex-col rounded-xl bg-stone-700/90 shadow-xl md:w-3/4"
-			>
-				<div class="flex items-center justify-between px-6 py-2">
-					<h2>Find Album</h2>
-					<Button onclick={closeFinder}><XIcon /></Button>
-				</div>
-				<AlbumFinder onAlbumClick={handleAlbumClick} {isMobile} />
-			</div>
+<div
+	class="flex min-h-[calc(100vh-36px)] flex-col items-center justify-center p-4"
+>
+	<header class="p-4">
+		<div>
+			<h1 class="font-display text-center text-4xl">Top 10 Album</h1>
+			<p>pick your top 10 albums</p>
 		</div>
-	{/if}
+		<div>
+			<IconButton
+				icon={ShareIcon}
+				onClick={() => {
+					page.url.searchParams.set('code', pageStore.code);
+					navigator.clipboard.writeText(page.url.toString());
+					alert('url was copied to your clipboard');
+				}}
+			/>
+		</div>
+	</header>
+	<AlbumTile
+		albums={pageStore.albums}
+		onClick={pageStore.onAlbumTileClick}
+		colCount={globalStore.isMobile ? 2 : 5}
+		rowCount={globalStore.isMobile ? 5 : 2}
+	/>
 </div>
+
+<Modal
+	onCloseClick={pageStore.onCloseFinder}
+	isVisible={pageStore.isFinderOpen}
+>
+	{#snippet title()}
+		<div>
+			<span>Replace:</span>
+			<span class="font-bold">{pageStore.selectedAlbum?.name}</span>
+		</div>
+	{/snippet}
+	<AlbumFinder
+		onAlbumClick={pageStore.onAlbumClick}
+		isMobile={globalStore.isMobile}
+	/>
+</Modal>

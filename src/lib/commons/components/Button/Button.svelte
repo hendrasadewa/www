@@ -21,6 +21,7 @@
 <button
 	disabled={rest.disabled}
 	class={cn([
+		'cursor-pointer',
 		// Outer shell
 		'relative inline-flex items-center justify-center rounded-md',
 		'transition active:translate-y-px active:shadow-inner',
@@ -42,7 +43,7 @@
 			variant == 'solid' &&
 				'bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700',
 			variant == 'ghost' &&
-				'bg-transparent hover:bg-stone-200 active:bg-blue-200'
+				'bg-transparent hover:bg-stone-200 active:bg-blue-200 dark:hover:bg-stone-700'
 		])}
 	>
 		{#if IconLeft}

@@ -5,40 +5,17 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 
-	let keywordParams = $derived(page.url.searchParams.get('keyword'));
+	// state
 	let keyword = $state('');
 
-	$effect(() => {
-		if (keywordParams) {
-			keyword = keywordParams.toString();
-		}
-	});
-
-	function handleKeywordChanged() {
-		if (!keyword) {
-			page.url.searchParams.delete('keyword');
-		} else {
-			page.url.searchParams.set('keyword', keyword);
-		}
-
-		goto(['/post?', page.url.searchParams].join(''), { invalidateAll: true });
-	}
-	function handleSubmitSearch(
-		e: SubmitEvent & {
-			currentTarget: EventTarget & HTMLFormElement;
-		}
-	) {
-		e.preventDefault();
-		handleKeywordChanged();
-	}
-
+	// event handlers
 	function handleResetClick() {
-		keyword = '';
-		handleKeywordChanged();
+		page.url.searchParams.delete('keyword');
+		goto(['/post', page.url.searchParams].join(''), { invalidateAll: true });
 	}
 </script>
 
-<form onsubmit={handleSubmitSearch} class="rounded-full bg-transparent">
+<form action="/post" class="rounded-full bg-transparent">
 	<label
 		id="search"
 		class="flex items-center gap-2 rounded-xl bg-stone-100 px-2 py-1 dark:bg-stone-700"

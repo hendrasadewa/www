@@ -1,16 +1,26 @@
-<script lang="ts">
+<script>
 	import { AlertList } from '$lib/commons/components/Alert';
 	import SiteHeader from '$lib/commons/components/SiteHeader';
 
 	import '../app.css';
+	import { globalStore } from '$lib/commons/stores/global.svelte';
 
-	let { children } = $props();
+	// props
+	const { children } = $props();
+
+	let innerWidth = $state(0);
+
+	$effect(() => {
+		globalStore.setWidthChange(innerWidth);
+	});
 </script>
+
+<svelte:window bind:innerWidth />
 
 <div class="relative flex flex-col">
 	<AlertList />
 	<SiteHeader />
-	<main class="flex-1">
+	<div class="flex-1">
 		{@render children()}
-	</main>
+	</div>
 </div>

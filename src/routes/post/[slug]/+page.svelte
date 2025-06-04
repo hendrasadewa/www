@@ -3,7 +3,10 @@
 	import { ArticleHeader, Author } from '$lib/domains/blog/components';
 	import { cn } from '$lib/commons/utils/css-utils';
 
-	export let data;
+	const { data } = $props();
+
+	// derived
+	let Content = $derived(data.content);
 </script>
 
 <SEO
@@ -45,10 +48,10 @@
 			'dark:prose-invert'
 		])}
 	>
-		<svelte:component this={data.content} />
+		<Content />
 	</section>
 
-	<div class="my-8 flex w-full justify-center">
+	<div class="mx-auto my-8">
 		<Author />
 	</div>
 </article>

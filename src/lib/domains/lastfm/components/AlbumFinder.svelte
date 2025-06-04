@@ -1,13 +1,15 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	import SearchInput from '$lib/commons/components/SearchInput.svelte';
 	import { getRandomChar } from '$lib/commons/utils/string.utils';
-	import { onMount } from 'svelte';
+	import { cn } from '$lib/commons/utils/css-utils';
 
 	import type { Album } from '../entity/album.entity';
 	import { albumRepository } from '../repository/album.repository';
+	import type { ImageSize } from '../entity/common.entity';
 
 	import AlbumTile from './AlbumTile.svelte';
-	import type { ImageSize } from '../entity/common.entity';
 
 	interface Props {
 		albums?: Album[];
@@ -49,12 +51,14 @@
 	<div>
 		<SearchInput onSubmit={loadAlbums} placeholder="Find album" />
 	</div>
-	<AlbumTile
-		onClick={onAlbumClick}
-		{size}
-		{rowCount}
-		{colCount}
-		{albums}
-		{isLoading}
-	/>
+	<div class={cn(['overflow-y-scroll', 'max-h-[400px]'])}>
+		<AlbumTile
+			onClick={onAlbumClick}
+			{size}
+			{rowCount}
+			{colCount}
+			{albums}
+			{isLoading}
+		/>
+	</div>
 </div>

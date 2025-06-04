@@ -1,13 +1,13 @@
 <script lang="ts">
-	import { blur } from 'svelte/transition';
 	import type { Album } from '../entity/album.entity';
 	import type { ImageSize } from '../entity/common.entity';
-	import AlbumDisplay from './AlbumDisplay.svelte';
+	import AlbumShowcase from './AlbumShowcase.svelte';
+	import AlbumShowcaseLoader from './AlbumShowcaseLoader.svelte';
 
 	interface Props {
-		colCount: number;
-		rowCount: number;
-		albums: Album[];
+		colCount?: number;
+		rowCount?: number;
+		albums?: Album[];
 		onClick(album: Album, index: number): void;
 		size?: ImageSize;
 		isLoading?: boolean;
@@ -23,7 +23,7 @@
 	}: Props = $props();
 </script>
 
-<div class="flex items-center justify-center">
+<div class="flex h-full items-center justify-center">
 	<div
 		class="grid items-start justify-center gap-2"
 		style={`
@@ -33,17 +33,16 @@
 	>
 		{#if isLoading}
 			{#each Array(8) as _, i}
-				<AlbumDisplay {isLoading} />
+				<AlbumShowcaseLoader />
 			{/each}
 		{:else}
 			{#each albums as album, index}
-				<AlbumDisplay
+				<AlbumShowcase
 					{size}
 					albumArts={album.albumArts}
 					artist={album.artist}
 					name={album.name}
 					onAlbumClick={() => onClick(album, index)}
-					{isLoading}
 				/>
 			{/each}
 		{/if}

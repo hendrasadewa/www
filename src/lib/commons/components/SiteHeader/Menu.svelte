@@ -4,6 +4,7 @@
 	import GripIcon from 'lucide-svelte/icons/grip';
 	import InfoIcon from 'lucide-svelte/icons/info';
 	import TableIcon from 'lucide-svelte/icons/table';
+	import DiscAlbumIcon from 'lucide-svelte/icons/disc-album';
 
 	import { AppAvatar } from '$lib/commons/components/Avatar';
 	import { Dropdown } from '$lib/commons/components/Dropdown';
@@ -43,6 +44,11 @@
 				<li>
 					<NavLink href="/app/tukang-csv">
 						<AppAvatar name="Tukang CSV" icon={TableIcon} />
+					</NavLink>
+				</li>
+				<li>
+					<NavLink href="/app/album-tiles">
+						<AppAvatar name="Album Tiles" icon={DiscAlbumIcon} />
 					</NavLink>
 				</li>
 			</ul>

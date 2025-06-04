@@ -33,18 +33,18 @@ export const albumRepository = {
 			name: response.album.name,
 			artist: response.album.artist,
 			url: response.album.url,
-			albumArts: response.album.image.map((image) => ({
+			streamable: response.album.tracks?.track.some(
+				(track) => track.streamable['#text'] === '1'
+			),
+			albumArts: response.album.image?.map((image) => ({
 				url: image['#text'],
 				size: image.size
 			})),
-			streamable: response.album.tracks.track.some(
-				(track) => track.streamable['#text'] === '1'
-			),
-			tags: response.album.tags.tag.map((tag) => ({
+			tags: response.album.tags.tag?.map((tag) => ({
 				name: tag.name,
 				url: tag.url
 			})),
-			tracks: response.album.tracks.track.map((track) => ({
+			tracks: response.album.tracks?.track.map((track) => ({
 				name: track.name,
 				duration: track.duration,
 				url: track.url,

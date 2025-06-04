@@ -1,32 +1,30 @@
 <script lang="ts">
 	import { SEO } from '$lib/commons/components/SEO';
-
 	import metadata from '$lib/commons/configs/site.config.js';
 	import { ArticleHeader, ArticleList } from '$lib/domains/blog/components';
 
-	export let data;
+	// props
+	const { data } = $props();
 
-	let [highlighted, ...rest] = data.posts;
+	// derived
+	let [highlighted, ...rest] = $derived(data.posts);
 </script>
 
 <SEO {...metadata} />
-
-<div class="mx-auto w-full max-w-(--breakpoint-md)">
-	<div class="space-y-8 pb-8">
-		<section id="highlight" class="mt-4 space-y-4 p-4">
-			<ArticleHeader
-				headerImageURL={highlighted.headerImageURL}
-				headerImageAlt={highlighted.headerImageAlt}
-				categories={highlighted.categories}
-				date={highlighted.date}
-				description={highlighted.description}
-				title={highlighted.title}
-				url={`/post/${highlighted.slug}`}
-				bskyPostURI={highlighted.bskyURI}
-			/>
-		</section>
-		<section id="posts" class="space-y-4">
-			<ArticleList posts={rest} />
-		</section>
-	</div>
-</div>
+<main class="mx-auto w-full max-w-(--breakpoint-md) py-4">
+	<section id="highlight">
+		<ArticleHeader
+			headerImageURL={highlighted.headerImageURL}
+			headerImageAlt={highlighted.headerImageAlt}
+			categories={highlighted.categories}
+			date={highlighted.date}
+			description={highlighted.description}
+			title={highlighted.title}
+			bskyPostURI={highlighted.bskyURI}
+			url={`/post/${highlighted.slug}`}
+		/>
+	</section>
+	<section id="posts" class="space-y-4">
+		<ArticleList posts={rest} />
+	</section>
+</main>

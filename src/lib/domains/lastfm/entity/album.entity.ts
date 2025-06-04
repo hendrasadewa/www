@@ -17,3 +17,5 @@ export interface AlbumArt {
 	url: string;
 	size: ImageSize;
 }
+
+export type AlbumKeyPair = Pick<Album, 'artist' | 'name'>;

@@ -13,8 +13,8 @@ export const imageDimensions: Record<ImageSize, ImageDimension> = {
 		width: 300
 	},
 	large: {
-		height: 174,
-		width: 174
+		height: 174, // original - 174px
+		width: 174 // original - 174px
 	},
 	medium: {
 		height: 64,
