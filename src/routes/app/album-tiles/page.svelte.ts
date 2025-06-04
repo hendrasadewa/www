@@ -64,7 +64,6 @@ export const pageStore = {
 		pageState.albums = albums;
 	},
 	onAlbumClick(album: Album) {
-		console.log('onAlbumClick', album);
 		if (pageState.selectedIndex == null) {
 			return;
 		}
@@ -77,10 +76,8 @@ export const pageStore = {
 		pageState.selectedIndex = null;
 	},
 	onAlbumTileClick(_: Album, index: number) {
-		console.log('onAlbumTileClick', index);
 		pageState.selectedIndex = index;
 		pageState.isFinderOpen = true;
-		console.log('pagestate', pageState.isFinderOpen);
 	},
 	onCloseFinder() {
 		pageState.isFinderOpen = false;
@@ -92,7 +89,6 @@ export function getPageState() {
 }
 
 export function onLoadAlbum(albums: Album[] = []) {
-	console.log('loaded albums', albums);
 	pageState.albums = albums;
 }
 

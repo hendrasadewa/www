@@ -40,10 +40,7 @@ export const albumRepository = {
 				url: image['#text'],
 				size: image.size
 			})),
-			tags: response.album.tags.tag?.map((tag) => ({
-				name: tag.name,
-				url: tag.url
-			})),
+
 			tracks: response.album.tracks?.track.map((track) => ({
 				name: track.name,
 				duration: track.duration,
@@ -61,6 +58,17 @@ export const albumRepository = {
 				rank: track['@attr'].rank ? Number(track['@attr'].rank) : 0
 			}))
 		};
+
+		if (
+			response.album.tags &&
+			response.album.tags.tag &&
+			Array.isArray(response.album.tags.tag)
+		) {
+			album.tags = response.album.tags.tag?.map((tag) => ({
+				name: tag.name,
+				url: tag.url
+			}));
+		}
 
 		return album;
 	},

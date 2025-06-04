@@ -11,15 +11,12 @@ export class PaginationStore {
 	}
 
 	nextPage = () => {
-		console.log('next target %d', this.page);
-
 		if (this.page <= this.totalPage) {
 			this.page += 1;
 		}
 	};
 
 	prevPage = () => {
-		console.log('prev target %d', this.page);
 		if (this.page > 1) {
 			this.page -= 1;
 		}

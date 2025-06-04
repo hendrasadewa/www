@@ -8,10 +8,24 @@
 
 	import { pageStore } from './page.svelte.js';
 	import { page } from '$app/state';
+	import { onMount } from 'svelte';
 
 	const { data } = $props();
 
 	pageStore.onLoadAlbum(data.albums);
+
+	onMount(async () => {
+		const code = page.url.searchParams.get('code');
+		if (!code) {
+			pageStore.onLoadAlbum(data.albums);
+			return;
+		}
+
+		const result = await pageStore.onLoadCode(code);
+		if (result) {
+			pageStore.onLoadAlbum(result);
+		}
+	});
 </script>
 
 <div

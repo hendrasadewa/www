@@ -17,7 +17,6 @@ export const actions = {
 		// load form data
 		const data = await request.formData();
 		const keyword = data.get('keyword')?.toString();
-		console.log(keyword);
 		const response = blogRepository.handleGetContents({ keyword });
 		return { posts: response };
 	}
