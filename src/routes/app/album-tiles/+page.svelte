@@ -9,6 +9,7 @@
 	import { pageStore } from './page.svelte.js';
 	import { page } from '$app/state';
 	import { onMount } from 'svelte';
+	import { SEO } from '$lib/commons/components/SEO/index.js';
 
 	const { data } = $props();
 
@@ -43,6 +44,12 @@
 		}
 	});
 </script>
+
+<SEO
+	categories={['Apps', 'Music']}
+	description="Pick your Top 10 Album, and share it to your friends using this Top 10 album tile maker"
+	title="Top 10 Album"
+/>
 
 <div
 	class="flex min-h-[calc(100vh-36px)] flex-col items-center justify-center p-4"
